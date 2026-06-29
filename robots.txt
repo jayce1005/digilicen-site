@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://digilicen.com/sitemap.xml
