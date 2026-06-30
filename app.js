@@ -326,7 +326,7 @@ function bySlug(slug) {
 }
 
 function productUrl(slug) {
-  return `products/${encodeURIComponent(slug)}.html`;
+  return `products/${encodeURIComponent(slug)}`;
 }
 
 function whatsappFor(productName) {

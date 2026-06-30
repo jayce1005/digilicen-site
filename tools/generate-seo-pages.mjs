@@ -4,7 +4,7 @@ const SITE_URL = "https://digilicen.com";
 const SITE_NAME = "DIGILICEN";
 const EMAIL = "digilicen@outlook.com";
 const WHATSAPP = "https://wa.me/8619928777176";
-const LASTMOD = "2026-06-26";
+const LASTMOD = "2026-06-30";
 const SOURCE = await readFile(new URL("../app.js", import.meta.url), "utf8");
 
 function extractLiteral(name, terminator) {
@@ -511,15 +511,15 @@ function imageFor(product) {
 }
 
 function productUrl(product) {
-  return `${SITE_URL}/products/${product.slug}.html`;
+  return `${SITE_URL}/products/${product.slug}`;
 }
 
 function categoryUrl(category) {
-  return `${SITE_URL}/categories/${category.slug}.html`;
+  return `${SITE_URL}/categories/${category.slug}`;
 }
 
 function blogUrl(post) {
-  return `${SITE_URL}/blog/${post.slug}.html`;
+  return `${SITE_URL}/blog/${post.slug}`;
 }
 
 function paypalFor(product) {
@@ -628,6 +628,7 @@ function productPage(product) {
     <title>${escapeHtml(title)}</title>
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <meta name="description" content="${escapeHtml(description)}">
+    <meta name="robots" content="index,follow,max-image-preview:large">
     <link rel="canonical" href="${canonical}">
     <meta property="og:type" content="product">
     <meta property="og:site_name" content="DIGILICEN">
@@ -647,16 +648,16 @@ function productPage(product) {
     <div class="topbar">Genuine Licenses. Lower Prices. Instant Delivery.</div>
 
     <header class="site-header">
-      <a class="brand" href="../index.html" aria-label="DIGILICEN home">
+      <a class="brand" href="../" aria-label="DIGILICEN home">
         <span class="brand-mark">D</span>
         <span>DIGILICEN</span>
       </a>
       <button class="menu-toggle" type="button" aria-label="Open menu">Menu</button>
       <nav class="main-nav" aria-label="Main navigation">
-        <a href="../index.html#products">Products</a>
-        <a href="../index.html#why">Why Choose Us</a>
-        <a href="../index.html#faq">FAQ</a>
-        <a href="../index.html#contact">Contact</a>
+        <a href="../#products">Products</a>
+        <a href="../#why">Why Choose Us</a>
+        <a href="../#faq">FAQ</a>
+        <a href="../#contact">Contact</a>
       </nav>
       <a class="header-cta" href="${WHATSAPP}" target="_blank" rel="noopener">WhatsApp</a>
     </header>
@@ -665,7 +666,7 @@ function productPage(product) {
       <section class="product-detail">
         <div class="product-detail-card">
           <div class="product-detail-visual">
-            <img src="../${image}" alt="${escapeHtml(productLabel(product))}">
+            <img src="../${image}" alt="${escapeHtml(productLabel(product))}" decoding="async" fetchpriority="high">
           </div>
           <div class="product-info-panel">
             <p class="eyebrow">${escapeHtml(product.category)} license inquiry</p>
@@ -721,8 +722,8 @@ function productPage(product) {
           <h2>More ${escapeHtml(product.category)} license inquiries</h2>
         </div>
         <div class="related-links">
-          ${related.map((item) => `<a href="${item.slug}.html">${escapeHtml(productLabel(item))}</a>`).join("\n          ")}
-          <a href="../index.html#products">View all products</a>
+          ${related.map((item) => `<a href="${item.slug}">${escapeHtml(productLabel(item))}</a>`).join("\n          ")}
+          <a href="../#products">View all products</a>
         </div>
       </section>
     </main>
@@ -734,9 +735,9 @@ function productPage(product) {
       </div>
       <div>
         <strong>Products</strong>
-        <a href="../index.html#products">Autodesk</a>
-        <a href="../index.html#products">Adobe</a>
-        <a href="../index.html#products">Engineering tools</a>
+        <a href="../#products">Autodesk</a>
+        <a href="../#products">Adobe</a>
+        <a href="../#products">Engineering tools</a>
       </div>
       <div>
         <strong>Contact</strong>
@@ -757,8 +758,8 @@ function productCards(products) {
   return products.map((product) => {
     const image = imageFor(product);
     return `<article class="product-card">
-      <a class="product-visual" href="../products/${product.slug}.html" aria-label="View ${escapeHtml(productLabel(product))}">
-        <img src="../${image}" alt="${escapeHtml(productLabel(product))}">
+      <a class="product-visual" href="../products/${product.slug}" aria-label="View ${escapeHtml(productLabel(product))}">
+        <img src="../${image}" alt="${escapeHtml(productLabel(product))}" loading="lazy" decoding="async">
       </a>
       <span class="category">${escapeHtml(product.category)}</span>
       <h3>${escapeHtml(product.name)}</h3>
@@ -769,7 +770,7 @@ function productCards(products) {
       </div>
       <p>${escapeHtml(product.summary)}</p>
       <div class="card-actions">
-        <a href="../products/${product.slug}.html">View Details</a>
+        <a href="../products/${product.slug}">View Details</a>
         <a href="${product.alibaba}" target="_blank" rel="noopener noreferrer nofollow">Alibaba</a>
         <a href="${paypalFor(product)}">PayPal Invoice</a>
       </div>
@@ -818,6 +819,7 @@ function categoryPage(category) {
     <title>${escapeHtml(category.title)}</title>
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <meta name="description" content="${escapeHtml(category.description)}">
+    <meta name="robots" content="index,follow,max-image-preview:large">
     <link rel="canonical" href="${canonical}">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="DIGILICEN">
@@ -837,16 +839,16 @@ function categoryPage(category) {
     <div class="topbar">Genuine Licenses. Lower Prices. Instant Delivery.</div>
 
     <header class="site-header">
-      <a class="brand" href="../index.html" aria-label="DIGILICEN home">
+      <a class="brand" href="../" aria-label="DIGILICEN home">
         <span class="brand-mark">D</span>
         <span>DIGILICEN</span>
       </a>
       <button class="menu-toggle" type="button" aria-label="Open menu">Menu</button>
       <nav class="main-nav" aria-label="Main navigation">
-        <a href="../index.html#products">Products</a>
-        <a href="../index.html#why">Why Choose Us</a>
-        <a href="../index.html#faq">FAQ</a>
-        <a href="../index.html#contact">Contact</a>
+        <a href="../#products">Products</a>
+        <a href="../#why">Why Choose Us</a>
+        <a href="../#faq">FAQ</a>
+        <a href="../#contact">Contact</a>
       </nav>
       <a class="header-cta" href="${WHATSAPP}" target="_blank" rel="noopener">WhatsApp</a>
     </header>
@@ -855,7 +857,7 @@ function categoryPage(category) {
       <section class="product-detail">
         <div class="product-detail-card">
           <div class="product-detail-visual">
-            <img src="../${category.image}" alt="${escapeHtml(category.name)}">
+            <img src="../${category.image}" alt="${escapeHtml(category.name)}" decoding="async" fetchpriority="high">
           </div>
           <div class="product-info-panel">
             <p class="eyebrow">DIGILICEN license category</p>
@@ -893,8 +895,8 @@ function categoryPage(category) {
           <h2>Software license categories</h2>
         </div>
         <div class="related-links">
-          ${CATEGORY_PAGES.filter((item) => item.slug !== category.slug).map((item) => `<a href="${item.slug}.html">${escapeHtml(item.name)}</a>`).join("\n          ")}
-          <a href="../index.html#products">View all products</a>
+          ${CATEGORY_PAGES.filter((item) => item.slug !== category.slug).map((item) => `<a href="${item.slug}">${escapeHtml(item.name)}</a>`).join("\n          ")}
+          <a href="../#products">View all products</a>
         </div>
       </section>
     </main>
@@ -906,7 +908,7 @@ function categoryPage(category) {
       </div>
       <div>
         <strong>Categories</strong>
-        ${CATEGORY_PAGES.map((item) => `<a href="${item.slug}.html">${escapeHtml(item.name)}</a>`).join("\n        ")}
+        ${CATEGORY_PAGES.map((item) => `<a href="${item.slug}">${escapeHtml(item.name)}</a>`).join("\n        ")}
       </div>
       <div>
         <strong>Contact</strong>
@@ -948,6 +950,7 @@ function blogIndexPage() {
     <title>Software License Blog | DIGILICEN</title>
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <meta name="description" content="${escapeHtml(description)}">
+    <meta name="robots" content="index,follow,max-image-preview:large">
     <link rel="canonical" href="${canonical}">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="DIGILICEN">
@@ -962,17 +965,17 @@ function blogIndexPage() {
   <body>
     <div class="topbar">Genuine Licenses. Lower Prices. Instant Delivery.</div>
     <header class="site-header">
-      <a class="brand" href="../index.html" aria-label="DIGILICEN home">
+      <a class="brand" href="../" aria-label="DIGILICEN home">
         <span class="brand-mark">D</span>
         <span>DIGILICEN</span>
       </a>
       <button class="menu-toggle" type="button" aria-label="Open menu">Menu</button>
       <nav class="main-nav" aria-label="Main navigation">
-        <a href="../index.html#products">Products</a>
-        <a href="../categories/autodesk-software-licenses.html">Autodesk</a>
-        <a href="../categories/adobe-creative-cloud-subscription.html">Adobe</a>
-        <a href="index.html">Blog</a>
-        <a href="../index.html#contact">Contact</a>
+        <a href="../#products">Products</a>
+        <a href="../categories/autodesk-software-licenses">Autodesk</a>
+        <a href="../categories/adobe-creative-cloud-subscription">Adobe</a>
+        <a href="./">Blog</a>
+        <a href="../#contact">Contact</a>
       </nav>
       <a class="header-cta" href="${WHATSAPP}" target="_blank" rel="noopener">WhatsApp</a>
     </header>
@@ -985,7 +988,7 @@ function blogIndexPage() {
         </div>
         <div class="blog-grid">
           ${BLOG_POSTS.map((post) => `<article class="blog-card">
-            <a href="${post.slug}.html">
+            <a href="${post.slug}">
               <span>${escapeHtml(post.category)}</span>
               <h2>${escapeHtml(post.title)}</h2>
               <p>${escapeHtml(post.description)}</p>
@@ -1001,7 +1004,7 @@ function blogIndexPage() {
       </div>
       <div>
         <strong>Categories</strong>
-        ${CATEGORY_PAGES.map((item) => `<a href="../categories/${item.slug}.html">${escapeHtml(item.name)}</a>`).join("\n        ")}
+        ${CATEGORY_PAGES.map((item) => `<a href="../categories/${item.slug}">${escapeHtml(item.name)}</a>`).join("\n        ")}
       </div>
       <div>
         <strong>Contact</strong>
@@ -1073,6 +1076,7 @@ function blogPage(post) {
     <title>${escapeHtml(post.title)} | DIGILICEN</title>
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <meta name="description" content="${escapeHtml(post.description)}">
+    <meta name="robots" content="index,follow,max-image-preview:large">
     <link rel="canonical" href="${canonical}">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="DIGILICEN">
@@ -1091,17 +1095,17 @@ function blogPage(post) {
   <body>
     <div class="topbar">Genuine Licenses. Lower Prices. Instant Delivery.</div>
     <header class="site-header">
-      <a class="brand" href="../index.html" aria-label="DIGILICEN home">
+      <a class="brand" href="../" aria-label="DIGILICEN home">
         <span class="brand-mark">D</span>
         <span>DIGILICEN</span>
       </a>
       <button class="menu-toggle" type="button" aria-label="Open menu">Menu</button>
       <nav class="main-nav" aria-label="Main navigation">
-        <a href="../index.html#products">Products</a>
-        <a href="../categories/autodesk-software-licenses.html">Autodesk</a>
-        <a href="../categories/adobe-creative-cloud-subscription.html">Adobe</a>
-        <a href="index.html">Blog</a>
-        <a href="../index.html#contact">Contact</a>
+        <a href="../#products">Products</a>
+        <a href="../categories/autodesk-software-licenses">Autodesk</a>
+        <a href="../categories/adobe-creative-cloud-subscription">Adobe</a>
+        <a href="./">Blog</a>
+        <a href="../#contact">Contact</a>
       </nav>
       <a class="header-cta" href="${WHATSAPP}" target="_blank" rel="noopener">WhatsApp</a>
     </header>
@@ -1111,7 +1115,7 @@ function blogPage(post) {
           <p class="eyebrow">${escapeHtml(post.category)}</p>
           <h1>${escapeHtml(post.title)}</h1>
           <p>${escapeHtml(post.description)}</p>
-          <img src="../${post.heroImage}" alt="${escapeHtml(post.title)}">
+          <img src="../${post.heroImage}" alt="${escapeHtml(post.title)}" decoding="async" fetchpriority="high">
         </header>
         <div class="article-body">
           ${post.sections.map((section) => `<section>
@@ -1134,8 +1138,8 @@ function blogPage(post) {
           <h2>Product pages mentioned in this guide</h2>
         </div>
         <div class="related-links">
-          ${relatedProducts.map((product) => `<a href="../products/${product.slug}.html">${escapeHtml(productLabel(product))}</a>`).join("\n          ")}
-          <a href="../index.html#products">View all products</a>
+          ${relatedProducts.map((product) => `<a href="../products/${product.slug}">${escapeHtml(productLabel(product))}</a>`).join("\n          ")}
+          <a href="../#products">View all products</a>
         </div>
       </section>
       <section class="section">
@@ -1144,8 +1148,8 @@ function blogPage(post) {
           <h2>Continue reading</h2>
         </div>
         <div class="related-links">
-          ${BLOG_POSTS.filter((item) => item.slug !== post.slug).slice(0, 3).map((item) => `<a href="${item.slug}.html">${escapeHtml(item.title)}</a>`).join("\n          ")}
-          <a href="index.html">All blog posts</a>
+          ${BLOG_POSTS.filter((item) => item.slug !== post.slug).slice(0, 3).map((item) => `<a href="${item.slug}">${escapeHtml(item.title)}</a>`).join("\n          ")}
+          <a href="./">All blog posts</a>
         </div>
       </section>
     </main>
@@ -1156,7 +1160,7 @@ function blogPage(post) {
       </div>
       <div>
         <strong>Categories</strong>
-        ${CATEGORY_PAGES.map((item) => `<a href="../categories/${item.slug}.html">${escapeHtml(item.name)}</a>`).join("\n        ")}
+        ${CATEGORY_PAGES.map((item) => `<a href="../categories/${item.slug}">${escapeHtml(item.name)}</a>`).join("\n        ")}
       </div>
       <div>
         <strong>Contact</strong>
