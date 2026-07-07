@@ -4,7 +4,7 @@ const SITE_URL = "https://digilicen.com";
 const SITE_NAME = "DIGILICEN";
 const EMAIL = "digilicen@outlook.com";
 const WHATSAPP = "https://wa.me/8619928777176";
-const LASTMOD = "2026-06-30";
+const LASTMOD = "2026-07-07";
 const SOURCE = await readFile(new URL("../app.js", import.meta.url), "utf8");
 
 function extractLiteral(name, terminator) {
@@ -547,11 +547,11 @@ function priceValue(product) {
 }
 
 function productTitle(product) {
-  return `${productLabel(product)} | ${product.version} | DIGILICEN`;
+  return `${productLabel(product)} Software License | DIGILICEN`;
 }
 
 function productDescription(product) {
-  return `${productLabel(product)} ${product.version} inquiry from DIGILICEN. Price ${product.price}. Alibaba online payment, PayPal invoice, WhatsApp support, and digital delivery.`;
+  return `${productLabel(product)} from DIGILICEN: ${product.version}, ${product.price}, Alibaba or PayPal invoice, WhatsApp support, and digital delivery.`;
 }
 
 function jsonLd(data) {
@@ -564,16 +564,53 @@ function relatedProducts(product) {
     .slice(0, 3);
 }
 
+function productFaqs(product) {
+  return [
+    {
+      question: `Is ${productLabel(product)} a genuine software license inquiry?`,
+      answer: `Yes. DIGILICEN provides genuine software license inquiry support for ${productLabel(product)} and does not provide cracked software, pirated copies, or unsafe activation methods.`
+    },
+    {
+      question: `What should I confirm before ordering ${product.name}?`,
+      answer: `Please confirm the product name, ${product.term} term, account email requirements, operating system, compatibility needs, payment method, and delivery timing before payment.`
+    },
+    {
+      question: `Can I pay for ${productLabel(product)} with Alibaba or PayPal?`,
+      answer: `DIGILICEN supports Alibaba online payment and PayPal invoice requests. Contact us first if you need availability confirmation or an invoice before ordering.`
+    }
+  ];
+}
+
+function categoryFaqs(category, products) {
+  const examples = products.slice(0, 4).map((product) => product.name).join(", ");
+  return [
+    {
+      question: `Which products are included in ${category.name}?`,
+      answer: `${category.name} includes DIGILICEN software license inquiry options such as ${examples}. Product availability, term, and account requirements should be confirmed before payment.`
+    },
+    {
+      question: `How do I choose the right ${category.name} option?`,
+      answer: `Start with your workflow, required software name, license term, operating system, account email, and number of users. DIGILICEN can help confirm the closest listed option before you order.`
+    },
+    {
+      question: `Can I pay for ${category.name} by Alibaba or PayPal?`,
+      answer: `Yes. DIGILICEN supports Alibaba online payment and PayPal invoice requests for software license inquiries after product details and availability are confirmed.`
+    }
+  ];
+}
+
 function productPage(product) {
   const title = productTitle(product);
   const description = productDescription(product);
   const image = imageFor(product);
   const canonical = productUrl(product);
   const related = relatedProducts(product);
+  const faqs = productFaqs(product);
   const schema = {
     "@context": "https://schema.org",
     "@type": "Product",
     name: productLabel(product),
+    url: canonical,
     image: `${SITE_URL}/${image}`,
     description,
     brand: {
@@ -582,6 +619,7 @@ function productPage(product) {
     },
     category: "Software license",
     sku: product.slug,
+    itemCondition: "https://schema.org/NewCondition",
     offers: {
       "@type": "Offer",
       url: canonical,
@@ -619,6 +657,18 @@ function productPage(product) {
       }
     ]
   };
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.answer
+      }
+    }))
+  };
 
   return `<!doctype html>
 <html lang="en">
@@ -643,6 +693,7 @@ function productPage(product) {
     <link rel="stylesheet" href="../styles.css?v=6">
     <script type="application/ld+json">${jsonLd(schema)}</script>
     <script type="application/ld+json">${jsonLd(breadcrumbSchema)}</script>
+    <script type="application/ld+json">${jsonLd(faqSchema)}</script>
   </head>
   <body>
     <div class="topbar">Genuine Licenses. Lower Prices. Instant Delivery.</div>
@@ -718,6 +769,19 @@ function productPage(product) {
 
       <section class="section">
         <div class="section-head">
+          <p class="eyebrow">FAQ</p>
+          <h2>Questions about ${escapeHtml(productLabel(product))}</h2>
+        </div>
+        <div class="faq-list">
+          ${faqs.map((faq, index) => `<details ${index === 0 ? "open" : ""}>
+            <summary>${escapeHtml(faq.question)}</summary>
+            <p>${escapeHtml(faq.answer)}</p>
+          </details>`).join("\n          ")}
+        </div>
+      </section>
+
+      <section class="section section-muted">
+        <div class="section-head">
           <p class="eyebrow">Related products</p>
           <h2>More ${escapeHtml(product.category)} license inquiries</h2>
         </div>
@@ -781,6 +845,7 @@ function productCards(products) {
 function categoryPage(category) {
   const products = PRODUCTS.filter(category.match);
   const canonical = categoryUrl(category);
+  const faqs = categoryFaqs(category, products);
   const itemListSchema = {
     "@context": "https://schema.org",
     "@type": "ItemList",
@@ -810,6 +875,18 @@ function categoryPage(category) {
       }
     ]
   };
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.answer
+      }
+    }))
+  };
 
   return `<!doctype html>
 <html lang="en">
@@ -834,6 +911,7 @@ function categoryPage(category) {
     <link rel="stylesheet" href="../styles.css?v=6">
     <script type="application/ld+json">${jsonLd(itemListSchema)}</script>
     <script type="application/ld+json">${jsonLd(breadcrumbSchema)}</script>
+    <script type="application/ld+json">${jsonLd(faqSchema)}</script>
   </head>
   <body>
     <div class="topbar">Genuine Licenses. Lower Prices. Instant Delivery.</div>
@@ -890,6 +968,19 @@ function categoryPage(category) {
       </section>
 
       <section class="section">
+        <div class="section-head">
+          <p class="eyebrow">FAQ</p>
+          <h2>Questions about ${escapeHtml(category.name)}</h2>
+        </div>
+        <div class="faq-list">
+          ${faqs.map((faq, index) => `<details ${index === 0 ? "open" : ""}>
+            <summary>${escapeHtml(faq.question)}</summary>
+            <p>${escapeHtml(faq.answer)}</p>
+          </details>`).join("\n          ")}
+        </div>
+      </section>
+
+      <section class="section section-muted">
         <div class="section-head">
           <p class="eyebrow">Explore more</p>
           <h2>Software license categories</h2>
