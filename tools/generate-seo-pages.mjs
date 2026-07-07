@@ -62,6 +62,187 @@ const CATEGORY_PAGES = [
     match: (product) => product.category === "Developer Tools" || product.name.includes("JetBrains")
   }
 ];
+const INFO_PAGES = [
+  {
+    slug: "about",
+    title: "About DIGILICEN | Genuine Software License Inquiries",
+    description: "Learn about DIGILICEN, a software license inquiry site for Autodesk, Adobe, AutoCAD, engineering, creative, and developer tool customers.",
+    heading: "About DIGILICEN",
+    intro: "DIGILICEN helps business, design, engineering, creative, and developer users send clear software license inquiries before ordering.",
+    sections: [
+      {
+        heading: "What DIGILICEN does",
+        paragraphs: [
+          "DIGILICEN is built for customers who want to confirm software license options before payment. The site lists software license inquiry pages, prices, license terms, delivery notes, and contact routes for products such as Autodesk, AutoCAD, Revit, Adobe Creative Cloud, and developer tools.",
+          "Customers can review product details, ask compatibility questions, continue to Alibaba where available, request a PayPal invoice, or contact support by WhatsApp and email."
+        ]
+      },
+      {
+        heading: "Genuine license positioning",
+        paragraphs: [
+          "DIGILICEN focuses on genuine software license solutions and pre-purchase confirmation. The site does not promote cracked software, pirated copies, malware, unsafe activation tools, or bypass methods.",
+          "Before payment, customers should confirm product name, term, account email requirements, operating system, and expected use case so the order can be matched with the right support process."
+        ]
+      },
+      {
+        heading: "How customers should use the site",
+        paragraphs: [
+          "Use the product pages to compare listed terms and prices, then contact DIGILICEN if you are unsure about compatibility, delivery timing, account requirements, or payment route.",
+          "For business buyers, it is useful to prepare the number of users, required software names, account email, and internal purchasing requirements before requesting an invoice."
+        ]
+      }
+    ],
+    faqs: [
+      {
+        question: "Is DIGILICEN a software license inquiry site?",
+        answer: "Yes. DIGILICEN is a software license inquiry site where customers can review listed license options and contact support before ordering."
+      },
+      {
+        question: "Does DIGILICEN provide cracked software?",
+        answer: "No. DIGILICEN does not provide cracked software, pirated copies, unsafe activation tools, or bypass methods."
+      }
+    ]
+  },
+  {
+    slug: "payment-and-delivery",
+    title: "Payment and Digital Delivery | DIGILICEN",
+    description: "DIGILICEN payment and digital delivery guide covering Alibaba online payment, PayPal invoice requests, order details, and activation support.",
+    heading: "Payment and digital delivery",
+    intro: "Confirm your software license details before payment, then keep order information organized for faster digital delivery and activation support.",
+    sections: [
+      {
+        heading: "Alibaba online payment",
+        paragraphs: [
+          "Many DIGILICEN product pages include Alibaba links. Alibaba online payment can help create a clear order record, which is useful for matching payment confirmation with delivery support.",
+          "Before continuing to Alibaba, confirm the exact software product, term, price, account email requirements, and compatibility details."
+        ]
+      },
+      {
+        heading: "PayPal invoice requests",
+        paragraphs: [
+          "Customers who prefer PayPal can use the PayPal Invoice button on product pages. The email request includes the selected product, term, version, and listed price so DIGILICEN can confirm availability before sending payment instructions.",
+          "If you need a company invoice or special purchase note, include that information in the request."
+        ]
+      },
+      {
+        heading: "Digital delivery process",
+        paragraphs: [
+          "After payment, send the order number or invoice email, product name, selected term, account email if required, and preferred support channel.",
+          "Delivery timing may vary by product, order status, working hours, account requirements, and compatibility checks. Customers should ask before payment if timing is important."
+        ]
+      }
+    ],
+    faqs: [
+      {
+        question: "Which payment methods does DIGILICEN support?",
+        answer: "DIGILICEN supports Alibaba online payment where available and PayPal invoice requests after product details are confirmed."
+      },
+      {
+        question: "What information should I send after payment?",
+        answer: "Send your order number or invoice email, product name, selected term, account email if required, and preferred support channel."
+      }
+    ]
+  },
+  {
+    slug: "order-support-policy",
+    title: "Order Support Policy | DIGILICEN",
+    description: "DIGILICEN order support policy for software license inquiries, compatibility confirmation, payment records, digital delivery, and support communication.",
+    heading: "Order support policy",
+    intro: "This page explains how DIGILICEN handles order support for software license inquiries and what customers should confirm before payment.",
+    sections: [
+      {
+        heading: "Confirm before payment",
+        paragraphs: [
+          "Software license orders can depend on product name, term, account email, operating system, region, team size, and compatibility requirements. Customers should confirm these details before payment.",
+          "If you are unsure which product fits your workflow, contact DIGILICEN by WhatsApp or email before placing an order."
+        ]
+      },
+      {
+        heading: "Support after payment",
+        paragraphs: [
+          "After payment confirmation, DIGILICEN uses the product name, order number, account details, and communication channel to coordinate digital delivery and activation guidance.",
+          "Support questions should include screenshots or exact error text when possible. This helps the team understand the issue faster."
+        ]
+      },
+      {
+        heading: "Refund and issue handling",
+        paragraphs: [
+          "Because software licenses are digital products, customers should ask all compatibility and account questions before payment. If an issue appears after payment, contact DIGILICEN with order details so the case can be reviewed.",
+          "Any refund, replacement, or support decision depends on the payment channel, order state, delivery state, product terms, and information supplied by the customer."
+        ]
+      }
+    ],
+    faqs: [
+      {
+        question: "Should I confirm compatibility before payment?",
+        answer: "Yes. Customers should confirm software name, term, account email requirements, operating system, and compatibility needs before payment."
+      },
+      {
+        question: "How should I report an order issue?",
+        answer: "Send the order number, product name, account email if required, payment method, and screenshots or exact error text."
+      }
+    ]
+  },
+  {
+    slug: "contact",
+    title: "Contact DIGILICEN | Software License Inquiry Support",
+    description: "Contact DIGILICEN by WhatsApp or email for Autodesk, Adobe, AutoCAD, Revit, developer tools, payment, delivery, and software license inquiry support.",
+    heading: "Contact DIGILICEN",
+    intro: "Send DIGILICEN your product name, term, operating system, account requirements, and payment preference before ordering.",
+    sections: [
+      {
+        heading: "Contact channels",
+        paragraphs: [
+          "WhatsApp: +86 199 2877 7176. Email: digilicen@outlook.com.",
+          "For faster replies, include product name, required term, operating system, account email requirements, payment method, and whether you are buying for personal or business use."
+        ]
+      },
+      {
+        heading: "What to include in your inquiry",
+        paragraphs: [
+          "A complete inquiry should include the exact product name, version or license type, term length, number of users, account email if required, and any compatibility questions.",
+          "If you have already paid, include the Alibaba order number or PayPal invoice email so support can match your request."
+        ]
+      }
+    ],
+    faqs: [
+      {
+        question: "Can I contact DIGILICEN before payment?",
+        answer: "Yes. Customers are encouraged to contact DIGILICEN before payment to confirm product availability, compatibility, and delivery details."
+      }
+    ]
+  },
+  {
+    slug: "faq",
+    title: "Software License FAQ | DIGILICEN",
+    description: "Frequently asked questions about DIGILICEN software license inquiries, genuine licenses, payment, PayPal invoice, Alibaba payment, and digital delivery.",
+    heading: "Software license FAQ",
+    intro: "Common questions customers ask before sending a DIGILICEN software license inquiry.",
+    sections: [
+      {
+        heading: "General questions",
+        paragraphs: [
+          "DIGILICEN helps customers review software license options and confirm product details before payment. The site includes product pages, category pages, blog guides, payment information, and contact options.",
+          "Customers should contact DIGILICEN if they are unsure about product fit, compatibility, account requirements, delivery timing, or payment method."
+        ]
+      }
+    ],
+    faqs: [
+      {
+        question: "Are the listed products digital software license inquiries?",
+        answer: "Yes. DIGILICEN lists digital software license inquiry options with product terms, prices, payment routes, and support contact methods."
+      },
+      {
+        question: "Can I request a PayPal invoice?",
+        answer: "Yes. Product pages include PayPal invoice request links so customers can ask for confirmation before payment."
+      },
+      {
+        question: "Does every product have the same delivery process?",
+        answer: "No. Delivery and activation steps can vary by software product, account requirement, compatibility needs, and order status."
+      }
+    ]
+  }
+];
 const BLOG_POSTS = [
   {
     slug: "how-to-buy-genuine-autodesk-software-licenses-online",
@@ -491,6 +672,171 @@ const BLOG_POSTS = [
         ]
       }
     ]
+  },
+  {
+    slug: "best-software-licenses-for-cad-teams",
+    title: "Best Software License Options for CAD Teams",
+    description: "A practical guide for CAD teams comparing AutoCAD, AutoCAD LT, Revit, Civil 3D, Inventor, Fusion 360, and Autodesk collection inquiries.",
+    category: "CAD software licenses",
+    date: "2026-07-07",
+    heroImage: "assets/autocad-commercial.png",
+    related: ["autocad", "autocad-lt", "revit", "civil-3d"],
+    cta: "Send DIGILICEN your CAD workflow, team size, and required term before choosing a software license option.",
+    sections: [
+      {
+        heading: "Start with your daily CAD workflow",
+        paragraphs: [
+          "CAD teams often search for one software name but actually need a product that matches a specific workflow. Drafting, BIM modeling, civil infrastructure, mechanical design, plant design, and construction documentation can point to different products.",
+          "Before requesting a license, list the drawings, file types, collaboration needs, and account setup your team uses every day."
+        ]
+      },
+      {
+        heading: "Match products to project roles",
+        paragraphs: [
+          "AutoCAD and AutoCAD LT may fit drafting workflows, while Revit is usually tied to BIM and building design. Civil 3D is used for civil engineering workflows, and Inventor or Fusion 360 may fit product design and manufacturing users.",
+          "If one team needs several tools, an Autodesk collection inquiry may be more practical than checking each product separately."
+        ]
+      },
+      {
+        heading: "Confirm support and delivery details",
+        paragraphs: [
+          "Before payment, confirm the term, price, account email requirement, operating system, and number of users. These details help support match the order to the right delivery process.",
+          "DIGILICEN can help customers compare listed CAD options before they continue to Alibaba payment or request a PayPal invoice."
+        ]
+      }
+    ]
+  },
+  {
+    slug: "what-information-needed-before-software-license-activation",
+    title: "What Information Is Needed Before Software License Activation?",
+    description: "Prepare the details needed before software license activation, including product name, term, account email, operating system, payment record, and support channel.",
+    category: "Activation checklist",
+    date: "2026-07-07",
+    heroImage: "assets/genuine-software.png",
+    related: ["adobe-1-year", "autocad", "revit", "jetbrains-ai-assistant-all-products-6-month"],
+    cta: "Prepare product, account, and payment details before contacting DIGILICEN for activation support.",
+    sections: [
+      {
+        heading: "Prepare product and term details",
+        paragraphs: [
+          "A clear activation request should start with the exact product name, license term, listed price, and version or license type. Similar names can represent different software tools, especially across AutoCAD, Revit, Adobe Creative Cloud, and developer tools.",
+          "If you are unsure, send your intended workflow before payment so support can confirm the closest product page."
+        ]
+      },
+      {
+        heading: "Prepare account and environment details",
+        paragraphs: [
+          "Some software license orders may require an account email, operating system, device environment, team setup, or compatibility check. Preparing these details early can reduce delays after payment.",
+          "For company buyers, mention whether the software will be used by one user, multiple users, or a managed business account."
+        ]
+      },
+      {
+        heading: "Keep payment records easy to find",
+        paragraphs: [
+          "After payment, send the Alibaba order number or PayPal invoice email together with the product name and account details. This helps support match payment confirmation to the activation request.",
+          "A single organized message is often faster than sending information across several separate conversations."
+        ]
+      }
+    ]
+  },
+  {
+    slug: "paypal-invoice-vs-alibaba-payment-software-license",
+    title: "PayPal Invoice vs Alibaba Payment for Software License Orders",
+    description: "Compare PayPal invoice requests and Alibaba online payment for software license inquiries, including records, confirmation, and delivery support.",
+    category: "Payment methods",
+    date: "2026-07-07",
+    heroImage: "assets/hero-license.png",
+    related: ["adobe-6-month", "autocad", "fusion-360", "revit-lt"],
+    cta: "Choose Alibaba or PayPal based on your purchasing process, then confirm product details with DIGILICEN before payment.",
+    sections: [
+      {
+        heading: "Alibaba payment creates an order record",
+        paragraphs: [
+          "Alibaba online payment is useful when customers want a marketplace order trail. Many DIGILICEN product pages link to Alibaba listings where available.",
+          "Before payment, confirm the product name, term, price, account email requirements, and delivery details so the order record matches the intended software license inquiry."
+        ]
+      },
+      {
+        heading: "PayPal invoice is useful for confirmation first",
+        paragraphs: [
+          "A PayPal invoice request is useful when the buyer wants DIGILICEN to confirm availability and details before payment. Product pages generate an email with the product, term, version, and price.",
+          "Business buyers can include company requirements, invoice notes, and account details in the PayPal request."
+        ]
+      },
+      {
+        heading: "Both methods need clear delivery details",
+        paragraphs: [
+          "Whether you use Alibaba or PayPal, support still needs product name, order reference, account email if required, and preferred contact method.",
+          "Choosing the right payment route is helpful, but clear product information is what keeps software delivery organized."
+        ]
+      }
+    ]
+  },
+  {
+    slug: "how-fast-is-digital-software-license-delivery",
+    title: "How Fast Is Digital Software License Delivery?",
+    description: "Learn what affects digital software license delivery time, including payment confirmation, account information, product compatibility, and support hours.",
+    category: "Software license delivery",
+    date: "2026-07-07",
+    heroImage: "assets/hero-license.png",
+    related: ["autocad", "adobe-1-month", "maya", "aec-collection"],
+    cta: "Ask DIGILICEN about delivery timing before payment if your project has a deadline.",
+    sections: [
+      {
+        heading: "Delivery speed depends on order completeness",
+        paragraphs: [
+          "Digital software license delivery is fastest when the customer sends product name, term, account email if required, operating system, payment reference, and support channel in one message.",
+          "Missing information can slow the process because support needs to confirm details before moving forward."
+        ]
+      },
+      {
+        heading: "Some products require compatibility checks",
+        paragraphs: [
+          "Engineering, creative, and developer software can have different account or platform requirements. A compatibility check before payment is useful when the customer is unsure about the product fit.",
+          "If timing matters, ask about expected delivery before payment instead of assuming every product follows the same process."
+        ]
+      },
+      {
+        heading: "Keep communication in one place",
+        paragraphs: [
+          "Using one support channel, such as WhatsApp or email, helps keep product details and order records together.",
+          "When payment is complete, send the order number or invoice email and the selected product page so DIGILICEN can match the request more quickly."
+        ]
+      }
+    ]
+  },
+  {
+    slug: "developer-tools-license-procurement-guide",
+    title: "Developer Tools License Procurement Guide",
+    description: "A developer tools license procurement guide covering JetBrains AI Assistant, All Products Pack, account details, devices, and payment confirmation.",
+    category: "Developer tools",
+    date: "2026-07-07",
+    heroImage: "assets/jetbrains-ai-assistant-all-products-6-month-usd34.png",
+    related: ["jetbrains-ai-assistant-all-products-6-month"],
+    cta: "Ask DIGILICEN to confirm developer tool access, account setup, and term before ordering.",
+    sections: [
+      {
+        heading: "Confirm tool access before payment",
+        paragraphs: [
+          "Developer tools license inquiries should start with the exact tools needed, term length, account environment, and whether the buyer needs individual or team use.",
+          "For JetBrains-related inquiries, confirm whether the request includes AI Assistant, All Products Pack access, devices, and cross-platform use."
+        ]
+      },
+      {
+        heading: "Prepare account and platform details",
+        paragraphs: [
+          "Developer tools may depend on account email, operating system, device count, and team requirements. Preparing this information before payment reduces back-and-forth during delivery.",
+          "If you are purchasing for a development team, include the number of users and whether each user needs separate access."
+        ]
+      },
+      {
+        heading: "Choose the right payment route",
+        paragraphs: [
+          "DIGILICEN supports Alibaba online payment and PayPal invoice requests. Confirm the product details first, then choose the payment route that fits your purchasing process.",
+          "After payment, send the order number, product name, term, and account email if required so support can continue efficiently."
+        ]
+      }
+    ]
   }
 ];
 
@@ -581,6 +927,43 @@ function productFaqs(product) {
   ];
 }
 
+function productGuidance(product) {
+  const categoryGuidance = {
+    Adobe: {
+      audience: "Creative teams, designers, editors, marketers, freelancers, and short-term project users who need Adobe Creative Cloud access for design, PDF, photo, video, or production work.",
+      checklist: "Confirm the Creative Cloud term, account email requirement, required Adobe apps, delivery timing, and whether the subscription is for a single user, contractor, or business workflow."
+    },
+    Autodesk: {
+      audience: "CAD, design, architecture, manufacturing, visualization, product design, and engineering users who need Autodesk software license inquiry support before payment.",
+      checklist: "Confirm the exact Autodesk product name, license term, operating system, account setup, project workflow, and whether a single product or collection is more appropriate."
+    },
+    Engineering: {
+      audience: "Engineering, BIM, construction, civil, plant, electrical, mechanical, and infrastructure teams that need professional software for technical workflows.",
+      checklist: "Confirm file compatibility, project discipline, required product, account email, number of users, and whether the software needs to fit a company BIM or CAD standard."
+    },
+    "Developer Tools": {
+      audience: "Developers, software teams, technical users, and multi-device coding workflows that need developer tool access and account setup confirmation.",
+      checklist: "Confirm included developer tools, account email, operating system, device requirements, user count, AI assistant needs, and payment route before ordering."
+    }
+  };
+  const guidance = categoryGuidance[product.category] || categoryGuidance.Autodesk;
+
+  return [
+    {
+      heading: `Who ${productLabel(product)} is for`,
+      body: guidance.audience
+    },
+    {
+      heading: "Before ordering checklist",
+      body: guidance.checklist
+    },
+    {
+      heading: "Delivery and support workflow",
+      body: `After payment confirmation, send DIGILICEN the product name, ${product.term} term, order number or PayPal invoice email, account email if required, and preferred support channel.`
+    }
+  ];
+}
+
 function categoryFaqs(category, products) {
   const examples = products.slice(0, 4).map((product) => product.name).join(", ");
   return [
@@ -606,6 +989,7 @@ function productPage(product) {
   const canonical = productUrl(product);
   const related = relatedProducts(product);
   const faqs = productFaqs(product);
+  const guidance = productGuidance(product);
   const schema = {
     "@context": "https://schema.org",
     "@type": "Product",
@@ -769,6 +1153,21 @@ function productPage(product) {
 
       <section class="section">
         <div class="section-head">
+          <p class="eyebrow">Buying guide</p>
+          <h2>How to prepare for ${escapeHtml(productLabel(product))}</h2>
+          <p>Use these notes to confirm whether this listed software license inquiry fits your workflow before payment.</p>
+        </div>
+        <div class="value-grid compact">
+          ${guidance.map((item, index) => `<article>
+            <span class="value-icon">${String(index + 1).padStart(2, "0")}</span>
+            <h3>${escapeHtml(item.heading)}</h3>
+            <p>${escapeHtml(item.body)}</p>
+          </article>`).join("\n          ")}
+        </div>
+      </section>
+
+      <section class="section section-muted">
+        <div class="section-head">
           <p class="eyebrow">FAQ</p>
           <h2>Questions about ${escapeHtml(productLabel(product))}</h2>
         </div>
@@ -780,7 +1179,7 @@ function productPage(product) {
         </div>
       </section>
 
-      <section class="section section-muted">
+      <section class="section">
         <div class="section-head">
           <p class="eyebrow">Related products</p>
           <h2>More ${escapeHtml(product.category)} license inquiries</h2>
@@ -1267,9 +1666,172 @@ function blogPage(post) {
 `;
 }
 
+function infoPageUrl(page) {
+  return `${SITE_URL}/${page.slug}`;
+}
+
+function infoPage(page) {
+  const canonical = infoPageUrl(page);
+  const webPageSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    name: page.title,
+    url: canonical,
+    description: page.description,
+    publisher: {
+      "@type": "Organization",
+      name: SITE_NAME,
+      url: SITE_URL
+    }
+  };
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: `${SITE_URL}/`
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: page.heading,
+        item: canonical
+      }
+    ]
+  };
+  const faqSchema = page.faqs?.length ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: page.faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.answer
+      }
+    }))
+  } : null;
+
+  return `<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>${escapeHtml(page.title)}</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <meta name="description" content="${escapeHtml(page.description)}">
+    <meta name="robots" content="index,follow,max-image-preview:large">
+    <link rel="canonical" href="${canonical}">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="DIGILICEN">
+    <meta property="og:title" content="${escapeHtml(page.title)}">
+    <meta property="og:description" content="${escapeHtml(page.description)}">
+    <meta property="og:url" content="${canonical}">
+    <meta property="og:image" content="${SITE_URL}/assets/hero-license.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="${escapeHtml(page.title)}">
+    <meta name="twitter:description" content="${escapeHtml(page.description)}">
+    <meta name="twitter:image" content="${SITE_URL}/assets/hero-license.png">
+    <link rel="stylesheet" href="styles.css?v=6">
+    <script type="application/ld+json">${jsonLd(webPageSchema)}</script>
+    <script type="application/ld+json">${jsonLd(breadcrumbSchema)}</script>
+    ${faqSchema ? `<script type="application/ld+json">${jsonLd(faqSchema)}</script>` : ""}
+  </head>
+  <body>
+    <div class="topbar">Genuine Licenses. Lower Prices. Instant Delivery.</div>
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="DIGILICEN home">
+        <span class="brand-mark">D</span>
+        <span>DIGILICEN</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Open menu">Menu</button>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="/#products">Products</a>
+        <a href="/about">About</a>
+        <a href="/payment-and-delivery">Payment & Delivery</a>
+        <a href="/blog/">Blog</a>
+        <a href="/contact">Contact</a>
+      </nav>
+      <a class="header-cta" href="${WHATSAPP}" target="_blank" rel="noopener">WhatsApp</a>
+    </header>
+    <main>
+      <article class="article-page">
+        <header class="article-hero">
+          <p class="eyebrow">DIGILICEN support</p>
+          <h1>${escapeHtml(page.heading)}</h1>
+          <p>${escapeHtml(page.intro)}</p>
+        </header>
+        <div class="article-body">
+          ${page.sections.map((section) => `<section>
+            <h2>${escapeHtml(section.heading)}</h2>
+            ${section.paragraphs.map((paragraph) => `<p>${escapeHtml(paragraph)}</p>`).join("\n            ")}
+          </section>`).join("\n          ")}
+          ${page.faqs?.length ? `<section>
+            <h2>Frequently asked questions</h2>
+            <div class="faq-list">
+              ${page.faqs.map((faq, index) => `<details ${index === 0 ? "open" : ""}>
+                <summary>${escapeHtml(faq.question)}</summary>
+                <p>${escapeHtml(faq.answer)}</p>
+              </details>`).join("\n              ")}
+            </div>
+          </section>` : ""}
+          <section class="article-cta">
+            <h2>Need help with a software license inquiry?</h2>
+            <p>Send DIGILICEN the product name, required term, account email requirements, operating system, and payment preference before ordering.</p>
+            <div class="product-actions">
+              <a class="btn btn-primary" href="${WHATSAPP}" target="_blank" rel="noopener">WhatsApp Inquiry</a>
+              <a class="btn btn-secondary" href="mailto:${EMAIL}?subject=${encodeURIComponent(page.heading)}">Email DIGILICEN</a>
+            </div>
+          </section>
+        </div>
+      </article>
+      <section class="section section-muted">
+        <div class="section-head">
+          <p class="eyebrow">Useful links</p>
+          <h2>Continue exploring DIGILICEN</h2>
+        </div>
+        <div class="related-links">
+          <a href="/about">About DIGILICEN</a>
+          <a href="/payment-and-delivery">Payment and Delivery</a>
+          <a href="/order-support-policy">Order Support Policy</a>
+          <a href="/faq">FAQ</a>
+          <a href="/blog/">Software License Blog</a>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div>
+        <strong>DIGILICEN</strong>
+        <p>Genuine software license solutions for business, design, engineering, creative, office, and professional users.</p>
+      </div>
+      <div>
+        <strong>Support</strong>
+        <a href="/about">About</a>
+        <a href="/payment-and-delivery">Payment & Delivery</a>
+        <a href="/order-support-policy">Order Support Policy</a>
+        <a href="/faq">FAQ</a>
+      </div>
+      <div>
+        <strong>Contact</strong>
+        <a href="mailto:${EMAIL}">${EMAIL}</a>
+        <a href="${WHATSAPP}" target="_blank" rel="noopener">WhatsApp</a>
+        <span>Secure Payment: Alibaba Online Payment / PayPal Invoice</span>
+      </div>
+      <div class="copyright">2026 Copyright (c) Digilicen.com</div>
+    </footer>
+    <script src="app.js?v=6"></script>
+  </body>
+</html>
+`;
+}
+
 function sitemapXml() {
   const urls = [
     { loc: `${SITE_URL}/`, priority: "1.0" },
+    ...INFO_PAGES.map((page) => ({ loc: infoPageUrl(page), priority: "0.8" })),
     ...CATEGORY_PAGES.map((category) => ({ loc: categoryUrl(category), priority: "0.9" })),
     { loc: `${SITE_URL}/blog/`, priority: "0.8" },
     ...BLOG_POSTS.map((post) => ({ loc: blogUrl(post), priority: "0.7" })),
@@ -1303,6 +1865,10 @@ for (const category of CATEGORY_PAGES) {
 await writeFile(new URL("../blog/index.html", import.meta.url), blogIndexPage());
 for (const post of BLOG_POSTS) {
   await writeFile(new URL(`../blog/${post.slug}.html`, import.meta.url), blogPage(post));
+}
+
+for (const page of INFO_PAGES) {
+  await writeFile(new URL(`../${page.slug}.html`, import.meta.url), infoPage(page));
 }
 
 await writeFile(new URL("../sitemap.xml", import.meta.url), sitemapXml());
