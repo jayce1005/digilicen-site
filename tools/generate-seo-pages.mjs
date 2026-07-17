@@ -4,7 +4,7 @@ const SITE_URL = "https://digilicen.com";
 const SITE_NAME = "DIGILICEN";
 const EMAIL = "digilicen@outlook.com";
 const WHATSAPP = "https://wa.me/8619928777176";
-const LASTMOD = "2026-07-07";
+const LASTMOD = "2026-07-17";
 const SOURCE = await readFile(new URL("../app.js", import.meta.url), "utf8");
 
 function extractLiteral(name, terminator) {
@@ -239,6 +239,107 @@ const INFO_PAGES = [
       {
         question: "Does every product have the same delivery process?",
         answer: "No. Delivery and activation steps can vary by software product, account requirement, compatibility needs, and order status."
+      }
+    ]
+  },
+  {
+    slug: "software-license-price-list",
+    title: "Software License Price List | Autodesk, Adobe, AutoCAD, JetBrains | DIGILICEN",
+    description: "Compare DIGILICEN software license prices for Autodesk, Adobe Creative Cloud, AutoCAD, Revit, engineering tools, and JetBrains developer tools.",
+    heading: "Software license price list",
+    intro: "Use this price guide to compare listed software license inquiry options before contacting DIGILICEN for availability, payment, and digital delivery confirmation.",
+    relatedProducts: ["autocad", "adobe-1-year", "adobe-6-month", "revit", "civil-3d", "aec-collection", "bim-collection", "jetbrains-ai-assistant-all-products-6-month"],
+    sections: [
+      {
+        heading: "Compare listed license prices before inquiry",
+        paragraphs: [
+          "DIGILICEN product pages show listed USD prices, license terms, payment routes, and support options for software license inquiries. Prices help customers compare options before asking for availability confirmation.",
+          "Before payment, always confirm the product name, term, account email requirements, operating system, and delivery timing because software license details can vary by product."
+        ]
+      },
+      {
+        heading: "Payment options",
+        paragraphs: [
+          "Customers can continue to Alibaba online payment where available or request a PayPal invoice from the product page. The PayPal request includes product name, term, version, and listed price.",
+          "If you are buying for a company, include invoice notes, number of users, and account requirements before requesting payment instructions."
+        ]
+      },
+      {
+        heading: "Best pages to check first",
+        paragraphs: [
+          "For Autodesk and CAD tools, start with AutoCAD, Revit, Civil 3D, AEC Collection, and BIM Collection pages. For creative users, compare Adobe Creative Cloud 1 year, 6 month, 3 month, and 1 month options.",
+          "For developer teams, check JetBrains AI Assistant with All Products Pack and confirm devices, account email, user count, and cross-platform requirements."
+        ]
+      }
+    ],
+    faqs: [
+      {
+        question: "Are DIGILICEN prices listed in USD?",
+        answer: "Yes. DIGILICEN product pages list prices in USD for software license inquiries, but customers should confirm availability and details before payment."
+      },
+      {
+        question: "Can I ask for a PayPal invoice before payment?",
+        answer: "Yes. Product pages include PayPal invoice request links so DIGILICEN can confirm product details before sending payment instructions."
+      }
+    ]
+  },
+  {
+    slug: "autodesk-license-price-list",
+    title: "Autodesk License Price List | AutoCAD, Revit, Civil 3D, Inventor | DIGILICEN",
+    description: "Compare Autodesk license inquiry prices for AutoCAD, Revit, Civil 3D, Inventor, Maya, Fusion 360, Navisworks, and Autodesk collections.",
+    heading: "Autodesk license price list",
+    intro: "Compare Autodesk software license inquiry options by product, term, workflow, and listed price before contacting DIGILICEN.",
+    relatedProducts: ["autocad", "autocad-lt", "revit", "civil-3d", "inventor", "fusion-360", "maya", "navisworks", "aec-collection"],
+    sections: [
+      {
+        heading: "Autodesk products customers compare most",
+        paragraphs: [
+          "Autodesk buyers often compare AutoCAD, AutoCAD LT, Revit, Civil 3D, Inventor, Fusion 360, Maya, Navisworks, and Autodesk collection options before ordering.",
+          "The right Autodesk license inquiry depends on workflow: drafting, BIM, civil engineering, mechanical design, product design, visualization, or project coordination."
+        ]
+      },
+      {
+        heading: "What to confirm before payment",
+        paragraphs: [
+          "Confirm the exact Autodesk product name, term, operating system, account email requirement, and number of users before payment. Similar Autodesk names can represent different workflows.",
+          "If you are unsure whether a single product or collection fits better, contact DIGILICEN with your project type and required tools."
+        ]
+      }
+    ],
+    faqs: [
+      {
+        question: "Which Autodesk license should I ask about first?",
+        answer: "Start with the software your workflow uses every day, such as AutoCAD for drafting, Revit for BIM, Civil 3D for civil engineering, or Inventor for mechanical design."
+      }
+    ]
+  },
+  {
+    slug: "adobe-creative-cloud-price-list",
+    title: "Adobe Creative Cloud Price List | 1 Year, 6 Month, 3 Month, 1 Month | DIGILICEN",
+    description: "Compare Adobe Creative Cloud subscription inquiry prices by term, including 1 year, 6 month, 3 month, and 1 month options.",
+    heading: "Adobe Creative Cloud price list",
+    intro: "Compare Adobe Creative Cloud subscription terms and listed prices before requesting availability, PayPal invoice, or Alibaba payment support.",
+    relatedProducts: ["adobe-1-year", "adobe-6-month", "adobe-3-month", "adobe-1-month"],
+    sections: [
+      {
+        heading: "Choose Adobe Creative Cloud by project length",
+        paragraphs: [
+          "A 1 year Adobe Creative Cloud subscription inquiry can fit ongoing design, agency, production, and company workflows. Shorter 6 month, 3 month, and 1 month terms can fit temporary projects or flexible creative work.",
+          "Before payment, confirm account email requirements, required Adobe apps, term length, and delivery timing."
+        ]
+      },
+      {
+        heading: "Payment and support",
+        paragraphs: [
+          "DIGILICEN supports Alibaba online payment where available and PayPal invoice requests after product details are confirmed.",
+          "After payment, send the selected term, order reference, account email if required, and preferred support channel."
+        ]
+      }
+    ],
+    faqs: [
+      {
+        question: "Which Adobe Creative Cloud term is best?",
+        answer: "Choose 1 year for ongoing creative work and shorter terms such as 6 months, 3 months, or 1 month for temporary projects or flexible use."
       }
     ]
   }
@@ -837,6 +938,138 @@ const BLOG_POSTS = [
         ]
       }
     ]
+  },
+  {
+    slug: "autocad-license-price-guide-2026",
+    title: "AutoCAD License Price Guide 2026",
+    description: "Compare AutoCAD license inquiry prices, AutoCAD LT, AutoCAD Mechanical, AutoCAD Architecture, MEP, Electrical, and Plant 3D options.",
+    category: "AutoCAD licenses",
+    date: "2026-07-17",
+    heroImage: "assets/autocad-commercial.png",
+    related: ["autocad", "autocad-lt", "autocad-mechanical", "autocad-architecture"],
+    cta: "Send DIGILICEN your AutoCAD workflow, term, and account requirements before requesting payment.",
+    sections: [
+      {
+        heading: "AutoCAD price comparisons start with product type",
+        paragraphs: [
+          "Customers searching for AutoCAD price often need to compare more than one product. AutoCAD, AutoCAD LT, AutoCAD Mechanical, AutoCAD Architecture, AutoCAD MEP, AutoCAD Electrical, and AutoCAD Plant 3D can fit different workflows.",
+          "Before payment, confirm whether your work is general drafting, 2D documentation, mechanical design, architecture, MEP design, electrical design, or plant design."
+        ]
+      },
+      {
+        heading: "Use listed prices as an inquiry starting point",
+        paragraphs: [
+          "DIGILICEN product pages list USD prices and license terms so customers can compare options before contacting support. The listed price should be confirmed with product availability, account requirements, and payment route before ordering.",
+          "If you are buying for a team, include number of users, account email requirements, operating system, and company purchasing notes."
+        ]
+      },
+      {
+        heading: "Ask before paying if you are unsure",
+        paragraphs: [
+          "A short WhatsApp or email inquiry can prevent ordering the wrong AutoCAD-related product. Send your project type and the files or workflows you need to support.",
+          "DIGILICEN supports Alibaba online payment and PayPal invoice requests after details are confirmed."
+        ]
+      }
+    ]
+  },
+  {
+    slug: "adobe-creative-cloud-paypal-invoice-guide",
+    title: "Adobe Creative Cloud PayPal Invoice Guide",
+    description: "How to request a PayPal invoice for Adobe Creative Cloud subscription inquiries, including term, account email, and delivery details.",
+    category: "Adobe Creative Cloud",
+    date: "2026-07-17",
+    heroImage: "assets/adobe-creative-large.png",
+    related: ["adobe-1-year", "adobe-6-month", "adobe-3-month", "adobe-1-month"],
+    cta: "Choose your Adobe Creative Cloud term and request PayPal invoice confirmation from DIGILICEN.",
+    sections: [
+      {
+        heading: "Choose the Adobe term first",
+        paragraphs: [
+          "Adobe Creative Cloud inquiry pages include 1 year, 6 month, 3 month, and 1 month options. Pick the term that fits the project length before requesting invoice confirmation.",
+          "If your team needs specific Adobe apps, mention them in the request so support can confirm the subscription option."
+        ]
+      },
+      {
+        heading: "What to include in a PayPal invoice request",
+        paragraphs: [
+          "Include product name, selected term, account email if required, company or personal use case, and preferred support channel. DIGILICEN product pages generate an email with the selected product and listed price.",
+          "PayPal invoice requests are useful when customers want product availability and details confirmed before payment."
+        ]
+      },
+      {
+        heading: "Keep account and payment details organized",
+        paragraphs: [
+          "After payment, keep the invoice email, selected term, account email, and support conversation together. This helps digital delivery and activation guidance move faster.",
+          "If you prefer Alibaba online payment, use the Alibaba button on the product page where available."
+        ]
+      }
+    ]
+  },
+  {
+    slug: "autodesk-license-for-small-business",
+    title: "Autodesk License Options for Small Business Buyers",
+    description: "A practical guide for small businesses comparing Autodesk, AutoCAD, Revit, Fusion 360, Inventor, and AEC software license inquiries.",
+    category: "Autodesk licenses",
+    date: "2026-07-17",
+    heroImage: "assets/autodesk-generic.png",
+    related: ["autocad", "revit", "fusion-360", "inventor"],
+    cta: "Tell DIGILICEN your business workflow and required Autodesk tools before ordering.",
+    sections: [
+      {
+        heading: "Small businesses should match licenses to real workflow",
+        paragraphs: [
+          "Small business buyers may need one focused Autodesk product or several tools for design, documentation, engineering, and coordination. Start with the product used daily rather than choosing only by price.",
+          "AutoCAD can fit drafting, Revit can fit BIM, Fusion 360 and Inventor can fit product design, and AEC Collection can fit multi-discipline building workflows."
+        ]
+      },
+      {
+        heading: "Prepare company purchase details",
+        paragraphs: [
+          "Before asking for payment, prepare company name if needed, user count, account email, operating system, required term, and any invoice notes.",
+          "These details help DIGILICEN confirm the correct software license inquiry path and reduce delays after payment."
+        ]
+      },
+      {
+        heading: "Confirm delivery and support channel",
+        paragraphs: [
+          "For digital software license delivery, keep order records and account details in one place. WhatsApp or email can be used for confirmation and activation support.",
+          "If timing is important, ask about delivery before payment."
+        ]
+      }
+    ]
+  },
+  {
+    slug: "software-license-inquiry-email-template",
+    title: "Software License Inquiry Email Template",
+    description: "Use this software license inquiry email template to send product name, term, account email, operating system, payment method, and delivery questions.",
+    category: "Buying checklist",
+    date: "2026-07-17",
+    heroImage: "assets/genuine-software.png",
+    related: ["autocad", "adobe-1-year", "revit", "jetbrains-ai-assistant-all-products-6-month"],
+    cta: "Use this template when contacting DIGILICEN by email or WhatsApp.",
+    sections: [
+      {
+        heading: "A clear inquiry gets a faster answer",
+        paragraphs: [
+          "Software license questions are easier to answer when the buyer includes product name, term, account email requirement, operating system, number of users, payment method, and expected delivery timing.",
+          "A complete first message reduces repeated questions and helps support confirm availability faster."
+        ]
+      },
+      {
+        heading: "Copy this inquiry format",
+        paragraphs: [
+          "Hello DIGILICEN, I want to inquire about [product name] for [term]. My operating system is [Windows/macOS/Linux]. I need [one user / multiple users]. My preferred payment method is [Alibaba / PayPal invoice]. Please confirm availability, delivery timing, and account email requirements.",
+          "If you already paid, add the Alibaba order number or PayPal invoice email to the same message."
+        ]
+      },
+      {
+        heading: "Attach useful context",
+        paragraphs: [
+          "For compatibility questions, include screenshots, exact software names, workflow details, or error text. This helps support understand the request quickly.",
+          "For business purchases, include invoice notes or company requirements before payment."
+        ]
+      }
+    ]
   }
 ];
 
@@ -908,6 +1141,16 @@ function relatedProducts(product) {
   return PRODUCTS
     .filter((item) => item.slug !== product.slug && item.category === product.category)
     .slice(0, 3);
+}
+
+function relatedPostsForProduct(product) {
+  const direct = BLOG_POSTS.filter((post) => post.related.includes(product.slug));
+  const category = BLOG_POSTS.filter((post) => {
+    const categoryMatch = post.category.toLowerCase().includes(product.category.toLowerCase().split(" ")[0]);
+    const nameMatch = post.title.toLowerCase().includes(product.name.split(" ")[0].toLowerCase());
+    return !direct.includes(post) && (categoryMatch || nameMatch);
+  });
+  return [...direct, ...category].slice(0, 4);
 }
 
 function productFaqs(product) {
@@ -982,12 +1225,28 @@ function categoryFaqs(category, products) {
   ];
 }
 
+function blogFaqs(post) {
+  const primaryProduct = post.related.map((slug) => PRODUCTS.find((product) => product.slug === slug)).find(Boolean);
+  const productText = primaryProduct ? productLabel(primaryProduct) : "a software license";
+  return [
+    {
+      question: `Can DIGILICEN help with ${post.title.toLowerCase()}?`,
+      answer: `Yes. DIGILICEN can help customers confirm ${productText}, payment route, account requirements, and digital delivery details before ordering.`
+    },
+    {
+      question: "Should I confirm details before payment?",
+      answer: "Yes. Always confirm product name, term, account email requirements, operating system, payment method, and delivery timing before payment."
+    }
+  ];
+}
+
 function productPage(product) {
   const title = productTitle(product);
   const description = productDescription(product);
   const image = imageFor(product);
   const canonical = productUrl(product);
   const related = relatedProducts(product);
+  const relatedPosts = relatedPostsForProduct(product);
   const faqs = productFaqs(product);
   const guidance = productGuidance(product);
   const schema = {
@@ -1004,6 +1263,23 @@ function productPage(product) {
     category: "Software license",
     sku: product.slug,
     itemCondition: "https://schema.org/NewCondition",
+    additionalProperty: [
+      {
+        "@type": "PropertyValue",
+        name: "License term",
+        value: product.term
+      },
+      {
+        "@type": "PropertyValue",
+        name: "Payment options",
+        value: "Alibaba online payment or PayPal invoice request"
+      },
+      {
+        "@type": "PropertyValue",
+        name: "Delivery",
+        value: "Digital delivery after payment confirmation"
+      }
+    ],
     offers: {
       "@type": "Offer",
       url: canonical,
@@ -1016,6 +1292,36 @@ function productPage(product) {
         url: SITE_URL
       }
     }
+  };
+  const howToSchema = {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: `How to order ${productLabel(product)} from DIGILICEN`,
+    description: `Steps to confirm and request ${productLabel(product)} with DIGILICEN before payment.`,
+    totalTime: "PT20M",
+    supply: [
+      {
+        "@type": "HowToSupply",
+        name: "Product name, term, account email if required, and preferred payment method"
+      }
+    ],
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Confirm product details",
+        text: `Check the exact product name, ${product.term} term, listed price, operating system, and account email requirements.`
+      },
+      {
+        "@type": "HowToStep",
+        name: "Contact DIGILICEN",
+        text: "Ask DIGILICEN to confirm availability, compatibility, payment route, and delivery timing before payment."
+      },
+      {
+        "@type": "HowToStep",
+        name: "Pay and send order details",
+        text: "Use Alibaba online payment or request a PayPal invoice, then send the order number or invoice email for digital delivery support."
+      }
+    ]
   };
   const breadcrumbSchema = {
     "@context": "https://schema.org",
@@ -1076,6 +1382,7 @@ function productPage(product) {
     <meta name="twitter:image" content="${SITE_URL}/${image}">
     <link rel="stylesheet" href="../styles.css?v=6">
     <script type="application/ld+json">${jsonLd(schema)}</script>
+    <script type="application/ld+json">${jsonLd(howToSchema)}</script>
     <script type="application/ld+json">${jsonLd(breadcrumbSchema)}</script>
     <script type="application/ld+json">${jsonLd(faqSchema)}</script>
   </head>
@@ -1189,6 +1496,17 @@ function productPage(product) {
           <a href="../#products">View all products</a>
         </div>
       </section>
+
+      ${relatedPosts.length ? `<section class="section section-muted">
+        <div class="section-head">
+          <p class="eyebrow">Buying guides</p>
+          <h2>Guides related to ${escapeHtml(product.name)}</h2>
+        </div>
+        <div class="related-links">
+          ${relatedPosts.map((post) => `<a href="../blog/${post.slug}">${escapeHtml(post.title)}</a>`).join("\n          ")}
+          <a href="../blog/">All software license guides</a>
+        </div>
+      </section>` : ""}
     </main>
 
     <footer class="site-footer">
@@ -1513,6 +1831,7 @@ function blogIndexPage() {
 function blogPage(post) {
   const canonical = blogUrl(post);
   const relatedProducts = post.related.map((slug) => PRODUCTS.find((product) => product.slug === slug)).filter(Boolean);
+  const faqs = blogFaqs(post);
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
@@ -1557,6 +1876,18 @@ function blogPage(post) {
       }
     ]
   };
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.answer
+      }
+    }))
+  };
 
   return `<!doctype html>
 <html lang="en">
@@ -1581,6 +1912,7 @@ function blogPage(post) {
     <link rel="stylesheet" href="../styles.css?v=6">
     <script type="application/ld+json">${jsonLd(articleSchema)}</script>
     <script type="application/ld+json">${jsonLd(breadcrumbSchema)}</script>
+    <script type="application/ld+json">${jsonLd(faqSchema)}</script>
   </head>
   <body>
     <div class="topbar">Genuine Licenses. Lower Prices. Instant Delivery.</div>
@@ -1612,6 +1944,15 @@ function blogPage(post) {
             <h2>${escapeHtml(section.heading)}</h2>
             ${section.paragraphs.map((paragraph) => `<p>${escapeHtml(paragraph)}</p>`).join("\n            ")}
           </section>`).join("\n          ")}
+          <section>
+            <h2>Frequently asked questions</h2>
+            <div class="faq-list">
+              ${faqs.map((faq, index) => `<details ${index === 0 ? "open" : ""}>
+                <summary>${escapeHtml(faq.question)}</summary>
+                <p>${escapeHtml(faq.answer)}</p>
+              </details>`).join("\n              ")}
+            </div>
+          </section>
           <section class="article-cta">
             <h2>Ready to confirm your license?</h2>
             <p>${escapeHtml(post.cta)}</p>
@@ -1672,6 +2013,7 @@ function infoPageUrl(page) {
 
 function infoPage(page) {
   const canonical = infoPageUrl(page);
+  const relatedProducts = page.relatedProducts?.map((slug) => PRODUCTS.find((product) => product.slug === slug)).filter(Boolean) || [];
   const webPageSchema = {
     "@context": "https://schema.org",
     "@type": "WebPage",
@@ -1776,6 +2118,12 @@ function infoPage(page) {
                 <summary>${escapeHtml(faq.question)}</summary>
                 <p>${escapeHtml(faq.answer)}</p>
               </details>`).join("\n              ")}
+            </div>
+          </section>` : ""}
+          ${relatedProducts.length ? `<section>
+            <h2>Related product price pages</h2>
+            <div class="related-links">
+              ${relatedProducts.map((product) => `<a href="/products/${product.slug}">${escapeHtml(productLabel(product))} - ${escapeHtml(product.price)}</a>`).join("\n              ")}
             </div>
           </section>` : ""}
           <section class="article-cta">
