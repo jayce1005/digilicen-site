@@ -295,6 +295,19 @@ const PRODUCTS = [
     price: "US$34.00",
     summary: "JetBrains AI Assistant with All Products Pack activation for 16 professional developer tools, multi-device and cross-platform use.",
     alibaba: "https://www.alibaba.com/product-detail/DIGILICEN-Software-Pack-Genuine-Software-License_1601806607731.html?spm=a2747.product_manager.0.0.2c0f71d2KomOoG"
+  },
+  {
+    slug: "endnote-2025-21-20-x9-license-key",
+    name: "EndNote 2025 / 21 / 20 / X9",
+    category: "Research Tools",
+    badge: "EndNote",
+    version: "English / Chinese License Key for Windows and Mac",
+    term: "2025, 21, 20, X9 - Win / Mac",
+    price: "US$5.50",
+    summary: "EndNote reference management software license key inquiry with installer package, tutorial, and remote installation support.",
+    delivery: "License key, installer package, tutorial, and remote installation support",
+    contactOnly: true,
+    alibaba: ""
   }
 ];
 
@@ -304,7 +317,8 @@ const CATEGORY_IMAGES = {
   Autodesk: "assets/autodesk-generic.png",
   Adobe: "assets/adobe-creative-large.png",
   Engineering: "assets/aec-collection.png",
-  "Developer Tools": "assets/jetbrains-ai-assistant-all-products-6-month-usd34.png"
+  "Developer Tools": "assets/jetbrains-ai-assistant-all-products-6-month-usd34.png",
+  "Research Tools": "assets/endnote-license-key-installer-tutorial.png"
 };
 
 const PRODUCT_IMAGES = {
@@ -318,7 +332,8 @@ const PRODUCT_IMAGES = {
   "aec-collection": "assets/aec-collection.png",
   "bim-collection": "assets/bim-collection.png",
   "raster-design": "assets/raster-design.png",
-  "jetbrains-ai-assistant-all-products-6-month": "assets/jetbrains-ai-assistant-all-products-6-month-usd34.png"
+  "jetbrains-ai-assistant-all-products-6-month": "assets/jetbrains-ai-assistant-all-products-6-month-usd34.png",
+  "endnote-2025-21-20-x9-license-key": "assets/endnote-license-key-installer-tutorial.png"
 };
 
 function bySlug(slug) {
@@ -357,6 +372,10 @@ function productLabel(product) {
   return `${product.name} - ${product.term}`;
 }
 
+function isContactOnly(product) {
+  return product.contactOnly || !product.alibaba;
+}
+
 function renderProducts(filter = "all") {
   const grid = document.querySelector("#productGrid");
   if (!grid) return;
@@ -377,8 +396,11 @@ function renderProducts(filter = "all") {
       <p>${product.summary}</p>
       <div class="card-actions">
         <a href="${productUrl(product.slug)}">View Details</a>
+        ${isContactOnly(product) ? `
+        <a href="${whatsappFor(productLabel(product))}" target="_blank" rel="noopener">Contact Us</a>
+        <a href="mailto:${EMAIL}?subject=${encodeURIComponent(`Inquiry: ${productLabel(product)}`)}">Email Inquiry</a>` : `
         <a href="${product.alibaba}" target="_blank" rel="noopener noreferrer nofollow">Alibaba</a>
-        <a href="${paypalFor(product)}">PayPal Invoice</a>
+        <a href="${paypalFor(product)}">PayPal Invoice</a>`}
       </div>
     </article>
   `).join("");
@@ -415,15 +437,17 @@ function renderProductDetail() {
           <span><strong>Term</strong> ${product.term}</span>
           <span><strong>Price</strong> ${product.price}</span>
           <span><strong>License type</strong> Genuine commercial software license</span>
-          <span><strong>Delivery</strong> Digital delivery after payment confirmation</span>
-          <span><strong>Payment</strong> Alibaba secure online payment or PayPal invoice</span>
+          <span><strong>Delivery</strong> ${product.delivery || "Digital delivery after payment confirmation"}</span>
+          <span><strong>Payment</strong> ${isContactOnly(product) ? "Contact us before ordering" : "Alibaba secure online payment or PayPal invoice"}</span>
           <span><strong>Support</strong> WhatsApp and email activation guidance</span>
         </div>
         <div class="product-actions">
+          ${isContactOnly(product) ? `
+          <a class="btn btn-primary" href="${whatsappFor(productLabel(product))}" target="_blank" rel="noopener">Contact Us on WhatsApp</a>
+          <a class="btn btn-secondary" href="mailto:${EMAIL}?subject=${encodeURIComponent(`Inquiry: ${productLabel(product)}`)}">Email Inquiry</a>` : `
           <a class="btn btn-primary" href="${product.alibaba}" target="_blank" rel="noopener noreferrer nofollow">Pay Securely on Alibaba</a>
           <a class="btn btn-secondary" href="${paypalFor(product)}">Request PayPal Invoice</a>
-          <a class="btn btn-ghost" href="${whatsappFor(product.name)}" target="_blank" rel="noopener">WhatsApp Inquiry</a>
-          <a class="btn btn-secondary" href="mailto:${EMAIL}?subject=${encodeURIComponent(`Inquiry: ${product.name}`)}">Email Inquiry</a>
+          <a class="btn btn-ghost" href="${whatsappFor(product.name)}" target="_blank" rel="noopener">WhatsApp Inquiry</a>`}
         </div>
       </div>
     </div>

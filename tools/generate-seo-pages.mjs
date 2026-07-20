@@ -4,7 +4,7 @@ const SITE_URL = "https://digilicen.com";
 const SITE_NAME = "DIGILICEN";
 const EMAIL = "digilicen@outlook.com";
 const WHATSAPP = "https://wa.me/8619928777176";
-const LASTMOD = "2026-07-17";
+const LASTMOD = "2026-07-20";
 const SOURCE = await readFile(new URL("../app.js", import.meta.url), "utf8");
 
 function extractLiteral(name, terminator) {
@@ -60,6 +60,16 @@ const CATEGORY_PAGES = [
     intro: "Browse developer software license options for coding, AI assistant workflows, JetBrains tools, multi-device use, and cross-platform development teams.",
     image: "assets/jetbrains-ai-assistant-all-products-6-month-usd34.png",
     match: (product) => product.category === "Developer Tools" || product.name.includes("JetBrains")
+  },
+  {
+    slug: "research-reference-software-licenses",
+    name: "Research and Reference Software Licenses",
+    title: "Research and Reference Software Licenses | EndNote Windows and Mac | DIGILICEN",
+    description: "Research and reference management software license inquiries from DIGILICEN, including EndNote 2025, 21, 20, and X9 for Windows and Mac.",
+    heading: "Research and reference software license inquiries",
+    intro: "Browse research software license options for reference management, bibliography workflows, Windows and Mac users, and remote installation support.",
+    image: "assets/endnote-license-key-installer-tutorial.png",
+    match: (product) => product.category === "Research Tools" || product.name.includes("EndNote")
   }
 ];
 const INFO_PAGES = [
@@ -248,7 +258,7 @@ const INFO_PAGES = [
     description: "Compare DIGILICEN software license prices for Autodesk, Adobe Creative Cloud, AutoCAD, Revit, engineering tools, and JetBrains developer tools.",
     heading: "Software license price list",
     intro: "Use this price guide to compare listed software license inquiry options before contacting DIGILICEN for availability, payment, and digital delivery confirmation.",
-    relatedProducts: ["autocad", "adobe-1-year", "adobe-6-month", "revit", "civil-3d", "aec-collection", "bim-collection", "jetbrains-ai-assistant-all-products-6-month"],
+    relatedProducts: ["autocad", "adobe-1-year", "adobe-6-month", "revit", "civil-3d", "aec-collection", "bim-collection", "jetbrains-ai-assistant-all-products-6-month", "endnote-2025-21-20-x9-license-key"],
     sections: [
       {
         heading: "Compare listed license prices before inquiry",
@@ -1070,6 +1080,39 @@ const BLOG_POSTS = [
         ]
       }
     ]
+  },
+  {
+    slug: "endnote-license-key-windows-mac-installation-guide",
+    title: "EndNote License Key Windows and Mac Installation Guide",
+    description: "A buyer guide for EndNote 2025, 21, 20, and X9 license key inquiries for Windows and Mac, including installer package, tutorial, and remote support.",
+    category: "Research software",
+    date: "2026-07-20",
+    heroImage: "assets/endnote-license-key-installer-tutorial.png",
+    related: ["endnote-2025-21-20-x9-license-key"],
+    cta: "Contact DIGILICEN to confirm your EndNote version, Windows or Mac platform, language preference, and remote installation support before ordering.",
+    sections: [
+      {
+        heading: "Choose the EndNote version and platform",
+        paragraphs: [
+          "EndNote license key inquiries should start with the exact version and platform. DIGILICEN lists EndNote 2025, EndNote 21, EndNote 20, and EndNote X9 options for Windows and Mac users.",
+          "Before ordering, confirm whether you need the Windows version or Mac version and whether you prefer English or Chinese language support."
+        ]
+      },
+      {
+        heading: "Delivery includes key, installer, and tutorial",
+        paragraphs: [
+          "The listed EndNote inquiry includes a license key, installer package, and tutorial. Customers can ask for remote installation support if they need help with setup.",
+          "Keep your operating system details ready so support can send the correct installation guidance."
+        ]
+      },
+      {
+        heading: "Contact DIGILICEN before payment",
+        paragraphs: [
+          "This EndNote product does not use an Alibaba product link on DIGILICEN. Customers should contact the team by WhatsApp or email to confirm version, platform, delivery details, and support needs.",
+          "DIGILICEN focuses on genuine software license inquiry support and does not provide cracked software, unsafe activation tools, or bypass methods."
+        ]
+      }
+    ]
   }
 ];
 
@@ -1117,6 +1160,40 @@ function paypalFor(product) {
   return `mailto:${EMAIL}?subject=${encodeURIComponent(`PayPal invoice request: ${label}`)}&body=${encodeURIComponent(body)}`;
 }
 
+function isContactOnly(product) {
+  return product.contactOnly || !product.alibaba;
+}
+
+function deliveryText(product) {
+  return product.delivery || "Digital delivery after payment confirmation";
+}
+
+function paymentText(product) {
+  return isContactOnly(product) ? "Contact DIGILICEN before ordering" : "Alibaba online payment or PayPal invoice request";
+}
+
+function productCardActions(product) {
+  if (isContactOnly(product)) {
+    return `<a href="../products/${product.slug}">View Details</a>
+        <a href="${whatsappFor(product)}" target="_blank" rel="noopener">Contact Us</a>
+        <a href="mailto:${EMAIL}?subject=${encodeURIComponent(`Inquiry: ${productLabel(product)}`)}">Email Inquiry</a>`;
+  }
+  return `<a href="../products/${product.slug}">View Details</a>
+        <a href="${product.alibaba}" target="_blank" rel="noopener noreferrer nofollow">Alibaba</a>
+        <a href="${paypalFor(product)}">PayPal Invoice</a>`;
+}
+
+function productDetailActions(product) {
+  if (isContactOnly(product)) {
+    return `<a class="btn btn-primary" href="${whatsappFor(product)}" target="_blank" rel="noopener">Contact Us on WhatsApp</a>
+              <a class="btn btn-secondary" href="mailto:${EMAIL}?subject=${encodeURIComponent(`Inquiry: ${productLabel(product)}`)}">Email Inquiry</a>`;
+  }
+  return `<a class="btn btn-primary" href="${product.alibaba}" target="_blank" rel="noopener noreferrer nofollow">Pay Securely on Alibaba</a>
+              <a class="btn btn-secondary" href="${paypalFor(product)}">Request PayPal Invoice</a>
+              <a class="btn btn-ghost" href="${whatsappFor(product)}" target="_blank" rel="noopener">WhatsApp Inquiry</a>
+              <a class="btn btn-secondary" href="mailto:${EMAIL}?subject=${encodeURIComponent(`Inquiry: ${productLabel(product)}`)}">Email Inquiry</a>`;
+}
+
 function whatsappFor(product) {
   return `${WHATSAPP}?text=${encodeURIComponent(`Hello DIGILICEN, I want to inquire about ${productLabel(product)}.`)}`;
 }
@@ -1130,6 +1207,9 @@ function productTitle(product) {
 }
 
 function productDescription(product) {
+  if (isContactOnly(product)) {
+    return `${productLabel(product)} from DIGILICEN: ${product.version}, ${product.price}, contact us for version confirmation, installer package, tutorial, remote installation support, and digital delivery.`;
+  }
   return `${productLabel(product)} from DIGILICEN: ${product.version}, ${product.price}, Alibaba or PayPal invoice, WhatsApp support, and digital delivery.`;
 }
 
@@ -1154,6 +1234,23 @@ function relatedPostsForProduct(product) {
 }
 
 function productFaqs(product) {
+  if (isContactOnly(product)) {
+    return [
+      {
+        question: `Which versions are available for ${product.name}?`,
+        answer: `DIGILICEN lists ${product.name} options for 2025, 21, 20, and X9, with Windows and Mac versions. Contact us to confirm your required version and platform before ordering.`
+      },
+      {
+        question: `What is included with ${product.name}?`,
+        answer: "Delivery includes a license key, installer package, tutorial, and remote installation support when needed."
+      },
+      {
+        question: `How do I order ${product.name}?`,
+        answer: "This product does not use an Alibaba product link on DIGILICEN. Contact us by WhatsApp or email to confirm version, platform, language preference, price, and delivery details."
+      }
+    ];
+  }
+
   return [
     {
       question: `Is ${productLabel(product)} a genuine software license inquiry?`,
@@ -1187,6 +1284,10 @@ function productGuidance(product) {
     "Developer Tools": {
       audience: "Developers, software teams, technical users, and multi-device coding workflows that need developer tool access and account setup confirmation.",
       checklist: "Confirm included developer tools, account email, operating system, device requirements, user count, AI assistant needs, and payment route before ordering."
+    },
+    "Research Tools": {
+      audience: "Researchers, students, academic writers, laboratories, and office users who need EndNote reference management support for Windows or Mac.",
+      checklist: "Confirm the EndNote version, Windows or Mac platform, English or Chinese language preference, installer package needs, tutorial needs, and whether remote installation support is required."
     }
   };
   const guidance = categoryGuidance[product.category] || categoryGuidance.Autodesk;
@@ -1202,13 +1303,16 @@ function productGuidance(product) {
     },
     {
       heading: "Delivery and support workflow",
-      body: `After payment confirmation, send DIGILICEN the product name, ${product.term} term, order number or PayPal invoice email, account email if required, and preferred support channel.`
+      body: isContactOnly(product)
+        ? `Contact DIGILICEN with the product name, ${product.term} platform option, language preference, operating system details, and whether you need remote installation support.`
+        : `After payment confirmation, send DIGILICEN the product name, ${product.term} term, order number or PayPal invoice email, account email if required, and preferred support channel.`
     }
   ];
 }
 
 function categoryFaqs(category, products) {
   const examples = products.slice(0, 4).map((product) => product.name).join(", ");
+  const contactOnly = products.length > 0 && products.every(isContactOnly);
   return [
     {
       question: `Which products are included in ${category.name}?`,
@@ -1219,8 +1323,10 @@ function categoryFaqs(category, products) {
       answer: `Start with your workflow, required software name, license term, operating system, account email, and number of users. DIGILICEN can help confirm the closest listed option before you order.`
     },
     {
-      question: `Can I pay for ${category.name} by Alibaba or PayPal?`,
-      answer: `Yes. DIGILICEN supports Alibaba online payment and PayPal invoice requests for software license inquiries after product details and availability are confirmed.`
+      question: contactOnly ? `How do I order ${category.name}?` : `Can I pay for ${category.name} by Alibaba or PayPal?`,
+      answer: contactOnly
+        ? `For ${category.name}, contact DIGILICEN by WhatsApp or email first to confirm product version, platform, price, and delivery details before ordering.`
+        : `Yes. DIGILICEN supports Alibaba online payment and PayPal invoice requests for software license inquiries after product details and availability are confirmed.`
     }
   ];
 }
@@ -1272,12 +1378,12 @@ function productPage(product) {
       {
         "@type": "PropertyValue",
         name: "Payment options",
-        value: "Alibaba online payment or PayPal invoice request"
+        value: paymentText(product)
       },
       {
         "@type": "PropertyValue",
         name: "Delivery",
-        value: "Digital delivery after payment confirmation"
+        value: deliveryText(product)
       }
     ],
     offers: {
@@ -1319,7 +1425,7 @@ function productPage(product) {
       {
         "@type": "HowToStep",
         name: "Pay and send order details",
-        text: "Use Alibaba online payment or request a PayPal invoice, then send the order number or invoice email for digital delivery support."
+        text: isContactOnly(product) ? "Contact DIGILICEN by WhatsApp or email to confirm the version, platform, delivery package, and remote installation support." : "Use Alibaba online payment or request a PayPal invoice, then send the order number or invoice email for digital delivery support."
       }
     ]
   };
@@ -1419,15 +1525,12 @@ function productPage(product) {
               <span><strong>Term</strong> ${escapeHtml(product.term)}</span>
               <span><strong>Price</strong> ${escapeHtml(product.price)}</span>
               <span><strong>License type</strong> Genuine commercial software license</span>
-              <span><strong>Delivery</strong> Digital delivery after payment confirmation</span>
-              <span><strong>Payment</strong> Alibaba secure online payment or PayPal invoice</span>
+              <span><strong>Delivery</strong> ${escapeHtml(deliveryText(product))}</span>
+              <span><strong>Payment</strong> ${escapeHtml(paymentText(product))}</span>
               <span><strong>Support</strong> WhatsApp and email activation guidance</span>
             </div>
             <div class="product-actions">
-              <a class="btn btn-primary" href="${product.alibaba}" target="_blank" rel="noopener noreferrer nofollow">Pay Securely on Alibaba</a>
-              <a class="btn btn-secondary" href="${paypalFor(product)}">Request PayPal Invoice</a>
-              <a class="btn btn-ghost" href="${whatsappFor(product)}" target="_blank" rel="noopener">WhatsApp Inquiry</a>
-              <a class="btn btn-secondary" href="mailto:${EMAIL}?subject=${encodeURIComponent(`Inquiry: ${productLabel(product)}`)}">Email Inquiry</a>
+              ${productDetailActions(product)}
             </div>
           </div>
         </div>
@@ -1447,8 +1550,8 @@ function productPage(product) {
           </article>
           <article>
             <span class="value-icon">02</span>
-            <h3>Secure payment</h3>
-            <p>Pay through Alibaba online payment or request a PayPal invoice after availability is confirmed.</p>
+            <h3>${isContactOnly(product) ? "Contact first" : "Secure payment"}</h3>
+            <p>${isContactOnly(product) ? "Contact DIGILICEN by WhatsApp or email to confirm version, platform, language, price, and delivery support before ordering." : "Pay through Alibaba online payment or request a PayPal invoice after availability is confirmed."}</p>
           </article>
           <article>
             <span class="value-icon">03</span>
@@ -1551,9 +1654,7 @@ function productCards(products) {
       </div>
       <p>${escapeHtml(product.summary)}</p>
       <div class="card-actions">
-        <a href="../products/${product.slug}">View Details</a>
-        <a href="${product.alibaba}" target="_blank" rel="noopener noreferrer nofollow">Alibaba</a>
-        <a href="${paypalFor(product)}">PayPal Invoice</a>
+        ${productCardActions(product)}
       </div>
     </article>`;
   }).join("\n          ");
@@ -1563,6 +1664,7 @@ function categoryPage(category) {
   const products = PRODUCTS.filter(category.match);
   const canonical = categoryUrl(category);
   const faqs = categoryFaqs(category, products);
+  const contactOnly = products.length > 0 && products.every(isContactOnly);
   const itemListSchema = {
     "@context": "https://schema.org",
     "@type": "ItemList",
@@ -1660,7 +1762,7 @@ function categoryPage(category) {
             <p class="product-summary">${escapeHtml(category.intro)}</p>
             <div class="product-meta">
               <span><strong>Products</strong> ${products.length} license options</span>
-              <span><strong>Payment</strong> Alibaba secure online payment or PayPal invoice</span>
+              <span><strong>Payment</strong> ${contactOnly ? "Contact DIGILICEN before ordering" : "Alibaba secure online payment or PayPal invoice"}</span>
               <span><strong>Delivery</strong> Digital delivery after payment confirmation</span>
               <span><strong>Support</strong> WhatsApp and email activation guidance</span>
             </div>
