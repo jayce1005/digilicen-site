@@ -64,12 +64,12 @@ const CATEGORY_PAGES = [
   {
     slug: "research-reference-software-licenses",
     name: "Research and Reference Software Licenses",
-    title: "Research and Reference Software Licenses | EndNote Windows and Mac | DIGILICEN",
-    description: "Research and reference management software license inquiries from DIGILICEN, including EndNote 2025, 21, 20, and X9 for Windows and Mac.",
+    title: "Research and Reference Software Licenses | NVivo and EndNote | DIGILICEN",
+    description: "Research and reference software license inquiries from DIGILICEN, including NVivo 15, NVivo 14, NVivo 12 by inquiry, and EndNote for Windows and Mac.",
     heading: "Research and reference software license inquiries",
-    intro: "Browse research software license options for reference management, bibliography workflows, Windows and Mac users, and remote installation support.",
-    image: "assets/endnote-license-key-installer-tutorial.png",
-    match: (product) => product.category === "Research Tools" || product.name.includes("EndNote")
+    intro: "Browse research software license options for qualitative analysis, reference management, bibliography workflows, Windows and Mac users, and remote installation support.",
+    image: "assets/nvivo-qualitative-analysis-license-key.png",
+    match: (product) => product.category === "Research Tools" || product.name.includes("EndNote") || product.name.includes("NVivo")
   }
 ];
 const INFO_PAGES = [
@@ -258,7 +258,7 @@ const INFO_PAGES = [
     description: "Compare DIGILICEN software license prices for Autodesk, Adobe Creative Cloud, AutoCAD, Revit, engineering tools, and JetBrains developer tools.",
     heading: "Software license price list",
     intro: "Use this price guide to compare listed software license inquiry options before contacting DIGILICEN for availability, payment, and digital delivery confirmation.",
-    relatedProducts: ["autocad", "adobe-1-year", "adobe-6-month", "revit", "civil-3d", "aec-collection", "bim-collection", "jetbrains-ai-assistant-all-products-6-month", "endnote-2025-21-20-x9-license-key"],
+    relatedProducts: ["autocad", "adobe-1-year", "adobe-6-month", "revit", "civil-3d", "aec-collection", "bim-collection", "jetbrains-ai-assistant-all-products-6-month", "endnote-2025-21-20-x9-license-key", "nvivo-15-license-key-windows-mac", "nvivo-14-license-key-windows-mac"],
     sections: [
       {
         heading: "Compare listed license prices before inquiry",
@@ -278,7 +278,7 @@ const INFO_PAGES = [
         heading: "Best pages to check first",
         paragraphs: [
           "For Autodesk and CAD tools, start with AutoCAD, Revit, Civil 3D, AEC Collection, and BIM Collection pages. For creative users, compare Adobe Creative Cloud 1 year, 6 month, 3 month, and 1 month options.",
-          "For developer teams, check JetBrains AI Assistant with All Products Pack and confirm devices, account email, user count, and cross-platform requirements."
+          "For developer teams, check JetBrains AI Assistant with All Products Pack and confirm devices, account email, user count, and cross-platform requirements. For research users, compare NVivo qualitative analysis license key options and EndNote reference management options."
         ]
       }
     ],
@@ -1113,6 +1113,39 @@ const BLOG_POSTS = [
         ]
       }
     ]
+  },
+  {
+    slug: "nvivo-license-key-windows-mac-qualitative-analysis-guide",
+    title: "NVivo License Key Windows and Mac Qualitative Analysis Guide",
+    description: "A buyer guide for NVivo 15, NVivo 14, and NVivo 12 qualitative analysis software license key inquiries, including Windows and Mac setup, installer guidance, and remote support.",
+    category: "Research software",
+    date: "2026-07-20",
+    heroImage: "assets/nvivo-qualitative-analysis-license-key.png",
+    related: ["nvivo-15-license-key-windows-mac", "nvivo-14-license-key-windows-mac"],
+    cta: "Contact DIGILICEN to confirm your NVivo version, Windows or Mac platform, installer guidance, and remote installation support before ordering.",
+    sections: [
+      {
+        heading: "Choose the NVivo version you need",
+        paragraphs: [
+          "DIGILICEN lists NVivo 15 and NVivo 14 qualitative analysis software license key inquiry options for Windows and Mac users. NVivo 12 can be confirmed by contact if you need an older version.",
+          "Before ordering, confirm your operating system, required version, delivery timing, and whether remote installation support is needed."
+        ]
+      },
+      {
+        heading: "Listed NVivo license key prices",
+        paragraphs: [
+          "NVivo 15 license key inquiry is listed at US$15.00. NVivo 14 license key inquiry is listed at US$12.00. Contact DIGILICEN to confirm stock, platform, and setup requirements before payment.",
+          "The delivery package can include the license key, installer guidance, tutorial, and remote installation support."
+        ]
+      },
+      {
+        heading: "Use NVivo for qualitative analysis workflows",
+        paragraphs: [
+          "NVivo is commonly used for qualitative research workflows such as interview coding, literature review support, case analysis, survey responses, themes, memos, and mixed-method research organization.",
+          "DIGILICEN focuses on genuine software license inquiry support and does not provide cracked software, unsafe activation tools, or bypass methods."
+        ]
+      }
+    ]
   }
 ];
 
@@ -1129,7 +1162,11 @@ function productLabel(product) {
 }
 
 function imageFor(product) {
-  return PRODUCT_IMAGES[product.slug] || CATEGORY_IMAGES[product.category] || "assets/genuine-software.png";
+  return webImage(PRODUCT_IMAGES[product.slug] || CATEGORY_IMAGES[product.category] || "assets/genuine-software.png");
+}
+
+function webImage(path) {
+  return path.replace(/\.png$/, ".jpg");
 }
 
 function productUrl(product) {
@@ -1235,6 +1272,23 @@ function relatedPostsForProduct(product) {
 
 function productFaqs(product) {
   if (isContactOnly(product)) {
+    if (product.name.includes("NVivo")) {
+      return [
+        {
+          question: `Which versions are available for ${product.name}?`,
+          answer: "DIGILICEN lists NVivo 15 and NVivo 14 qualitative analysis software license key inquiry options. NVivo 12 can be confirmed by contact if you need an older version."
+        },
+        {
+          question: `What is included with ${product.name}?`,
+          answer: "Delivery can include a license key, installer guidance, tutorial, and remote installation support when needed."
+        },
+        {
+          question: `How do I order ${product.name}?`,
+          answer: "This product does not use an Alibaba product link on DIGILICEN. Contact us by WhatsApp or email to confirm version, Windows or Mac platform, price, and delivery details."
+        }
+      ];
+    }
+
     return [
       {
         question: `Which versions are available for ${product.name}?`,
@@ -1286,8 +1340,8 @@ function productGuidance(product) {
       checklist: "Confirm included developer tools, account email, operating system, device requirements, user count, AI assistant needs, and payment route before ordering."
     },
     "Research Tools": {
-      audience: "Researchers, students, academic writers, laboratories, and office users who need EndNote reference management support for Windows or Mac.",
-      checklist: "Confirm the EndNote version, Windows or Mac platform, English or Chinese language preference, installer package needs, tutorial needs, and whether remote installation support is required."
+      audience: "Researchers, students, academic writers, qualitative analysis teams, laboratories, and office users who need research software support for Windows or Mac.",
+      checklist: "Confirm the software name, version, Windows or Mac platform, language preference, installer package needs, tutorial needs, and whether remote installation support is required."
     }
   };
   const guidance = categoryGuidance[product.category] || categoryGuidance.Autodesk;
@@ -1665,6 +1719,7 @@ function categoryPage(category) {
   const canonical = categoryUrl(category);
   const faqs = categoryFaqs(category, products);
   const contactOnly = products.length > 0 && products.every(isContactOnly);
+  const categoryImage = webImage(category.image);
   const itemListSchema = {
     "@context": "https://schema.org",
     "@type": "ItemList",
@@ -1722,11 +1777,11 @@ function categoryPage(category) {
     <meta property="og:title" content="${escapeHtml(category.title)}">
     <meta property="og:description" content="${escapeHtml(category.description)}">
     <meta property="og:url" content="${canonical}">
-    <meta property="og:image" content="${SITE_URL}/${category.image}">
+    <meta property="og:image" content="${SITE_URL}/${categoryImage}">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="${escapeHtml(category.title)}">
     <meta name="twitter:description" content="${escapeHtml(category.description)}">
-    <meta name="twitter:image" content="${SITE_URL}/${category.image}">
+    <meta name="twitter:image" content="${SITE_URL}/${categoryImage}">
     <link rel="stylesheet" href="../styles.css?v=6">
     <script type="application/ld+json">${jsonLd(itemListSchema)}</script>
     <script type="application/ld+json">${jsonLd(breadcrumbSchema)}</script>
@@ -1754,7 +1809,7 @@ function categoryPage(category) {
       <section class="product-detail">
         <div class="product-detail-card">
           <div class="product-detail-visual">
-            <img src="../${category.image}" alt="${escapeHtml(category.name)}" decoding="async" fetchpriority="high">
+            <img src="../${categoryImage}" alt="${escapeHtml(category.name)}" decoding="async" fetchpriority="high">
           </div>
           <div class="product-info-panel">
             <p class="eyebrow">DIGILICEN license category</p>
@@ -1838,6 +1893,7 @@ function categoryPage(category) {
 function blogIndexPage() {
   const canonical = `${SITE_URL}/blog/`;
   const description = "DIGILICEN software license blog with buying guides for Autodesk, AutoCAD, Adobe Creative Cloud, digital delivery, Alibaba payment, and PayPal invoice requests.";
+  const image = "assets/hero-license.jpg";
   const blogSchema = {
     "@context": "https://schema.org",
     "@type": "Blog",
@@ -1867,7 +1923,7 @@ function blogIndexPage() {
     <meta property="og:title" content="Software License Blog | DIGILICEN">
     <meta property="og:description" content="${escapeHtml(description)}">
     <meta property="og:url" content="${canonical}">
-    <meta property="og:image" content="${SITE_URL}/assets/hero-license.png">
+    <meta property="og:image" content="${SITE_URL}/${image}">
     <meta name="twitter:card" content="summary_large_image">
     <link rel="stylesheet" href="../styles.css?v=6">
     <script type="application/ld+json">${jsonLd(blogSchema)}</script>
@@ -1934,12 +1990,13 @@ function blogPage(post) {
   const canonical = blogUrl(post);
   const relatedProducts = post.related.map((slug) => PRODUCTS.find((product) => product.slug === slug)).filter(Boolean);
   const faqs = blogFaqs(post);
+  const heroImage = webImage(post.heroImage);
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     headline: post.title,
     description: post.description,
-    image: `${SITE_URL}/${post.heroImage}`,
+    image: `${SITE_URL}/${heroImage}`,
     datePublished: post.date,
     dateModified: LASTMOD,
     author: {
@@ -2006,11 +2063,11 @@ function blogPage(post) {
     <meta property="og:title" content="${escapeHtml(post.title)}">
     <meta property="og:description" content="${escapeHtml(post.description)}">
     <meta property="og:url" content="${canonical}">
-    <meta property="og:image" content="${SITE_URL}/${post.heroImage}">
+    <meta property="og:image" content="${SITE_URL}/${heroImage}">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="${escapeHtml(post.title)}">
     <meta name="twitter:description" content="${escapeHtml(post.description)}">
-    <meta name="twitter:image" content="${SITE_URL}/${post.heroImage}">
+    <meta name="twitter:image" content="${SITE_URL}/${heroImage}">
     <link rel="stylesheet" href="../styles.css?v=6">
     <script type="application/ld+json">${jsonLd(articleSchema)}</script>
     <script type="application/ld+json">${jsonLd(breadcrumbSchema)}</script>
@@ -2039,7 +2096,7 @@ function blogPage(post) {
           <p class="eyebrow">${escapeHtml(post.category)}</p>
           <h1>${escapeHtml(post.title)}</h1>
           <p>${escapeHtml(post.description)}</p>
-          <img src="../${post.heroImage}" alt="${escapeHtml(post.title)}" decoding="async" fetchpriority="high">
+          <img src="../${heroImage}" alt="${escapeHtml(post.title)}" decoding="async" fetchpriority="high">
         </header>
         <div class="article-body">
           ${post.sections.map((section) => `<section>
@@ -2116,6 +2173,7 @@ function infoPageUrl(page) {
 function infoPage(page) {
   const canonical = infoPageUrl(page);
   const relatedProducts = page.relatedProducts?.map((slug) => PRODUCTS.find((product) => product.slug === slug)).filter(Boolean) || [];
+  const image = "assets/hero-license.jpg";
   const webPageSchema = {
     "@context": "https://schema.org",
     "@type": "WebPage",
@@ -2174,11 +2232,11 @@ function infoPage(page) {
     <meta property="og:title" content="${escapeHtml(page.title)}">
     <meta property="og:description" content="${escapeHtml(page.description)}">
     <meta property="og:url" content="${canonical}">
-    <meta property="og:image" content="${SITE_URL}/assets/hero-license.png">
+    <meta property="og:image" content="${SITE_URL}/${image}">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="${escapeHtml(page.title)}">
     <meta name="twitter:description" content="${escapeHtml(page.description)}">
-    <meta name="twitter:image" content="${SITE_URL}/assets/hero-license.png">
+    <meta name="twitter:image" content="${SITE_URL}/${image}">
     <link rel="stylesheet" href="styles.css?v=6">
     <script type="application/ld+json">${jsonLd(webPageSchema)}</script>
     <script type="application/ld+json">${jsonLd(breadcrumbSchema)}</script>

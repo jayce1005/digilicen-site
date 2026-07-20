@@ -308,6 +308,32 @@ const PRODUCTS = [
     delivery: "License key, installer package, tutorial, and remote installation support",
     contactOnly: true,
     alibaba: ""
+  },
+  {
+    slug: "nvivo-15-license-key-windows-mac",
+    name: "NVivo 15",
+    category: "Research Tools",
+    badge: "NVivo",
+    version: "Qualitative Analysis Software License Key for Windows and Mac",
+    term: "Perpetual License Key",
+    price: "US$15.00",
+    summary: "NVivo 15 qualitative analysis software license key inquiry with official activation code support, installer guidance, tutorial, and remote installation support.",
+    delivery: "License key, installer guidance, tutorial, and remote installation support",
+    contactOnly: true,
+    alibaba: ""
+  },
+  {
+    slug: "nvivo-14-license-key-windows-mac",
+    name: "NVivo 14",
+    category: "Research Tools",
+    badge: "NVivo",
+    version: "Qualitative Analysis Software License Key for Windows and Mac",
+    term: "Perpetual License Key",
+    price: "US$12.00",
+    summary: "NVivo 14 qualitative analysis software license key inquiry with official activation code support, installer guidance, tutorial, and remote installation support.",
+    delivery: "License key, installer guidance, tutorial, and remote installation support",
+    contactOnly: true,
+    alibaba: ""
   }
 ];
 
@@ -318,7 +344,7 @@ const CATEGORY_IMAGES = {
   Adobe: "assets/adobe-creative-large.png",
   Engineering: "assets/aec-collection.png",
   "Developer Tools": "assets/jetbrains-ai-assistant-all-products-6-month-usd34.png",
-  "Research Tools": "assets/endnote-license-key-installer-tutorial.png"
+  "Research Tools": "assets/nvivo-qualitative-analysis-license-key.png"
 };
 
 const PRODUCT_IMAGES = {
@@ -333,7 +359,9 @@ const PRODUCT_IMAGES = {
   "bim-collection": "assets/bim-collection.png",
   "raster-design": "assets/raster-design.png",
   "jetbrains-ai-assistant-all-products-6-month": "assets/jetbrains-ai-assistant-all-products-6-month-usd34.png",
-  "endnote-2025-21-20-x9-license-key": "assets/endnote-license-key-installer-tutorial.png"
+  "endnote-2025-21-20-x9-license-key": "assets/endnote-license-key-installer-tutorial.png",
+  "nvivo-15-license-key-windows-mac": "assets/nvivo-qualitative-analysis-license-key.png",
+  "nvivo-14-license-key-windows-mac": "assets/nvivo-qualitative-analysis-license-key.png"
 };
 
 function bySlug(slug) {
@@ -364,8 +392,12 @@ function paypalFor(product) {
   return `mailto:${EMAIL}?subject=${encodeURIComponent(`PayPal invoice request: ${label}`)}&body=${encodeURIComponent(body)}`;
 }
 
+function webImage(path) {
+  return path.replace(/\.png$/, ".jpg");
+}
+
 function imageFor(product) {
-  return PRODUCT_IMAGES[product.slug] || CATEGORY_IMAGES[product.category] || "assets/genuine-software.png";
+  return webImage(PRODUCT_IMAGES[product.slug] || CATEGORY_IMAGES[product.category] || "assets/genuine-software.png");
 }
 
 function productLabel(product) {
@@ -384,7 +416,7 @@ function renderProducts(filter = "all") {
   grid.innerHTML = products.map((product) => `
     <article class="product-card">
       <a class="product-visual" href="${productUrl(product.slug)}" aria-label="View ${product.name}">
-        <img src="${imageFor(product)}" alt="${product.name}">
+        <img src="${imageFor(product)}" alt="${product.name}" loading="lazy" decoding="async">
       </a>
       <span class="category">${product.category}</span>
       <h3>${product.name}</h3>
@@ -426,7 +458,7 @@ function renderProductDetail() {
   detail.innerHTML = `
       <div class="product-detail-card">
       <div class="product-detail-visual">
-        <img src="${imageFor(product)}" alt="${product.name}">
+        <img src="${imageFor(product)}" alt="${product.name}" decoding="async" fetchpriority="high">
       </div>
       <div class="product-info-panel">
         <p class="eyebrow">${product.category} license inquiry</p>
