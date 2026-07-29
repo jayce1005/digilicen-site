@@ -1,417 +1,763 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://digilicen.com/</loc>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://digilicen.com/assets/hero-license.jpg</image:loc>
+      <image:title>DIGILICEN software license inquiry website</image:title>
+      <image:caption>Autodesk, Adobe, AutoCAD, JetBrains, NVivo, EndNote, and professional software license inquiries.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://digilicen.com/about</loc>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://digilicen.com/assets/hero-license.jpg</image:loc>
+      <image:title>About DIGILICEN</image:title>
+      <image:caption>Learn about DIGILICEN, a software license inquiry site for Autodesk, Adobe, AutoCAD, engineering, creative, and developer tool customers.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://digilicen.com/payment-and-delivery</loc>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://digilicen.com/assets/hero-license.jpg</image:loc>
+      <image:title>Payment and digital delivery</image:title>
+      <image:caption>DIGILICEN payment and digital delivery guide covering Alibaba online payment, PayPal invoice requests, order details, and activation support.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://digilicen.com/order-support-policy</loc>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://digilicen.com/assets/hero-license.jpg</image:loc>
+      <image:title>Order support policy</image:title>
+      <image:caption>DIGILICEN order support policy for software license inquiries, compatibility confirmation, payment records, digital delivery, and support communication.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://digilicen.com/contact</loc>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://digilicen.com/assets/hero-license.jpg</image:loc>
+      <image:title>Contact DIGILICEN</image:title>
+      <image:caption>Contact DIGILICEN by WhatsApp or email for Autodesk, Adobe, AutoCAD, Revit, developer tools, payment, delivery, and software license inquiry support.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://digilicen.com/faq</loc>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://digilicen.com/assets/hero-license.jpg</image:loc>
+      <image:title>Software license FAQ</image:title>
+      <image:caption>Frequently asked questions about DIGILICEN software license inquiries, genuine licenses, payment, PayPal invoice, Alibaba payment, and digital delivery.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://digilicen.com/software-license-price-list</loc>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://digilicen.com/assets/hero-license.jpg</image:loc>
+      <image:title>Software license price list</image:title>
+      <image:caption>Compare DIGILICEN software license prices for Autodesk, Adobe Creative Cloud, AutoCAD, Revit, engineering tools, and JetBrains developer tools.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://digilicen.com/autodesk-license-price-list</loc>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://digilicen.com/assets/hero-license.jpg</image:loc>
+      <image:title>Autodesk license price list</image:title>
+      <image:caption>Compare Autodesk license inquiry prices for AutoCAD, Revit, Civil 3D, Inventor, Maya, Fusion 360, Navisworks, and Autodesk collections.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://digilicen.com/adobe-creative-cloud-price-list</loc>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://digilicen.com/assets/hero-license.jpg</image:loc>
+      <image:title>Adobe Creative Cloud price list</image:title>
+      <image:caption>Compare Adobe Creative Cloud subscription inquiry prices by term, including 1 year, 6 month, 3 month, and 1 month options.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://digilicen.com/categories/autodesk-software-licenses</loc>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://digilicen.com/assets/autodesk-generic.jpg</image:loc>
+      <image:title>Autodesk Software Licenses</image:title>
+      <image:caption>Autodesk software license inquiries from DIGILICEN, including AutoCAD, Revit, Maya, Inventor, Civil 3D, Fusion 360, Navisworks, and AEC tools.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://digilicen.com/categories/adobe-creative-cloud-subscription</loc>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://digilicen.com/assets/adobe-creative-large.jpg</image:loc>
+      <image:title>Adobe Creative Cloud Subscriptions</image:title>
+      <image:caption>Adobe Creative Cloud subscription inquiries with 1 year, 6 month, 3 month, and 1 month options from DIGILICEN.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://digilicen.com/categories/autocad-engineering-software-licenses</loc>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://digilicen.com/assets/aec-collection.jpg</image:loc>
+      <image:title>AutoCAD and Engineering Software Licenses</image:title>
+      <image:caption>AutoCAD, Civil 3D, Revit, Plant 3D, MEP, Electrical, Map 3D, and BIM software license inquiries from DIGILICEN.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://digilicen.com/categories/developer-tools-software-licenses</loc>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://digilicen.com/assets/jetbrains-ai-assistant-all-products-6-month-usd34.jpg</image:loc>
+      <image:title>Developer Tools Software Licenses</image:title>
+      <image:caption>Developer tools software license inquiries from DIGILICEN, including JetBrains AI Assistant and JetBrains All Products Pack activation options.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://digilicen.com/categories/research-reference-software-licenses</loc>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://digilicen.com/assets/nvivo-qualitative-analysis-license-key.jpg</image:loc>
+      <image:title>Research and Reference Software Licenses</image:title>
+      <image:caption>Research and reference software license inquiries from DIGILICEN, including NVivo 15, NVivo 14, NVivo 12 by inquiry, and EndNote for Windows and Mac.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://digilicen.com/blog/</loc>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://digilicen.com/assets/hero-license.jpg</image:loc>
+      <image:title>DIGILICEN software license blog</image:title>
+      <image:caption>Software license buying guides, payment notes, and digital delivery support articles.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://digilicen.com/blog/how-to-buy-genuine-autodesk-software-licenses-online</loc>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://digilicen.com/assets/autodesk-generic.jpg</image:loc>
+      <image:title>How to Buy Genuine Autodesk Software Licenses Online</image:title>
+      <image:caption>A practical guide for business buyers comparing Autodesk software license options, payment methods, delivery details, and activation support.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://digilicen.com/blog/autocad-commercial-license-vs-autocad-lt</loc>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://digilicen.com/assets/autocad-commercial.jpg</image:loc>
+      <image:title>AutoCAD Commercial License vs AutoCAD LT: Which One Should You Choose?</image:title>
+      <image:caption>Compare AutoCAD Commercial License and AutoCAD LT for professional drafting, design workflows, pricing, and business license inquiries.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://digilicen.com/blog/adobe-creative-cloud-subscription-terms</loc>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://digilicen.com/assets/adobe-creative-large.jpg</image:loc>
+      <image:title>Adobe Creative Cloud 1 Year vs 6 Month vs 3 Month Subscription</image:title>
+      <image:caption>Compare Adobe Creative Cloud subscription terms for creative teams, short projects, flexible use, and digital delivery inquiries.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://digilicen.com/blog/digital-software-license-delivery-process</loc>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://digilicen.com/assets/genuine-software.jpg</image:loc>
+      <image:title>How Digital Software License Delivery Works</image:title>
+      <image:caption>Learn what buyers should prepare for digital software license delivery, including product details, account email, payment confirmation, and support steps.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://digilicen.com/blog/paypal-invoice-software-license-purchases</loc>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://digilicen.com/assets/hero-license.jpg</image:loc>
+      <image:title>PayPal Invoice for Software License Purchases: How It Works</image:title>
+      <image:caption>Understand how a PayPal invoice request works for software license inquiries, what information to provide, and when to confirm details before payment.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://digilicen.com/blog/alibaba-payment-software-license-orders</loc>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://digilicen.com/assets/genuine-software.jpg</image:loc>
+      <image:title>Why Use Alibaba Payment for Software License Orders?</image:title>
+      <image:caption>Learn why buyers may choose Alibaba online payment for software license orders and what details to confirm before purchase.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://digilicen.com/blog/autodesk-aec-collection-vs-individual-licenses</loc>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://digilicen.com/assets/aec-collection.jpg</image:loc>
+      <image:title>Autodesk AEC Collection vs Individual Autodesk Licenses</image:title>
+      <image:caption>Compare Autodesk AEC Collection inquiries with individual Autodesk software license options for architecture, engineering, and construction workflows.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://digilicen.com/blog/what-to-check-before-buying-autocad-license</loc>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://digilicen.com/assets/autocad-commercial.jpg</image:loc>
+      <image:title>What to Check Before Buying an AutoCAD License</image:title>
+      <image:caption>A buyer checklist for AutoCAD license inquiries, including product type, term, compatibility, payment method, delivery, and activation support.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://digilicen.com/blog/revit-commercial-license-buying-guide</loc>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://digilicen.com/assets/aec-collection.jpg</image:loc>
+      <image:title>Revit Commercial License Buying Guide for BIM Teams</image:title>
+      <image:caption>A practical Revit commercial license buying guide for BIM, architecture, engineering, account setup, payment, and digital delivery inquiries.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://digilicen.com/blog/fusion-360-vs-inventor-license-inquiry</loc>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://digilicen.com/assets/autodesk-generic.jpg</image:loc>
+      <image:title>Fusion 360 vs Inventor License Inquiry: Which Product Fits Your Workflow?</image:title>
+      <image:caption>Compare Fusion 360 and Inventor license inquiries for product design, engineering, manufacturing, collaboration, and professional CAD workflows.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://digilicen.com/blog/business-software-license-procurement-checklist</loc>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://digilicen.com/assets/genuine-software.jpg</image:loc>
+      <image:title>Business Software License Procurement Checklist</image:title>
+      <image:caption>A checklist for business buyers preparing software license inquiries, including product name, term, account email, payment route, and delivery support.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://digilicen.com/blog/software-license-delivery-questions-to-ask</loc>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://digilicen.com/assets/hero-license.jpg</image:loc>
+      <image:title>Software License Delivery Questions to Ask Before Payment</image:title>
+      <image:caption>Important questions to ask before software license payment, including delivery time, account requirements, activation support, and payment confirmation.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://digilicen.com/blog/jetbrains-ai-assistant-all-products-pack-activation-guide</loc>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://digilicen.com/assets/jetbrains-ai-assistant-all-products-6-month-usd34.jpg</image:loc>
+      <image:title>JetBrains AI Assistant and All Products Pack Activation Guide</image:title>
+      <image:caption>A buyer guide for JetBrains AI Assistant and JetBrains All Products Pack activation inquiries, including term, price, devices, account details, and delivery support.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://digilicen.com/blog/best-software-licenses-for-cad-teams</loc>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://digilicen.com/assets/autocad-commercial.jpg</image:loc>
+      <image:title>Best Software License Options for CAD Teams</image:title>
+      <image:caption>A practical guide for CAD teams comparing AutoCAD, AutoCAD LT, Revit, Civil 3D, Inventor, Fusion 360, and Autodesk collection inquiries.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://digilicen.com/blog/what-information-needed-before-software-license-activation</loc>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://digilicen.com/assets/genuine-software.jpg</image:loc>
+      <image:title>What Information Is Needed Before Software License Activation?</image:title>
+      <image:caption>Prepare the details needed before software license activation, including product name, term, account email, operating system, payment record, and support channel.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://digilicen.com/blog/paypal-invoice-vs-alibaba-payment-software-license</loc>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://digilicen.com/assets/hero-license.jpg</image:loc>
+      <image:title>PayPal Invoice vs Alibaba Payment for Software License Orders</image:title>
+      <image:caption>Compare PayPal invoice requests and Alibaba online payment for software license inquiries, including records, confirmation, and delivery support.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://digilicen.com/blog/how-fast-is-digital-software-license-delivery</loc>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://digilicen.com/assets/hero-license.jpg</image:loc>
+      <image:title>How Fast Is Digital Software License Delivery?</image:title>
+      <image:caption>Learn what affects digital software license delivery time, including payment confirmation, account information, product compatibility, and support hours.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://digilicen.com/blog/developer-tools-license-procurement-guide</loc>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://digilicen.com/assets/jetbrains-ai-assistant-all-products-6-month-usd34.jpg</image:loc>
+      <image:title>Developer Tools License Procurement Guide</image:title>
+      <image:caption>A developer tools license procurement guide covering JetBrains AI Assistant, All Products Pack, account details, devices, and payment confirmation.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://digilicen.com/blog/autocad-license-price-guide-2026</loc>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://digilicen.com/assets/autocad-commercial.jpg</image:loc>
+      <image:title>AutoCAD License Price Guide 2026</image:title>
+      <image:caption>Compare AutoCAD license inquiry prices, AutoCAD LT, AutoCAD Mechanical, AutoCAD Architecture, MEP, Electrical, and Plant 3D options.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://digilicen.com/blog/adobe-creative-cloud-paypal-invoice-guide</loc>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://digilicen.com/assets/adobe-creative-large.jpg</image:loc>
+      <image:title>Adobe Creative Cloud PayPal Invoice Guide</image:title>
+      <image:caption>How to request a PayPal invoice for Adobe Creative Cloud subscription inquiries, including term, account email, and delivery details.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://digilicen.com/blog/autodesk-license-for-small-business</loc>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://digilicen.com/assets/autodesk-generic.jpg</image:loc>
+      <image:title>Autodesk License Options for Small Business Buyers</image:title>
+      <image:caption>A practical guide for small businesses comparing Autodesk, AutoCAD, Revit, Fusion 360, Inventor, and AEC software license inquiries.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://digilicen.com/blog/software-license-inquiry-email-template</loc>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://digilicen.com/assets/genuine-software.jpg</image:loc>
+      <image:title>Software License Inquiry Email Template</image:title>
+      <image:caption>Use this software license inquiry email template to send product name, term, account email, operating system, payment method, and delivery questions.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://digilicen.com/blog/endnote-license-key-windows-mac-installation-guide</loc>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://digilicen.com/assets/endnote-license-key-installer-tutorial.jpg</image:loc>
+      <image:title>EndNote License Key Windows and Mac Installation Guide</image:title>
+      <image:caption>A buyer guide for EndNote 2025, 21, 20, and X9 license key inquiries for Windows and Mac, including installer package, tutorial, and remote support.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://digilicen.com/blog/nvivo-license-key-windows-mac-qualitative-analysis-guide</loc>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://digilicen.com/assets/nvivo-qualitative-analysis-license-key.jpg</image:loc>
+      <image:title>NVivo License Key Windows and Mac Qualitative Analysis Guide</image:title>
+      <image:caption>A buyer guide for NVivo 15, NVivo 14, and NVivo 12 qualitative analysis software license key inquiries, including Windows and Mac setup, installer guidance, and remote support.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://digilicen.com/products/adobe-1-year</loc>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://digilicen.com/assets/adobe-1-year.jpg</image:loc>
+      <image:title>Adobe Creative Cloud - 1 Year</image:title>
+      <image:caption>Adobe Creative Cloud - 1 Year from DIGILICEN: Creative Cloud Subscription, US$50.00, Alibaba or PayPal invoice, WhatsApp support, and digital delivery.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://digilicen.com/products/adobe-6-month</loc>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://digilicen.com/assets/adobe-6-month.jpg</image:loc>
+      <image:title>Adobe Creative Cloud - 6 Months</image:title>
+      <image:caption>Adobe Creative Cloud - 6 Months from DIGILICEN: Creative Cloud Subscription, US$30.00, Alibaba or PayPal invoice, WhatsApp support, and digital delivery.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://digilicen.com/products/adobe-3-month</loc>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://digilicen.com/assets/adobe-3-month.jpg</image:loc>
+      <image:title>Adobe Creative Cloud - 3 Months</image:title>
+      <image:caption>Adobe Creative Cloud - 3 Months from DIGILICEN: Creative Cloud Subscription, US$15.00, Alibaba or PayPal invoice, WhatsApp support, and digital delivery.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://digilicen.com/products/adobe-1-month</loc>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://digilicen.com/assets/adobe-1-month.jpg</image:loc>
+      <image:title>Adobe Creative Cloud - 1 Month</image:title>
+      <image:caption>Adobe Creative Cloud - 1 Month from DIGILICEN: Creative Cloud Subscription, US$6.00, Alibaba or PayPal invoice, WhatsApp support, and digital delivery.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://digilicen.com/products/infraworks</loc>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://digilicen.com/assets/autodesk-generic.jpg</image:loc>
+      <image:title>Autodesk InfraWorks - 1 Year</image:title>
+      <image:caption>Autodesk InfraWorks - 1 Year from DIGILICEN: Commercial License, US$60.00, Alibaba or PayPal invoice, WhatsApp support, and digital delivery.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://digilicen.com/products/recap-pro</loc>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://digilicen.com/assets/autodesk-generic.jpg</image:loc>
+      <image:title>Autodesk ReCap Pro - 1 Year</image:title>
+      <image:caption>Autodesk ReCap Pro - 1 Year from DIGILICEN: Commercial License, US$60.00, Alibaba or PayPal invoice, WhatsApp support, and digital delivery.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://digilicen.com/products/autocad-architecture</loc>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://digilicen.com/assets/autodesk-generic.jpg</image:loc>
+      <image:title>Autodesk AutoCAD Architecture - 1 Year</image:title>
+      <image:caption>Autodesk AutoCAD Architecture - 1 Year from DIGILICEN: Professional License, US$60.00, Alibaba or PayPal invoice, WhatsApp support, and digital delivery.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://digilicen.com/products/navisworks</loc>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://digilicen.com/assets/autodesk-generic.jpg</image:loc>
+      <image:title>Autodesk Navisworks Manage - 1 Year</image:title>
+      <image:caption>Autodesk Navisworks Manage - 1 Year from DIGILICEN: Professional License, US$60.00, Alibaba or PayPal invoice, WhatsApp support, and digital delivery.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://digilicen.com/products/fusion-360</loc>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://digilicen.com/assets/autodesk-generic.jpg</image:loc>
+      <image:title>Autodesk Fusion 360 - 1 Year</image:title>
+      <image:caption>Autodesk Fusion 360 - 1 Year from DIGILICEN: Professional License, US$50.00, Alibaba or PayPal invoice, WhatsApp support, and digital delivery.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://digilicen.com/products/inventor</loc>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://digilicen.com/assets/autodesk-generic.jpg</image:loc>
+      <image:title>Autodesk Inventor - 1 Year</image:title>
+      <image:caption>Autodesk Inventor - 1 Year from DIGILICEN: Professional License, US$60.00, Alibaba or PayPal invoice, WhatsApp support, and digital delivery.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://digilicen.com/products/maya</loc>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://digilicen.com/assets/autodesk-generic.jpg</image:loc>
+      <image:title>Autodesk Maya - 1 Year</image:title>
+      <image:caption>Autodesk Maya - 1 Year from DIGILICEN: Commercial License, US$60.00, Alibaba or PayPal invoice, WhatsApp support, and digital delivery.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://digilicen.com/products/3ds-max</loc>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://digilicen.com/assets/autodesk-generic.jpg</image:loc>
+      <image:title>Autodesk 3ds Max - 1 Year</image:title>
+      <image:caption>Autodesk 3ds Max - 1 Year from DIGILICEN: Commercial License, US$60.00, Alibaba or PayPal invoice, WhatsApp support, and digital delivery.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://digilicen.com/products/civil-3d</loc>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://digilicen.com/assets/aec-collection.jpg</image:loc>
+      <image:title>Autodesk Civil 3D - 1 Year</image:title>
+      <image:caption>Autodesk Civil 3D - 1 Year from DIGILICEN: Commercial License, US$60.00, Alibaba or PayPal invoice, WhatsApp support, and digital delivery.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://digilicen.com/products/revit</loc>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://digilicen.com/assets/aec-collection.jpg</image:loc>
+      <image:title>Autodesk Revit - 1 Year</image:title>
+      <image:caption>Autodesk Revit - 1 Year from DIGILICEN: Commercial License, US$60.00, Alibaba or PayPal invoice, WhatsApp support, and digital delivery.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://digilicen.com/products/plant-3d</loc>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://digilicen.com/assets/aec-collection.jpg</image:loc>
+      <image:title>AutoCAD Plant 3D - 1 Year</image:title>
+      <image:caption>AutoCAD Plant 3D - 1 Year from DIGILICEN: Commercial License, US$60.00, Alibaba or PayPal invoice, WhatsApp support, and digital delivery.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://digilicen.com/products/dwg-history</loc>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://digilicen.com/assets/autodesk-generic.jpg</image:loc>
+      <image:title>AutoCAD DWG History - 1 Year</image:title>
+      <image:caption>AutoCAD DWG History - 1 Year from DIGILICEN: Commercial License, US$60.00, Alibaba or PayPal invoice, WhatsApp support, and digital delivery.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://digilicen.com/products/electrical</loc>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://digilicen.com/assets/aec-collection.jpg</image:loc>
+      <image:title>AutoCAD Electrical - 1 Year</image:title>
+      <image:caption>AutoCAD Electrical - 1 Year from DIGILICEN: Commercial License, US$60.00, Alibaba or PayPal invoice, WhatsApp support, and digital delivery.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://digilicen.com/products/map-3d</loc>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://digilicen.com/assets/aec-collection.jpg</image:loc>
+      <image:title>Autodesk Map 3D - 1 Year</image:title>
+      <image:caption>Autodesk Map 3D - 1 Year from DIGILICEN: Commercial License, US$60.00, Alibaba or PayPal invoice, WhatsApp support, and digital delivery.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://digilicen.com/products/autocad-lt</loc>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://digilicen.com/assets/autodesk-generic.jpg</image:loc>
+      <image:title>AutoCAD LT - 1 Year</image:title>
+      <image:caption>AutoCAD LT - 1 Year from DIGILICEN: Commercial License, US$65.00, Alibaba or PayPal invoice, WhatsApp support, and digital delivery.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://digilicen.com/products/revit-lt</loc>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://digilicen.com/assets/aec-collection.jpg</image:loc>
+      <image:title>Autodesk Revit LT - 1 Year</image:title>
+      <image:caption>Autodesk Revit LT - 1 Year from DIGILICEN: Commercial License, US$65.00, Alibaba or PayPal invoice, WhatsApp support, and digital delivery.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://digilicen.com/products/bim-collection</loc>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://digilicen.com/assets/bim-collection.jpg</image:loc>
+      <image:title>AutoCAD BIM Collection - 1 Year</image:title>
+      <image:caption>AutoCAD BIM Collection - 1 Year from DIGILICEN: Commercial License, US$80.00, Alibaba or PayPal invoice, WhatsApp support, and digital delivery.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://digilicen.com/products/raster-design</loc>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://digilicen.com/assets/raster-design.jpg</image:loc>
+      <image:title>Autodesk Raster Design - 1 Year</image:title>
+      <image:caption>Autodesk Raster Design - 1 Year from DIGILICEN: Commercial License, US$60.00, Alibaba or PayPal invoice, WhatsApp support, and digital delivery.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://digilicen.com/products/aec-collection</loc>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://digilicen.com/assets/aec-collection.jpg</image:loc>
+      <image:title>Autodesk AEC Collection - 1 Year</image:title>
+      <image:caption>Autodesk AEC Collection - 1 Year from DIGILICEN: Commercial License, US$75.00, Alibaba or PayPal invoice, WhatsApp support, and digital delivery.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://digilicen.com/products/mep</loc>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://digilicen.com/assets/autocad-mep.jpg</image:loc>
+      <image:title>AutoCAD MEP - 1 Year</image:title>
+      <image:caption>AutoCAD MEP - 1 Year from DIGILICEN: Commercial License, US$60.00, Alibaba or PayPal invoice, WhatsApp support, and digital delivery.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://digilicen.com/products/autocad-mechanical</loc>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://digilicen.com/assets/autocad-mechanical.jpg</image:loc>
+      <image:title>AutoCAD Mechanical - 1 Year</image:title>
+      <image:caption>AutoCAD Mechanical - 1 Year from DIGILICEN: Commercial License, US$60.00, Alibaba or PayPal invoice, WhatsApp support, and digital delivery.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://digilicen.com/products/autocad</loc>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://digilicen.com/assets/autocad-commercial.jpg</image:loc>
+      <image:title>AutoCAD - 1 Year</image:title>
+      <image:caption>AutoCAD - 1 Year from DIGILICEN: Commercial License, US$65.00, Alibaba or PayPal invoice, WhatsApp support, and digital delivery.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://digilicen.com/products/jetbrains-ai-assistant-all-products-6-month</loc>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://digilicen.com/assets/jetbrains-ai-assistant-all-products-6-month-usd34.jpg</image:loc>
+      <image:title>JetBrains AI Assistant + All Products Pack - 6 Months</image:title>
+      <image:caption>JetBrains AI Assistant + All Products Pack - 6 Months from DIGILICEN: AI Assistant with JetBrains All Products Pack Activation, US$34.00, Alibaba or PayPal invoice, WhatsApp support, and digital delivery.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://digilicen.com/products/endnote-2025-21-20-x9-license-key</loc>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://digilicen.com/assets/endnote-license-key-installer-tutorial.jpg</image:loc>
+      <image:title>EndNote 2025 / 21 / 20 / X9 - 2025, 21, 20, X9 - Win / Mac</image:title>
+      <image:caption>EndNote 2025 / 21 / 20 / X9 - 2025, 21, 20, X9 - Win / Mac from DIGILICEN: English / Chinese License Key for Windows and Mac, US$5.50, contact us for version confirmation, installer package, tutorial, remote installation support, and digital delivery.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://digilicen.com/products/nvivo-15-license-key-windows-mac</loc>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://digilicen.com/assets/nvivo-qualitative-analysis-license-key.jpg</image:loc>
+      <image:title>NVivo 15 - Perpetual License Key</image:title>
+      <image:caption>NVivo 15 - Perpetual License Key from DIGILICEN: Qualitative Analysis Software License Key for Windows and Mac, US$15.00, contact us for version confirmation, installer package, tutorial, remote installation support, and digital delivery.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://digilicen.com/products/nvivo-14-license-key-windows-mac</loc>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://digilicen.com/assets/nvivo-qualitative-analysis-license-key.jpg</image:loc>
+      <image:title>NVivo 14 - Perpetual License Key</image:title>
+      <image:caption>NVivo 14 - Perpetual License Key from DIGILICEN: Qualitative Analysis Software License Key for Windows and Mac, US$12.00, contact us for version confirmation, installer package, tutorial, remote installation support, and digital delivery.</image:caption>
+    </image:image>
   </url>
 </urlset>

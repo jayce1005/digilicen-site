@@ -4,7 +4,7 @@ const SITE_URL = "https://digilicen.com";
 const SITE_NAME = "DIGILICEN";
 const EMAIL = "digilicen@outlook.com";
 const WHATSAPP = "https://wa.me/8619928777176";
-const LASTMOD = "2026-07-20";
+const LASTMOD = "2026-07-29";
 const SOURCE = await readFile(new URL("../app.js", import.meta.url), "utf8");
 
 function extractLiteral(name, terminator) {
@@ -1155,6 +1155,10 @@ function escapeHtml(value) {
     .replaceAll("<", "&lt;")
     .replaceAll(">", "&gt;")
     .replaceAll('"', "&quot;");
+}
+
+function escapeXml(value) {
+  return escapeHtml(value).replaceAll("'", "&apos;");
 }
 
 function productLabel(product) {
@@ -2338,21 +2342,63 @@ function infoPage(page) {
 
 function sitemapXml() {
   const urls = [
-    { loc: `${SITE_URL}/`, priority: "1.0" },
-    ...INFO_PAGES.map((page) => ({ loc: infoPageUrl(page), priority: "0.8" })),
-    ...CATEGORY_PAGES.map((category) => ({ loc: categoryUrl(category), priority: "0.9" })),
-    { loc: `${SITE_URL}/blog/`, priority: "0.8" },
-    ...BLOG_POSTS.map((post) => ({ loc: blogUrl(post), priority: "0.7" })),
-    ...PRODUCTS.map((product) => ({ loc: productUrl(product), priority: "0.8" }))
+    {
+      loc: `${SITE_URL}/`,
+      priority: "1.0",
+      image: `${SITE_URL}/assets/hero-license.jpg`,
+      imageTitle: "DIGILICEN software license inquiry website",
+      imageCaption: "Autodesk, Adobe, AutoCAD, JetBrains, NVivo, EndNote, and professional software license inquiries."
+    },
+    ...INFO_PAGES.map((page) => ({
+      loc: infoPageUrl(page),
+      priority: "0.8",
+      image: `${SITE_URL}/assets/hero-license.jpg`,
+      imageTitle: page.heading,
+      imageCaption: page.description
+    })),
+    ...CATEGORY_PAGES.map((category) => ({
+      loc: categoryUrl(category),
+      priority: "0.9",
+      image: `${SITE_URL}/${webImage(category.image)}`,
+      imageTitle: category.name,
+      imageCaption: category.description
+    })),
+    {
+      loc: `${SITE_URL}/blog/`,
+      priority: "0.8",
+      image: `${SITE_URL}/assets/hero-license.jpg`,
+      imageTitle: "DIGILICEN software license blog",
+      imageCaption: "Software license buying guides, payment notes, and digital delivery support articles."
+    },
+    ...BLOG_POSTS.map((post) => ({
+      loc: blogUrl(post),
+      priority: "0.7",
+      image: `${SITE_URL}/${webImage(post.heroImage)}`,
+      imageTitle: post.title,
+      imageCaption: post.description
+    })),
+    ...PRODUCTS.map((product) => ({
+      loc: productUrl(product),
+      priority: "0.8",
+      image: `${SITE_URL}/${imageFor(product)}`,
+      imageTitle: productLabel(product),
+      imageCaption: productDescription(product)
+    }))
   ];
 
   return `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 ${urls.map((url) => `  <url>
-    <loc>${url.loc}</loc>
+    <loc>${escapeXml(url.loc)}</loc>
     <lastmod>${LASTMOD}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>${url.priority}</priority>
+    <image:image>
+      <image:loc>${escapeXml(url.image)}</image:loc>
+      <image:title>${escapeXml(url.imageTitle)}</image:title>
+      <image:caption>${escapeXml(url.imageCaption)}</image:caption>
+    </image:image>
   </url>`).join("\n")}
 </urlset>
 `;
