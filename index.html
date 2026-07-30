@@ -53,7 +53,12 @@
         "@type": "WebSite",
         "name": "DIGILICEN",
         "url": "https://digilicen.com/",
-        "description": "Genuine software license inquiries for Autodesk, Adobe Creative Cloud, AutoCAD, Revit, JetBrains, business, design, engineering, and creative teams."
+        "description": "Genuine software license inquiries for Autodesk, Adobe Creative Cloud, AutoCAD, Revit, JetBrains, business, design, engineering, and creative teams.",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://digilicen.com/?q={search_term_string}#products",
+          "query-input": "required name=search_term_string"
+        }
       }
     </script>
     <script type="application/ld+json">
@@ -170,6 +175,14 @@
           <button class="filter-chip" type="button" data-filter="Developer Tools">Developer Tools</button>
           <button class="filter-chip" type="button" data-filter="Research Tools">Research Tools</button>
         </div>
+
+        <form class="product-search" id="productSearchForm" role="search" aria-label="Search software license products">
+          <label for="productSearchInput">Search products</label>
+          <div class="product-search-row">
+            <input id="productSearchInput" name="q" type="search" autocomplete="off" placeholder="Search AutoCAD, Adobe, JetBrains, NVivo...">
+            <button class="btn btn-secondary" type="submit">Search</button>
+          </div>
+        </form>
 
         <div id="productGrid" class="product-grid" aria-live="polite"></div>
       </section>

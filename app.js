@@ -408,11 +408,45 @@ function isContactOnly(product) {
   return product.contactOnly || !product.alibaba;
 }
 
-function renderProducts(filter = "all") {
+let activeFilter = "all";
+let activeQuery = "";
+
+function productSearchText(product) {
+  return [
+    product.name,
+    product.category,
+    product.badge,
+    product.version,
+    product.term,
+    product.summary,
+    product.price
+  ].join(" ").toLowerCase();
+}
+
+function renderProducts(filter = activeFilter, query = activeQuery) {
   const grid = document.querySelector("#productGrid");
   if (!grid) return;
 
-  const products = filter === "all" ? PRODUCTS : PRODUCTS.filter((product) => product.category === filter);
+  activeFilter = filter || "all";
+  activeQuery = (query || "").trim();
+  const normalizedQuery = activeQuery.toLowerCase();
+  const products = PRODUCTS.filter((product) => {
+    const categoryMatch = activeFilter === "all" || product.category === activeFilter;
+    const queryMatch = !normalizedQuery || productSearchText(product).includes(normalizedQuery);
+    return categoryMatch && queryMatch;
+  });
+
+  if (!products.length) {
+    grid.innerHTML = `
+    <div class="empty-products">
+      <h3>No matching products found</h3>
+      <p>Try another product name or contact DIGILICEN to confirm availability.</p>
+      <a href="${WHATSAPP}" target="_blank" rel="noopener">Contact Us on WhatsApp</a>
+    </div>
+  `;
+    return;
+  }
+
   grid.innerHTML = products.map((product) => `
     <article class="product-card">
       <a class="product-visual" href="${productUrl(product.slug)}" aria-label="View ${product.name}">
@@ -494,8 +528,33 @@ function bindFilters() {
     chip.addEventListener("click", () => {
       chips.forEach((item) => item.classList.remove("active"));
       chip.classList.add("active");
-      renderProducts(chip.dataset.filter);
+      renderProducts(chip.dataset.filter, activeQuery);
     });
+  });
+}
+
+function bindProductSearch() {
+  const form = document.querySelector("#productSearchForm");
+  const input = document.querySelector("#productSearchInput");
+  if (!form || !input) return;
+
+  const params = new URLSearchParams(window.location.search);
+  const initialQuery = params.get("q") || "";
+  if (initialQuery) {
+    input.value = initialQuery;
+    activeQuery = initialQuery;
+  }
+
+  input.addEventListener("input", () => {
+    renderProducts(activeFilter, input.value);
+  });
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const query = input.value.trim();
+    const nextUrl = query ? `?q=${encodeURIComponent(query)}#products` : "#products";
+    window.history.replaceState(null, "", nextUrl);
+    renderProducts(activeFilter, query);
   });
 }
 
@@ -529,6 +588,7 @@ function bindMobileMenu() {
   });
 }
 
+bindProductSearch();
 renderProducts();
 renderProductSelect();
 renderProductDetail();
