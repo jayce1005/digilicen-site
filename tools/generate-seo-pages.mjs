@@ -4,7 +4,7 @@ const SITE_URL = "https://digilicen.com";
 const SITE_NAME = "DIGILICEN";
 const EMAIL = "digilicen@outlook.com";
 const WHATSAPP = "https://wa.me/8619928777176";
-const LASTMOD = "2026-07-30";
+const LASTMOD = "2026-08-01";
 const SOURCE = await readFile(new URL("../app.js", import.meta.url), "utf8");
 
 function extractLiteral(name, terminator) {
@@ -1249,9 +1249,9 @@ function productTitle(product) {
 
 function productDescription(product) {
   if (isContactOnly(product)) {
-    return `${productLabel(product)} from DIGILICEN: ${product.version}, ${product.price}, contact us for version confirmation, installer package, tutorial, remote installation support, and digital delivery.`;
+    return `Contact DIGILICEN for ${productLabel(product)}: ${product.price}, ${deliveryText(product)}.`;
   }
-  return `${productLabel(product)} from DIGILICEN: ${product.version}, ${product.price}, Alibaba or PayPal invoice, WhatsApp support, and digital delivery.`;
+  return `${productLabel(product)} from DIGILICEN: ${product.price}, Alibaba or PayPal invoice, WhatsApp support, and digital delivery.`;
 }
 
 function jsonLd(data) {
