@@ -4,7 +4,7 @@ const SITE_URL = "https://digilicen.com";
 const SITE_NAME = "DIGILICEN";
 const EMAIL = "digilicen@outlook.com";
 const WHATSAPP = "https://wa.me/8619928777176";
-const LASTMOD = "2026-08-01";
+const LASTMOD = "2026-08-03";
 const SOURCE = await readFile(new URL("../app.js", import.meta.url), "utf8");
 
 function extractLiteral(name, terminator) {
@@ -24,7 +24,7 @@ const CATEGORY_PAGES = [
   {
     slug: "autodesk-software-licenses",
     name: "Autodesk Software Licenses",
-    title: "Autodesk Software Licenses | AutoCAD, Revit, Maya, Inventor | DIGILICEN",
+    title: "Autodesk Software Licenses | DIGILICEN",
     description: "Autodesk software license inquiries from DIGILICEN, including AutoCAD, Revit, Maya, Inventor, Civil 3D, Fusion 360, Navisworks, and AEC tools.",
     heading: "Autodesk software license inquiries",
     intro: "Browse Autodesk commercial license options for design, engineering, BIM, architecture, manufacturing, and visualization workflows.",
@@ -54,7 +54,7 @@ const CATEGORY_PAGES = [
   {
     slug: "developer-tools-software-licenses",
     name: "Developer Tools Software Licenses",
-    title: "Developer Tools Software Licenses | JetBrains AI Assistant | DIGILICEN",
+    title: "Developer Tools Licenses | JetBrains | DIGILICEN",
     description: "Developer tools software license inquiries from DIGILICEN, including JetBrains AI Assistant and JetBrains All Products Pack activation options.",
     heading: "Developer tools software license inquiries",
     intro: "Browse developer software license options for coding, AI assistant workflows, JetBrains tools, multi-device use, and cross-platform development teams.",
@@ -64,7 +64,7 @@ const CATEGORY_PAGES = [
   {
     slug: "research-reference-software-licenses",
     name: "Research and Reference Software Licenses",
-    title: "Research and Reference Software Licenses | NVivo and EndNote | DIGILICEN",
+    title: "Research Software Licenses | NVivo, EndNote | DIGILICEN",
     description: "Research and reference software license inquiries from DIGILICEN, including NVivo 15, NVivo 14, NVivo 12 by inquiry, and EndNote for Windows and Mac.",
     heading: "Research and reference software license inquiries",
     intro: "Browse research software license options for qualitative analysis, reference management, bibliography workflows, Windows and Mac users, and remote installation support.",
@@ -254,7 +254,7 @@ const INFO_PAGES = [
   },
   {
     slug: "software-license-price-list",
-    title: "Software License Price List | Autodesk, Adobe, AutoCAD, JetBrains | DIGILICEN",
+    title: "Software License Price List | DIGILICEN",
     description: "Compare DIGILICEN software license prices for Autodesk, Adobe Creative Cloud, AutoCAD, Revit, engineering tools, and JetBrains developer tools.",
     heading: "Software license price list",
     intro: "Use this price guide to compare listed software license inquiry options before contacting DIGILICEN for availability, payment, and digital delivery confirmation.",
@@ -295,7 +295,7 @@ const INFO_PAGES = [
   },
   {
     slug: "autodesk-license-price-list",
-    title: "Autodesk License Price List | AutoCAD, Revit, Civil 3D, Inventor | DIGILICEN",
+    title: "Autodesk License Price List | DIGILICEN",
     description: "Compare Autodesk license inquiry prices for AutoCAD, Revit, Civil 3D, Inventor, Maya, Fusion 360, Navisworks, and Autodesk collections.",
     heading: "Autodesk license price list",
     intro: "Compare Autodesk software license inquiry options by product, term, workflow, and listed price before contacting DIGILICEN.",
@@ -325,7 +325,7 @@ const INFO_PAGES = [
   },
   {
     slug: "adobe-creative-cloud-price-list",
-    title: "Adobe Creative Cloud Price List | 1 Year, 6 Month, 3 Month, 1 Month | DIGILICEN",
+    title: "Adobe Creative Cloud Price List | DIGILICEN",
     description: "Compare Adobe Creative Cloud subscription inquiry prices by term, including 1 year, 6 month, 3 month, and 1 month options.",
     heading: "Adobe Creative Cloud price list",
     intro: "Compare Adobe Creative Cloud subscription terms and listed prices before requesting availability, PayPal invoice, or Alibaba payment support.",
@@ -1165,6 +1165,39 @@ function productLabel(product) {
   return `${product.name} - ${product.term}`;
 }
 
+function compactSeoTitle(title) {
+  let compact = title
+    .replace("Adobe Creative Cloud 1 Year vs 6 Month vs 3 Month Subscription", "Adobe Creative Cloud Subscription Terms")
+    .replace("AutoCAD Commercial License vs AutoCAD LT: Which One Should You Choose?", "AutoCAD vs AutoCAD LT License Guide")
+    .replace("Fusion 360 vs Inventor License Inquiry: Which Product Fits Your Workflow?", "Fusion 360 vs Inventor License Guide")
+    .replace("PayPal Invoice vs Alibaba Payment for Software License Orders", "PayPal vs Alibaba for Software Licenses")
+    .replace("What Information Is Needed Before Software License Activation?", "Information Needed Before Software Activation")
+    .replace("NVivo License Key Windows and Mac Qualitative Analysis Guide", "NVivo License Key Windows and Mac Guide")
+    .replace("JetBrains AI Assistant and All Products Pack Activation Guide", "JetBrains AI Assistant Activation Guide")
+    .replace("PayPal Invoice for Software License Purchases: How It Works", "PayPal Invoice for Software Licenses")
+    .replace("Software License Delivery Questions to Ask Before Payment", "Software License Delivery Questions")
+    .replace("EndNote License Key Windows and Mac Installation Guide", "EndNote License Key Windows and Mac Guide")
+    .replace("How to Buy Genuine Autodesk Software Licenses Online", "Buy Autodesk Software Licenses Online")
+    .replace("Autodesk AEC Collection vs Individual Autodesk Licenses", "AEC Collection vs Autodesk Licenses")
+    .replace("Autodesk License Options for Small Business Buyers", "Autodesk Licenses for Small Business")
+    .replace("Developer Tools License Procurement Guide", "Developer Tools License Guide")
+    .replace("Commercial License Buying Guide", "License Guide")
+    .replace("Software License Options", "License Options");
+
+  compact = compact.replace(/\s+/g, " ").trim();
+  if (`${compact} | ${SITE_NAME}`.length <= 65) return compact;
+
+  compact = compact
+    .replaceAll("Software License", "License")
+    .replaceAll("Software Licenses", "Licenses")
+    .replaceAll("License Inquiry", "License")
+    .replaceAll("Procurement", "Buying")
+    .replace(/\s+/g, " ")
+    .trim();
+
+  return compact;
+}
+
 function imageFor(product) {
   return webImage(PRODUCT_IMAGES[product.slug] || CATEGORY_IMAGES[product.category] || "assets/genuine-software.png");
 }
@@ -1244,7 +1277,13 @@ function priceValue(product) {
 }
 
 function productTitle(product) {
-  return `${productLabel(product)} Software License | DIGILICEN`;
+  if (product.name.includes("JetBrains")) {
+    return `JetBrains AI Assistant 6 Month License | ${SITE_NAME}`;
+  }
+  if (product.name.includes("EndNote")) {
+    return `EndNote License Key Win/Mac | ${SITE_NAME}`;
+  }
+  return `${product.name} ${product.term} License | ${SITE_NAME}`;
 }
 
 function productDescription(product) {
@@ -1992,6 +2031,7 @@ function blogIndexPage() {
 
 function blogPage(post) {
   const canonical = blogUrl(post);
+  const title = `${compactSeoTitle(post.title)} | ${SITE_NAME}`;
   const relatedProducts = post.related.map((slug) => PRODUCTS.find((product) => product.slug === slug)).filter(Boolean);
   const faqs = blogFaqs(post);
   const heroImage = webImage(post.heroImage);
@@ -2057,7 +2097,7 @@ function blogPage(post) {
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>${escapeHtml(post.title)} | DIGILICEN</title>
+    <title>${escapeHtml(title)}</title>
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <meta name="description" content="${escapeHtml(post.description)}">
     <meta name="robots" content="index,follow,max-image-preview:large">
@@ -2176,12 +2216,13 @@ function infoPageUrl(page) {
 
 function infoPage(page) {
   const canonical = infoPageUrl(page);
+  const title = compactSeoTitle(page.title);
   const relatedProducts = page.relatedProducts?.map((slug) => PRODUCTS.find((product) => product.slug === slug)).filter(Boolean) || [];
   const image = "assets/hero-license.jpg";
   const webPageSchema = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    name: page.title,
+    name: title,
     url: canonical,
     description: page.description,
     publisher: {
@@ -2226,19 +2267,19 @@ function infoPage(page) {
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>${escapeHtml(page.title)}</title>
+    <title>${escapeHtml(title)}</title>
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <meta name="description" content="${escapeHtml(page.description)}">
     <meta name="robots" content="index,follow,max-image-preview:large">
     <link rel="canonical" href="${canonical}">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="DIGILICEN">
-    <meta property="og:title" content="${escapeHtml(page.title)}">
+    <meta property="og:title" content="${escapeHtml(title)}">
     <meta property="og:description" content="${escapeHtml(page.description)}">
     <meta property="og:url" content="${canonical}">
     <meta property="og:image" content="${SITE_URL}/${image}">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="${escapeHtml(page.title)}">
+    <meta name="twitter:title" content="${escapeHtml(title)}">
     <meta name="twitter:description" content="${escapeHtml(page.description)}">
     <meta name="twitter:image" content="${SITE_URL}/${image}">
     <link rel="stylesheet" href="styles.css?v=6">
