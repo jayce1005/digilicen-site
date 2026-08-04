@@ -4,7 +4,7 @@ const SITE_URL = "https://digilicen.com";
 const SITE_NAME = "DIGILICEN";
 const EMAIL = "digilicen@outlook.com";
 const WHATSAPP = "https://wa.me/8619928777176";
-const LASTMOD = "2026-08-03";
+const LASTMOD = "2026-08-04";
 const SOURCE = await readFile(new URL("../app.js", import.meta.url), "utf8");
 
 function extractLiteral(name, terminator) {
@@ -1431,9 +1431,10 @@ function categoryFaqs(category, products) {
 function blogFaqs(post) {
   const primaryProduct = post.related.map((slug) => PRODUCTS.find((product) => product.slug === slug)).find(Boolean);
   const productText = primaryProduct ? productLabel(primaryProduct) : "a software license";
+  const topic = compactSeoTitle(post.title).replace(/[?.!]+$/g, "");
   return [
     {
-      question: `Can DIGILICEN help with ${post.title.toLowerCase()}?`,
+      question: `Can DIGILICEN help with ${topic}?`,
       answer: `Yes. DIGILICEN can help customers confirm ${productText}, payment route, account requirements, and digital delivery details before ordering.`
     },
     {
@@ -2104,12 +2105,12 @@ function blogPage(post) {
     <link rel="canonical" href="${canonical}">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="DIGILICEN">
-    <meta property="og:title" content="${escapeHtml(post.title)}">
+    <meta property="og:title" content="${escapeHtml(title)}">
     <meta property="og:description" content="${escapeHtml(post.description)}">
     <meta property="og:url" content="${canonical}">
     <meta property="og:image" content="${SITE_URL}/${heroImage}">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="${escapeHtml(post.title)}">
+    <meta name="twitter:title" content="${escapeHtml(title)}">
     <meta name="twitter:description" content="${escapeHtml(post.description)}">
     <meta name="twitter:image" content="${SITE_URL}/${heroImage}">
     <link rel="stylesheet" href="../styles.css?v=6">
