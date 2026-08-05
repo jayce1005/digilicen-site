@@ -4,7 +4,7 @@ const SITE_URL = "https://digilicen.com";
 const SITE_NAME = "DIGILICEN";
 const EMAIL = "digilicen@outlook.com";
 const WHATSAPP = "https://wa.me/8619928777176";
-const LASTMOD = "2026-08-04";
+const LASTMOD = "2026-08-05";
 const SOURCE = await readFile(new URL("../app.js", import.meta.url), "utf8");
 
 function extractLiteral(name, terminator) {
@@ -1282,6 +1282,9 @@ function productTitle(product) {
   }
   if (product.name.includes("EndNote")) {
     return `EndNote License Key Win/Mac | ${SITE_NAME}`;
+  }
+  if (product.name.includes("NVivo")) {
+    return `${product.name} License Key | ${SITE_NAME}`;
   }
   return `${product.name} ${product.term} License | ${SITE_NAME}`;
 }
