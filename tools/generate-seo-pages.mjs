@@ -754,7 +754,7 @@ const BLOG_POSTS = [
   {
     slug: "jetbrains-ai-assistant-all-products-pack-activation-guide",
     title: "JetBrains AI Assistant and All Products Pack Activation Guide",
-    description: "A buyer guide for JetBrains AI Assistant and JetBrains All Products Pack activation inquiries, including term, price, devices, account details, and delivery support.",
+    description: "JetBrains AI Assistant and All Products Pack buyer guide with term, price, device, account, payment, and delivery details.",
     category: "Developer tools",
     date: "2026-06-26",
     heroImage: "assets/jetbrains-ai-assistant-all-products-6-month-usd34.png",
@@ -820,7 +820,7 @@ const BLOG_POSTS = [
   {
     slug: "what-information-needed-before-software-license-activation",
     title: "What Information Is Needed Before Software License Activation?",
-    description: "Prepare the details needed before software license activation, including product name, term, account email, operating system, payment record, and support channel.",
+    description: "Prepare software license activation details: product name, term, account email, operating system, payment record, and support channel.",
     category: "Activation checklist",
     date: "2026-07-07",
     heroImage: "assets/genuine-software.png",
@@ -1117,7 +1117,7 @@ const BLOG_POSTS = [
   {
     slug: "nvivo-license-key-windows-mac-qualitative-analysis-guide",
     title: "NVivo License Key Windows and Mac Qualitative Analysis Guide",
-    description: "A buyer guide for NVivo 15, NVivo 14, and NVivo 12 qualitative analysis software license key inquiries, including Windows and Mac setup, installer guidance, and remote support.",
+    description: "NVivo 15, NVivo 14, and NVivo 12 license key buyer guide for Windows/Mac setup, installer guidance, and remote support.",
     category: "Research software",
     date: "2026-07-20",
     heroImage: "assets/nvivo-qualitative-analysis-license-key.png",
@@ -1291,6 +1291,9 @@ function productTitle(product) {
 
 function productDescription(product) {
   if (isContactOnly(product)) {
+    if (product.name.includes("EndNote")) {
+      return `EndNote 2025, 21, 20, and X9 license key inquiries for Win/Mac from DIGILICEN: ${product.price}, installer, tutorial, and remote support.`;
+    }
     return `Contact DIGILICEN for ${productLabel(product)}: ${product.price}, ${deliveryText(product)}.`;
   }
   return `${productLabel(product)} from DIGILICEN: ${product.price}, Alibaba or PayPal invoice, WhatsApp support, and digital delivery.`;
