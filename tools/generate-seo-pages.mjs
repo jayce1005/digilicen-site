@@ -4,7 +4,7 @@ const SITE_URL = "https://digilicen.com";
 const SITE_NAME = "DIGILICEN";
 const EMAIL = "digilicen@outlook.com";
 const WHATSAPP = "https://wa.me/8619928777176";
-const LASTMOD = "2026-08-05";
+const LASTMOD = "2026-08-13";
 const SOURCE = await readFile(new URL("../app.js", import.meta.url), "utf8");
 
 function extractLiteral(name, terminator) {
@@ -1143,6 +1143,39 @@ const BLOG_POSTS = [
         paragraphs: [
           "NVivo is commonly used for qualitative research workflows such as interview coding, literature review support, case analysis, survey responses, themes, memos, and mixed-method research organization.",
           "DIGILICEN focuses on genuine software license inquiry support and does not provide cracked software, unsafe activation tools, or bypass methods."
+        ]
+      }
+    ]
+  },
+  {
+    slug: "civil-infrastructure-software-license-guide",
+    title: "Civil Infrastructure Software License Guide",
+    description: "Compare Civil 3D, InfraWorks, Map 3D, ReCap Pro, and Navisworks license inquiries for civil infrastructure workflows.",
+    category: "Civil infrastructure software",
+    date: "2026-08-13",
+    heroImage: "assets/aec-collection.png",
+    related: ["civil-3d", "infraworks", "map-3d", "recap-pro", "navisworks"],
+    cta: "Send DIGILICEN your civil infrastructure workflow, required Autodesk tools, account email, and delivery timeline before ordering.",
+    sections: [
+      {
+        heading: "Start with the infrastructure workflow",
+        paragraphs: [
+          "Civil infrastructure software license inquiries should start with the work being done, not only the product name. Road design, site development, survey data, mapping, point clouds, construction coordination, and model review can require different Autodesk tools.",
+          "DIGILICEN lists Civil 3D, InfraWorks, Map 3D, ReCap Pro, and Navisworks inquiry options for customers who need to confirm software fit, term, price, payment route, and digital delivery support before ordering."
+        ]
+      },
+      {
+        heading: "Match each product to the right task",
+        paragraphs: [
+          "Civil 3D is commonly requested for civil engineering design and documentation workflows. InfraWorks is often connected with conceptual infrastructure planning and early model review. Map 3D may fit mapping and GIS-linked CAD needs.",
+          "ReCap Pro is relevant when point cloud or reality capture data is part of the workflow, while Navisworks Manage is commonly requested for coordination, review, and construction model checking. If your team uses more than one of these tools, describe the full workflow before payment."
+        ]
+      },
+      {
+        heading: "Confirm account, platform, and delivery details",
+        paragraphs: [
+          "Before ordering, prepare the exact product names, license term, operating system, account email requirements, number of users, and whether the software is for one project or ongoing business use.",
+          "DIGILICEN supports Alibaba online payment and PayPal invoice requests where available. After payment, send the order reference, product page, account details if required, and preferred support channel so activation support can proceed efficiently."
         ]
       }
     ]
