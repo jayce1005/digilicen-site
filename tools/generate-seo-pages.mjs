@@ -4,7 +4,7 @@ const SITE_URL = "https://digilicen.com";
 const SITE_NAME = "DIGILICEN";
 const EMAIL = "digilicen@outlook.com";
 const WHATSAPP = "https://wa.me/8619928777176";
-const LASTMOD = "2026-08-13";
+const LASTMOD = "2026-08-14";
 const SOURCE = await readFile(new URL("../app.js", import.meta.url), "utf8");
 
 function extractLiteral(name, terminator) {
@@ -1176,6 +1176,39 @@ const BLOG_POSTS = [
         paragraphs: [
           "Before ordering, prepare the exact product names, license term, operating system, account email requirements, number of users, and whether the software is for one project or ongoing business use.",
           "DIGILICEN supports Alibaba online payment and PayPal invoice requests where available. After payment, send the order reference, product page, account details if required, and preferred support channel so activation support can proceed efficiently."
+        ]
+      }
+    ]
+  },
+  {
+    slug: "nvivo-vs-endnote-research-software-license-guide",
+    title: "NVivo vs EndNote Research Software License Guide",
+    description: "Compare NVivo and EndNote license inquiries for qualitative analysis, reference management, Windows/Mac setup, and delivery support.",
+    category: "Research software",
+    date: "2026-08-14",
+    heroImage: "assets/nvivo-qualitative-analysis-license-key.png",
+    related: ["nvivo-15-license-key-windows-mac", "nvivo-14-license-key-windows-mac", "endnote-2025-21-20-x9-license-key"],
+    cta: "Tell DIGILICEN whether you need qualitative analysis, reference management, or both before ordering research software.",
+    sections: [
+      {
+        heading: "Start with the research task",
+        paragraphs: [
+          "NVivo and EndNote solve different research problems. NVivo is usually requested for qualitative analysis workflows such as interview coding, theme development, survey response review, literature coding, memos, and mixed-method research organization.",
+          "EndNote is usually requested for reference management, citation organization, bibliography workflows, academic writing, and research paper preparation. Before payment, describe the research task so DIGILICEN can point you to the closer license inquiry page."
+        ]
+      },
+      {
+        heading: "Compare listed license options",
+        paragraphs: [
+          "DIGILICEN lists NVivo 15 license key inquiry at US$15.00 and NVivo 14 license key inquiry at US$12.00. NVivo 12 can be confirmed by contact if an older version is required.",
+          "DIGILICEN lists EndNote 2025, EndNote 21, EndNote 20, and EndNote X9 options for Windows and Mac at US$5.50. Delivery can include a license key, installer package, tutorial, and remote installation support."
+        ]
+      },
+      {
+        heading: "Confirm platform and support needs",
+        paragraphs: [
+          "Research software orders should include the exact product name, required version, Windows or Mac platform, language preference if relevant, delivery timing, and whether remote installation support is needed.",
+          "EndNote and NVivo inquiry pages on DIGILICEN are contact-first products without Alibaba product links. Contact by WhatsApp or email before payment to confirm version, platform, price, installer guidance, and support details. DIGILICEN does not provide cracked software, unsafe activation tools, or bypass methods."
         ]
       }
     ]
