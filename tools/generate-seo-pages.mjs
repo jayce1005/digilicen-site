@@ -4,7 +4,7 @@ const SITE_URL = "https://digilicen.com";
 const SITE_NAME = "DIGILICEN";
 const EMAIL = "digilicen@outlook.com";
 const WHATSAPP = "https://wa.me/8619928777176";
-const LASTMOD = "2026-08-14";
+const LASTMOD = "2026-08-15";
 const SOURCE = await readFile(new URL("../app.js", import.meta.url), "utf8");
 
 function extractLiteral(name, terminator) {
@@ -1209,6 +1209,39 @@ const BLOG_POSTS = [
         paragraphs: [
           "Research software orders should include the exact product name, required version, Windows or Mac platform, language preference if relevant, delivery timing, and whether remote installation support is needed.",
           "EndNote and NVivo inquiry pages on DIGILICEN are contact-first products without Alibaba product links. Contact by WhatsApp or email before payment to confirm version, platform, price, installer guidance, and support details. DIGILICEN does not provide cracked software, unsafe activation tools, or bypass methods."
+        ]
+      }
+    ]
+  },
+  {
+    slug: "maya-3ds-max-visualization-software-license-guide",
+    title: "Maya and 3ds Max Visualization Software License Guide",
+    description: "Compare Maya, 3ds Max, Raster Design, and Fusion 360 license inquiries for 3D design and visualization workflows.",
+    category: "3D design software",
+    date: "2026-08-15",
+    heroImage: "assets/autodesk-generic.png",
+    related: ["maya", "3ds-max", "raster-design", "fusion-360"],
+    cta: "Tell DIGILICEN your 3D design, visualization, animation, or product workflow before choosing an Autodesk license inquiry.",
+    sections: [
+      {
+        heading: "Start with the creative or technical workflow",
+        paragraphs: [
+          "Customers searching for Autodesk 3D software licenses may need different tools depending on whether the work is animation, modeling, product design, visualization, scanned drawing cleanup, or technical presentation.",
+          "DIGILICEN lists Autodesk Maya, Autodesk 3ds Max, Autodesk Raster Design, and Autodesk Fusion 360 inquiry options so buyers can compare product fit, term, price, account requirements, and payment route before ordering."
+        ]
+      },
+      {
+        heading: "Match Maya, 3ds Max, Raster Design, and Fusion 360",
+        paragraphs: [
+          "Maya is commonly requested for 3D animation, character work, visual effects, and advanced modeling workflows. 3ds Max is often requested for 3D modeling, rendering, visualization, design presentation, and architecture-related visual work.",
+          "Raster Design may fit users working with raster-to-vector or scanned drawing workflows, while Fusion 360 is commonly requested for product design, engineering, manufacturing, and collaborative 3D workflows. If you are unsure, describe the actual project before payment."
+        ]
+      },
+      {
+        heading: "Confirm license term and delivery details",
+        paragraphs: [
+          "Before ordering, prepare the exact product name, required license term, operating system, account email requirements, number of users, and whether the license is for one project, freelance work, or business use.",
+          "DIGILICEN supports Alibaba online payment and PayPal invoice requests where available. After payment, send the order reference, selected product page, account details if required, and preferred support channel. DIGILICEN does not provide cracked software, unsafe activation tools, or bypass methods."
         ]
       }
     ]
