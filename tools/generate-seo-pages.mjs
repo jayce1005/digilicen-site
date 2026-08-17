@@ -4,7 +4,7 @@ const SITE_URL = "https://digilicen.com";
 const SITE_NAME = "DIGILICEN";
 const EMAIL = "digilicen@outlook.com";
 const WHATSAPP = "https://wa.me/8619928777176";
-const LASTMOD = "2026-08-16";
+const LASTMOD = "2026-08-17";
 const SOURCE = await readFile(new URL("../app.js", import.meta.url), "utf8");
 
 function extractLiteral(name, terminator) {
@@ -1274,6 +1274,39 @@ const BLOG_POSTS = [
         heading: "Confirm account and delivery details",
         paragraphs: [
           "Before ordering, prepare the exact product name, one-year term, operating system, account email requirements, number of users, project discipline, and invoice or payment preference.",
+          "DIGILICEN supports Alibaba online payment and PayPal invoice requests where available. After payment, send the order reference, selected product page, account details if required, and preferred support channel. DIGILICEN does not provide cracked software, unsafe activation tools, or bypass methods."
+        ]
+      }
+    ]
+  },
+  {
+    slug: "revit-vs-revit-lt-bim-license-guide",
+    title: "Revit vs Revit LT BIM License Guide",
+    description: "Compare Revit, Revit LT, AEC Collection, and BIM Collection license inquiries for building design and BIM workflows.",
+    category: "BIM software",
+    date: "2026-08-17",
+    heroImage: "assets/revit-commercial.png",
+    related: ["revit", "revit-lt", "aec-collection", "bim-collection"],
+    cta: "Tell DIGILICEN whether your project needs full BIM collaboration, lighter Revit drafting, or a broader Autodesk collection before ordering.",
+    sections: [
+      {
+        heading: "Start with the BIM workflow",
+        paragraphs: [
+          "Customers comparing Revit and Revit LT should start with the actual building design workflow. A small drafting requirement, a single designer, a larger BIM coordination team, and a multi-discipline AEC project can point to different license inquiries.",
+          "DIGILICEN lists Autodesk Revit, Autodesk Revit LT, Autodesk AEC Collection, and AutoCAD BIM Collection inquiry options so buyers can confirm software fit, term, price, payment route, and digital delivery support before ordering."
+        ]
+      },
+      {
+        heading: "Compare listed Revit and collection options",
+        paragraphs: [
+          "Autodesk Revit is listed at US$60.00 for a one-year commercial license inquiry and is commonly requested for BIM and building design workflows. Autodesk Revit LT is listed at US$65.00 for a one-year commercial license inquiry and may fit lighter Revit-focused requirements.",
+          "Autodesk AEC Collection is listed at US$75.00 and can be relevant when architecture, engineering, and construction workflows require more than one Autodesk product. AutoCAD BIM Collection is listed at US$80.00 for coordinated design and project workflows."
+        ]
+      },
+      {
+        heading: "Confirm scope before payment",
+        paragraphs: [
+          "Before ordering, prepare the exact product name, one-year term, number of users, project discipline, account email requirements, and whether the license is for individual design work, team coordination, or a broader AEC workflow.",
           "DIGILICEN supports Alibaba online payment and PayPal invoice requests where available. After payment, send the order reference, selected product page, account details if required, and preferred support channel. DIGILICEN does not provide cracked software, unsafe activation tools, or bypass methods."
         ]
       }
