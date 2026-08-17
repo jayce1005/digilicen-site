@@ -4,7 +4,7 @@ const SITE_URL = "https://digilicen.com";
 const SITE_NAME = "DIGILICEN";
 const EMAIL = "digilicen@outlook.com";
 const WHATSAPP = "https://wa.me/8619928777176";
-const LASTMOD = "2026-08-15";
+const LASTMOD = "2026-08-16";
 const SOURCE = await readFile(new URL("../app.js", import.meta.url), "utf8");
 
 function extractLiteral(name, terminator) {
@@ -1241,6 +1241,39 @@ const BLOG_POSTS = [
         heading: "Confirm license term and delivery details",
         paragraphs: [
           "Before ordering, prepare the exact product name, required license term, operating system, account email requirements, number of users, and whether the license is for one project, freelance work, or business use.",
+          "DIGILICEN supports Alibaba online payment and PayPal invoice requests where available. After payment, send the order reference, selected product page, account details if required, and preferred support channel. DIGILICEN does not provide cracked software, unsafe activation tools, or bypass methods."
+        ]
+      }
+    ]
+  },
+  {
+    slug: "autocad-specialized-toolsets-license-guide",
+    title: "AutoCAD Specialized Toolsets License Guide",
+    description: "Compare AutoCAD Plant 3D, MEP, Electrical, Mechanical, and Architecture license inquiries for specialized CAD workflows.",
+    category: "AutoCAD licenses",
+    date: "2026-08-16",
+    heroImage: "assets/autocad-commercial.png",
+    related: ["plant-3d", "mep", "electrical", "autocad-mechanical", "autocad-architecture"],
+    cta: "Tell DIGILICEN your specialized AutoCAD workflow before choosing Plant 3D, MEP, Electrical, Mechanical, or Architecture.",
+    sections: [
+      {
+        heading: "Start with the specialized CAD workflow",
+        paragraphs: [
+          "Customers searching for AutoCAD may actually need a specialized toolset for plant design, building systems, electrical documentation, mechanical drafting, or architecture workflows.",
+          "DIGILICEN lists AutoCAD Plant 3D, AutoCAD MEP, AutoCAD Electrical, AutoCAD Mechanical, and AutoCAD Architecture inquiry options so buyers can confirm product fit, term, price, payment route, and digital delivery support before ordering."
+        ]
+      },
+      {
+        heading: "Match each toolset to the project",
+        paragraphs: [
+          "AutoCAD Plant 3D is commonly requested for plant design and process piping workflows. AutoCAD MEP may fit mechanical, electrical, and plumbing building systems. AutoCAD Electrical is focused on electrical control and documentation workflows.",
+          "AutoCAD Mechanical supports mechanical drafting and design documentation, while AutoCAD Architecture is requested for building design and architectural documentation. If a team works across several disciplines, describe the full project workflow before payment."
+        ]
+      },
+      {
+        heading: "Confirm account and delivery details",
+        paragraphs: [
+          "Before ordering, prepare the exact product name, one-year term, operating system, account email requirements, number of users, project discipline, and invoice or payment preference.",
           "DIGILICEN supports Alibaba online payment and PayPal invoice requests where available. After payment, send the order reference, selected product page, account details if required, and preferred support channel. DIGILICEN does not provide cracked software, unsafe activation tools, or bypass methods."
         ]
       }
