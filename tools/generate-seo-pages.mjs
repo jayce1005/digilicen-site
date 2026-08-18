@@ -4,7 +4,7 @@ const SITE_URL = "https://digilicen.com";
 const SITE_NAME = "DIGILICEN";
 const EMAIL = "digilicen@outlook.com";
 const WHATSAPP = "https://wa.me/8619928777176";
-const LASTMOD = "2026-08-17";
+const LASTMOD = "2026-08-18";
 const SOURCE = await readFile(new URL("../app.js", import.meta.url), "utf8");
 
 function extractLiteral(name, terminator) {
@@ -1307,6 +1307,39 @@ const BLOG_POSTS = [
         heading: "Confirm scope before payment",
         paragraphs: [
           "Before ordering, prepare the exact product name, one-year term, number of users, project discipline, account email requirements, and whether the license is for individual design work, team coordination, or a broader AEC workflow.",
+          "DIGILICEN supports Alibaba online payment and PayPal invoice requests where available. After payment, send the order reference, selected product page, account details if required, and preferred support channel. DIGILICEN does not provide cracked software, unsafe activation tools, or bypass methods."
+        ]
+      }
+    ]
+  },
+  {
+    slug: "navisworks-recap-pro-construction-coordination-license-guide",
+    title: "Navisworks ReCap Pro License Guide",
+    description: "Compare Navisworks Manage, ReCap Pro, InfraWorks, and Civil 3D license inquiries for construction coordination workflows.",
+    category: "Construction software",
+    date: "2026-08-18",
+    heroImage: "assets/autodesk-generic.png",
+    related: ["navisworks", "recap-pro", "infraworks", "civil-3d"],
+    cta: "Tell DIGILICEN whether your project needs model coordination, point cloud review, infrastructure planning, or civil design before ordering.",
+    sections: [
+      {
+        heading: "Start with the coordination problem",
+        paragraphs: [
+          "Construction coordination software inquiries should begin with the problem being solved. Model review, clash checking, point cloud preparation, infrastructure planning, and civil design documentation can require different Autodesk products.",
+          "DIGILICEN lists Autodesk Navisworks Manage, Autodesk ReCap Pro, Autodesk InfraWorks, and Autodesk Civil 3D inquiry options so buyers can confirm product fit, term, price, payment route, and digital delivery support before ordering."
+        ]
+      },
+      {
+        heading: "Match Navisworks, ReCap Pro, InfraWorks, and Civil 3D",
+        paragraphs: [
+          "Autodesk Navisworks Manage is listed at US$60.00 for a one-year professional license inquiry and is commonly requested for review, coordination, and project checking. Autodesk ReCap Pro is listed at US$60.00 for a one-year commercial license inquiry and is commonly requested for reality capture and scan workflows.",
+          "Autodesk InfraWorks is listed at US$60.00 for a one-year commercial license inquiry and may fit infrastructure planning and design workflows. Autodesk Civil 3D is listed at US$60.00 for a one-year commercial license inquiry and is commonly requested for civil engineering design and documentation."
+        ]
+      },
+      {
+        heading: "Prepare order details before payment",
+        paragraphs: [
+          "Before ordering, prepare the exact product name, one-year term, project type, operating system, number of users, account email requirements, and whether the workflow includes point clouds, BIM models, infrastructure planning, or civil drawings.",
           "DIGILICEN supports Alibaba online payment and PayPal invoice requests where available. After payment, send the order reference, selected product page, account details if required, and preferred support channel. DIGILICEN does not provide cracked software, unsafe activation tools, or bypass methods."
         ]
       }
