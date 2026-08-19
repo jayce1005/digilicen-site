@@ -4,7 +4,7 @@ const SITE_URL = "https://digilicen.com";
 const SITE_NAME = "DIGILICEN";
 const EMAIL = "digilicen@outlook.com";
 const WHATSAPP = "https://wa.me/8619928777176";
-const LASTMOD = "2026-08-18";
+const LASTMOD = "2026-08-19";
 const SOURCE = await readFile(new URL("../app.js", import.meta.url), "utf8");
 
 function extractLiteral(name, terminator) {
@@ -1340,6 +1340,39 @@ const BLOG_POSTS = [
         heading: "Prepare order details before payment",
         paragraphs: [
           "Before ordering, prepare the exact product name, one-year term, project type, operating system, number of users, account email requirements, and whether the workflow includes point clouds, BIM models, infrastructure planning, or civil drawings.",
+          "DIGILICEN supports Alibaba online payment and PayPal invoice requests where available. After payment, send the order reference, selected product page, account details if required, and preferred support channel. DIGILICEN does not provide cracked software, unsafe activation tools, or bypass methods."
+        ]
+      }
+    ]
+  },
+  {
+    slug: "cad-data-cleanup-mapping-license-guide",
+    title: "CAD Data Cleanup and Mapping License Guide",
+    description: "Compare Map 3D, Raster Design, DWG History, and AutoCAD license inquiries for mapping, scan cleanup, and CAD data workflows.",
+    category: "CAD data software",
+    date: "2026-08-19",
+    heroImage: "assets/autocad-commercial.png",
+    related: ["map-3d", "raster-design", "dwg-history", "autocad"],
+    cta: "Tell DIGILICEN whether your workflow involves mapping data, scanned drawings, DWG review, or general AutoCAD drafting before ordering.",
+    sections: [
+      {
+        heading: "Start with the CAD data problem",
+        paragraphs: [
+          "CAD data cleanup and mapping software inquiries should start with the file problem. A team may need map-linked CAD work, scanned drawing cleanup, DWG history review, or general drafting support, and each workflow can point to a different Autodesk license inquiry.",
+          "DIGILICEN lists Autodesk Map 3D, Autodesk Raster Design, AutoCAD DWG History, and AutoCAD inquiry options so buyers can confirm product fit, term, price, payment route, and digital delivery support before ordering."
+        ]
+      },
+      {
+        heading: "Match each product to the data workflow",
+        paragraphs: [
+          "Autodesk Map 3D is listed at US$60.00 for a one-year commercial license inquiry and is commonly requested for mapping and infrastructure workflows. Autodesk Raster Design is listed at US$60.00 for a one-year commercial license inquiry and may fit image, scan, and CAD cleanup workflows.",
+          "AutoCAD DWG History is listed at US$60.00 for a one-year commercial license inquiry and can be relevant when DWG review or drawing history is part of the process. AutoCAD is listed at US$65.00 for a one-year commercial license inquiry and may fit broader CAD drafting work."
+        ]
+      },
+      {
+        heading: "Confirm files and support needs",
+        paragraphs: [
+          "Before ordering, prepare the exact product name, one-year term, operating system, file type, account email requirements, number of users, and whether the workflow includes maps, scanned drawings, DWG files, or standard drafting.",
           "DIGILICEN supports Alibaba online payment and PayPal invoice requests where available. After payment, send the order reference, selected product page, account details if required, and preferred support channel. DIGILICEN does not provide cracked software, unsafe activation tools, or bypass methods."
         ]
       }
