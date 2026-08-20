@@ -4,7 +4,7 @@ const SITE_URL = "https://digilicen.com";
 const SITE_NAME = "DIGILICEN";
 const EMAIL = "digilicen@outlook.com";
 const WHATSAPP = "https://wa.me/8619928777176";
-const LASTMOD = "2026-08-19";
+const LASTMOD = "2026-08-20";
 const SOURCE = await readFile(new URL("../app.js", import.meta.url), "utf8");
 
 function extractLiteral(name, terminator) {
@@ -1373,6 +1373,39 @@ const BLOG_POSTS = [
         heading: "Confirm files and support needs",
         paragraphs: [
           "Before ordering, prepare the exact product name, one-year term, operating system, file type, account email requirements, number of users, and whether the workflow includes maps, scanned drawings, DWG files, or standard drafting.",
+          "DIGILICEN supports Alibaba online payment and PayPal invoice requests where available. After payment, send the order reference, selected product page, account details if required, and preferred support channel. DIGILICEN does not provide cracked software, unsafe activation tools, or bypass methods."
+        ]
+      }
+    ]
+  },
+  {
+    slug: "manufacturing-cad-license-procurement-guide",
+    title: "Manufacturing CAD License Procurement Guide",
+    description: "Compare Inventor, Fusion 360, AutoCAD Mechanical, and AutoCAD license inquiries for manufacturing CAD workflows.",
+    category: "Manufacturing CAD",
+    date: "2026-08-20",
+    heroImage: "assets/inventor.png",
+    related: ["inventor", "fusion-360", "autocad-mechanical", "autocad"],
+    cta: "Tell DIGILICEN whether your manufacturing workflow needs mechanical design, product development, drafting, or general CAD before ordering.",
+    sections: [
+      {
+        heading: "Start with the manufacturing workflow",
+        paragraphs: [
+          "Manufacturing CAD license inquiries should start with the type of design work being done. Product modeling, mechanical documentation, fabrication drawings, collaborative 3D design, and general CAD drafting can point to different Autodesk products.",
+          "DIGILICEN lists Autodesk Inventor, Autodesk Fusion 360, AutoCAD Mechanical, and AutoCAD inquiry options so buyers can confirm product fit, term, price, payment route, and digital delivery support before ordering."
+        ]
+      },
+      {
+        heading: "Compare listed manufacturing CAD options",
+        paragraphs: [
+          "Autodesk Inventor is listed at US$60.00 for a one-year professional license inquiry and is commonly requested for mechanical design and product development workflows. Autodesk Fusion 360 is listed at US$50.00 for a one-year professional license inquiry and may fit product design, engineering, and manufacturing collaboration.",
+          "AutoCAD Mechanical is listed at US$60.00 for a one-year commercial license inquiry and can support mechanical drafting and documentation. AutoCAD is listed at US$65.00 for a one-year commercial license inquiry and may fit broader CAD drafting requirements."
+        ]
+      },
+      {
+        heading: "Confirm team and delivery details",
+        paragraphs: [
+          "Before ordering, prepare the exact product name, one-year term, number of users, operating system, account email requirements, project type, and whether the work involves 3D modeling, manufacturing drawings, mechanical parts, or general CAD files.",
           "DIGILICEN supports Alibaba online payment and PayPal invoice requests where available. After payment, send the order reference, selected product page, account details if required, and preferred support channel. DIGILICEN does not provide cracked software, unsafe activation tools, or bypass methods."
         ]
       }
