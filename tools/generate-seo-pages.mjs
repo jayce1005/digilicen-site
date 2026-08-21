@@ -4,7 +4,7 @@ const SITE_URL = "https://digilicen.com";
 const SITE_NAME = "DIGILICEN";
 const EMAIL = "digilicen@outlook.com";
 const WHATSAPP = "https://wa.me/8619928777176";
-const LASTMOD = "2026-08-20";
+const LASTMOD = "2026-08-21";
 const SOURCE = await readFile(new URL("../app.js", import.meta.url), "utf8");
 
 function extractLiteral(name, terminator) {
@@ -1406,6 +1406,39 @@ const BLOG_POSTS = [
         heading: "Confirm team and delivery details",
         paragraphs: [
           "Before ordering, prepare the exact product name, one-year term, number of users, operating system, account email requirements, project type, and whether the work involves 3D modeling, manufacturing drawings, mechanical parts, or general CAD files.",
+          "DIGILICEN supports Alibaba online payment and PayPal invoice requests where available. After payment, send the order reference, selected product page, account details if required, and preferred support channel. DIGILICEN does not provide cracked software, unsafe activation tools, or bypass methods."
+        ]
+      }
+    ]
+  },
+  {
+    slug: "creative-developer-tools-license-guide",
+    title: "Creative and Developer Tools License Guide",
+    description: "Compare Adobe Creative Cloud and JetBrains license inquiries for design, content, coding, and AI assistant workflows.",
+    category: "Creative and developer tools",
+    date: "2026-08-21",
+    heroImage: "assets/hero-license.png",
+    related: ["adobe-1-year", "adobe-6-month", "adobe-3-month", "adobe-1-month", "jetbrains-ai-assistant-all-products-6-month"],
+    cta: "Tell DIGILICEN whether your team needs creative apps, developer tools, AI assistant access, or both before ordering.",
+    sections: [
+      {
+        heading: "Start with the team workflow",
+        paragraphs: [
+          "Creative and developer software inquiries should start with the roles using the tools. A design team, video editor, marketing operator, software developer, and technical content team can require different software terms and delivery support.",
+          "DIGILICEN lists Adobe Creative Cloud subscription options and JetBrains AI Assistant with All Products Pack inquiry options so buyers can confirm product fit, term, price, payment route, and digital delivery support before ordering."
+        ]
+      },
+      {
+        heading: "Compare Adobe and JetBrains options",
+        paragraphs: [
+          "Adobe Creative Cloud is listed with 1 Year at US$50.00, 6 Months at US$30.00, 3 Months at US$15.00, and 1 Month at US$6.00. These subscription options can fit design, creative production, PDF, image, video, and content workflows.",
+          "JetBrains AI Assistant with All Products Pack is listed at US$34.00 for 6 Months. It is positioned for developer workflows that need AI assistant access, JetBrains professional tools, multi-device use, and cross-platform support."
+        ]
+      },
+      {
+        heading: "Confirm users and delivery details",
+        paragraphs: [
+          "Before ordering, prepare the exact product name, term, number of users, operating system, account email requirements, and whether the software is for creative production, development, AI assistant workflows, or a mixed team.",
           "DIGILICEN supports Alibaba online payment and PayPal invoice requests where available. After payment, send the order reference, selected product page, account details if required, and preferred support channel. DIGILICEN does not provide cracked software, unsafe activation tools, or bypass methods."
         ]
       }
