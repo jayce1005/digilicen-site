@@ -4,7 +4,7 @@ const SITE_URL = "https://digilicen.com";
 const SITE_NAME = "DIGILICEN";
 const EMAIL = "digilicen@outlook.com";
 const WHATSAPP = "https://wa.me/8619928777176";
-const LASTMOD = "2026-08-22";
+const LASTMOD = "2026-08-24";
 const SOURCE = await readFile(new URL("../app.js", import.meta.url), "utf8");
 
 function extractLiteral(name, terminator) {
@@ -1473,6 +1473,39 @@ const BLOG_POSTS = [
         paragraphs: [
           "Before ordering, prepare the exact product name, one-year term, number of users, operating system, account email requirements, and whether the project needs 2D drafting, BIM modeling, documentation, or multi-discipline coordination.",
           "DIGILICEN supports Alibaba online payment and PayPal invoice requests where available. After payment, send the order reference, selected product page, account details if required, and preferred support channel. DIGILICEN does not provide cracked software, unsafe activation tools, or bypass methods."
+        ]
+      }
+    ]
+  },
+  {
+    slug: "research-lab-software-license-procurement-guide",
+    title: "Research Lab Software License Procurement Guide",
+    description: "Compare EndNote, NVivo, and Adobe Creative Cloud license inquiries for research labs, citation work, qualitative analysis, and academic content workflows.",
+    category: "Research software",
+    date: "2026-08-24",
+    heroImage: "assets/endnote-license-key-installer-tutorial.png",
+    related: ["endnote-2025-21-20-x9-license-key", "nvivo-15-license-key-windows-mac", "nvivo-14-license-key-windows-mac", "adobe-1-year"],
+    cta: "Tell DIGILICEN whether your research workflow needs citation management, qualitative analysis, PDF work, creative content, or a mixed lab setup before ordering.",
+    sections: [
+      {
+        heading: "Start with the research workflow",
+        paragraphs: [
+          "Research software inquiries should start with the actual academic workflow. A lab may need citation management, bibliography preparation, qualitative coding, interview analysis, PDF handling, visual content preparation, or a mixed research team setup.",
+          "DIGILICEN lists EndNote, NVivo, and Adobe Creative Cloud inquiry options so research buyers can confirm product fit, version, platform, term, price, payment route, and digital delivery support before ordering."
+        ]
+      },
+      {
+        heading: "Compare listed research software options",
+        paragraphs: [
+          "EndNote 2025, 21, 20, and X9 for Windows and Mac are listed at US$5.50, with delivery that can include a license key, installer package, tutorial, and remote installation support. EndNote is commonly requested for reference management, citation organization, and bibliography workflows.",
+          "NVivo 15 is listed at US$15.00 and NVivo 14 is listed at US$12.00 for perpetual license key inquiries. NVivo is commonly requested for qualitative analysis workflows such as interview coding, theme development, survey response review, and research organization."
+        ]
+      },
+      {
+        heading: "Add Adobe only when the lab needs content tools",
+        paragraphs: [
+          "Adobe Creative Cloud may be relevant when a research team also needs PDF work, image preparation, presentation content, video, or creative production tools. DIGILICEN lists Adobe Creative Cloud options from 1 Month through 1 Year, including a 1 Year subscription at US$50.00.",
+          "Before ordering, prepare the exact product name, required version, Windows or Mac platform, account email requirements, number of users, payment preference, and whether remote installation support is needed. DIGILICEN does not provide cracked software, unsafe activation tools, or bypass methods."
         ]
       }
     ]
