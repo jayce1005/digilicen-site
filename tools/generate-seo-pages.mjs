@@ -4,7 +4,7 @@ const SITE_URL = "https://digilicen.com";
 const SITE_NAME = "DIGILICEN";
 const EMAIL = "digilicen@outlook.com";
 const WHATSAPP = "https://wa.me/8619928777176";
-const LASTMOD = "2026-08-24";
+const LASTMOD = "2026-08-26";
 const SOURCE = await readFile(new URL("../app.js", import.meta.url), "utf8");
 
 function extractLiteral(name, terminator) {
@@ -1506,6 +1506,39 @@ const BLOG_POSTS = [
         paragraphs: [
           "Adobe Creative Cloud may be relevant when a research team also needs PDF work, image preparation, presentation content, video, or creative production tools. DIGILICEN lists Adobe Creative Cloud options from 1 Month through 1 Year, including a 1 Year subscription at US$50.00.",
           "Before ordering, prepare the exact product name, required version, Windows or Mac platform, account email requirements, number of users, payment preference, and whether remote installation support is needed. DIGILICEN does not provide cracked software, unsafe activation tools, or bypass methods."
+        ]
+      }
+    ]
+  },
+  {
+    slug: "windows-mac-software-license-inquiry-checklist",
+    title: "Windows and Mac Software License Inquiry Checklist",
+    description: "Use this Windows and Mac software license inquiry checklist for EndNote, NVivo, Adobe Creative Cloud, and mixed-device software orders.",
+    category: "Software license checklist",
+    date: "2026-08-26",
+    heroImage: "assets/genuine-software.png",
+    related: ["endnote-2025-21-20-x9-license-key", "nvivo-15-license-key-windows-mac", "nvivo-14-license-key-windows-mac", "adobe-1-year"],
+    cta: "Tell DIGILICEN your operating system, product version, account email requirements, and delivery preference before ordering Windows or Mac software licenses.",
+    sections: [
+      {
+        heading: "Confirm the operating system first",
+        paragraphs: [
+          "Windows and Mac software license inquiries should start with the device platform. Some products have different installers, activation steps, account requirements, or support notes depending on whether the customer uses Windows, macOS, or a mixed-device team.",
+          "DIGILICEN lists Windows and Mac related inquiry options for EndNote, NVivo, Adobe Creative Cloud, and other professional software. Before payment, customers should confirm the product name, version, license term, platform, and whether remote installation support is needed."
+        ]
+      },
+      {
+        heading: "Prepare version and delivery details",
+        paragraphs: [
+          "For EndNote, DIGILICEN lists 2025, 21, 20, and X9 options for Windows and Mac at US$5.50, with delivery that can include a license key, installer package, tutorial, and remote installation support. Customers should state the exact version and platform before ordering.",
+          "For NVivo, DIGILICEN lists NVivo 15 at US$15.00 and NVivo 14 at US$12.00 for perpetual license key inquiries. Customers should confirm whether the license request is for qualitative analysis work on Windows or Mac and whether installation guidance is required."
+        ]
+      },
+      {
+        heading: "Check account and payment requirements",
+        paragraphs: [
+          "Some software orders may require an account email, a specific device environment, or extra compatibility confirmation. For Adobe Creative Cloud, DIGILICEN lists 1 Month, 3 Month, 6 Month, and 1 Year subscription options, including 1 Year at US$50.00.",
+          "Before ordering, prepare the product name, version, Windows or Mac platform, number of users, account email requirements, payment preference, and expected delivery channel. DIGILICEN supports Alibaba online payment and PayPal invoice requests where available, and does not provide cracked software, unsafe activation tools, or bypass methods."
         ]
       }
     ]
