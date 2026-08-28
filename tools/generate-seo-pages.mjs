@@ -4,7 +4,7 @@ const SITE_URL = "https://digilicen.com";
 const SITE_NAME = "DIGILICEN";
 const EMAIL = "digilicen@outlook.com";
 const WHATSAPP = "https://wa.me/8619928777176";
-const LASTMOD = "2026-08-26";
+const LASTMOD = "2026-08-28";
 const SOURCE = await readFile(new URL("../app.js", import.meta.url), "utf8");
 
 function extractLiteral(name, terminator) {
@@ -1539,6 +1539,39 @@ const BLOG_POSTS = [
         paragraphs: [
           "Some software orders may require an account email, a specific device environment, or extra compatibility confirmation. For Adobe Creative Cloud, DIGILICEN lists 1 Month, 3 Month, 6 Month, and 1 Year subscription options, including 1 Year at US$50.00.",
           "Before ordering, prepare the product name, version, Windows or Mac platform, number of users, account email requirements, payment preference, and expected delivery channel. DIGILICEN supports Alibaba online payment and PayPal invoice requests where available, and does not provide cracked software, unsafe activation tools, or bypass methods."
+        ]
+      }
+    ]
+  },
+  {
+    slug: "software-license-activation-support-checklist",
+    title: "Software License Activation Support Checklist",
+    description: "Prepare a software license activation support request for AutoCAD, Adobe Creative Cloud, JetBrains, EndNote, NVivo, and other digital license orders.",
+    category: "Activation support",
+    date: "2026-08-28",
+    heroImage: "assets/hero-license.png",
+    related: ["autocad", "adobe-1-year", "jetbrains-ai-assistant-all-products-6-month", "endnote-2025-21-20-x9-license-key", "nvivo-15-license-key-windows-mac"],
+    cta: "Send DIGILICEN your product name, license term, account email, operating system, order reference, and screenshots before requesting activation support.",
+    sections: [
+      {
+        heading: "Prepare activation details before ordering",
+        paragraphs: [
+          "Software license activation support is faster when the product details are clear before payment. Customers should confirm the exact product name, version, license term, operating system, account email requirements, number of users, and preferred payment method.",
+          "DIGILICEN lists software license inquiry pages for AutoCAD, Adobe Creative Cloud, JetBrains AI Assistant with All Products Pack, EndNote, NVivo, and other professional software. Each product page includes price, term, delivery notes, and contact options where available."
+        ]
+      },
+      {
+        heading: "Send useful information after payment",
+        paragraphs: [
+          "After payment, send the order reference, selected product page, account email if required, Windows or Mac platform, and preferred support channel. If there is an activation error, include a screenshot and the exact error text instead of only saying that the software does not work.",
+          "For research software, DIGILICEN lists EndNote 2025, 21, 20, and X9 for Windows and Mac at US$5.50, NVivo 15 at US$15.00, and NVivo 14 at US$12.00. These inquiries may include installer guidance, tutorial support, or remote installation support depending on the product."
+        ]
+      },
+      {
+        heading: "Use safe activation support only",
+        paragraphs: [
+          "Activation support should focus on correct product matching, compatible installers, account details, payment confirmation, and clear troubleshooting information. Customers should not use unknown patches, cracked installers, unsafe activation tools, or bypass methods.",
+          "DIGILICEN supports Alibaba online payment and PayPal invoice requests where available. Before payment, contact DIGILICEN if you need help choosing the correct product, confirming delivery timing, checking Windows or Mac compatibility, or preparing a business software license inquiry."
         ]
       }
     ]
