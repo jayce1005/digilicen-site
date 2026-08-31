@@ -4,7 +4,7 @@ const SITE_URL = "https://digilicen.com";
 const SITE_NAME = "DIGILICEN";
 const EMAIL = "digilicen@outlook.com";
 const WHATSAPP = "https://wa.me/8619928777176";
-const LASTMOD = "2026-08-28";
+const LASTMOD = "2026-08-31";
 const SOURCE = await readFile(new URL("../app.js", import.meta.url), "utf8");
 
 function extractLiteral(name, terminator) {
@@ -1572,6 +1572,39 @@ const BLOG_POSTS = [
         paragraphs: [
           "Activation support should focus on correct product matching, compatible installers, account details, payment confirmation, and clear troubleshooting information. Customers should not use unknown patches, cracked installers, unsafe activation tools, or bypass methods.",
           "DIGILICEN supports Alibaba online payment and PayPal invoice requests where available. Before payment, contact DIGILICEN if you need help choosing the correct product, confirming delivery timing, checking Windows or Mac compatibility, or preparing a business software license inquiry."
+        ]
+      }
+    ]
+  },
+  {
+    slug: "subscription-vs-perpetual-software-license-inquiry-guide",
+    title: "Subscription vs Perpetual Software License Inquiry Guide",
+    description: "Compare subscription and perpetual software license inquiries for Adobe Creative Cloud, Autodesk, JetBrains, NVivo, and research or business teams.",
+    category: "Software license guide",
+    date: "2026-08-31",
+    heroImage: "assets/genuine-software.png",
+    related: ["adobe-1-year", "autocad", "jetbrains-ai-assistant-all-products-6-month", "nvivo-15-license-key-windows-mac", "nvivo-14-license-key-windows-mac"],
+    cta: "Tell DIGILICEN whether your workflow needs a short subscription, one-year business license inquiry, developer tools access, or a perpetual research software license key.",
+    sections: [
+      {
+        heading: "Match the license model to the workflow",
+        paragraphs: [
+          "Software buyers often compare subscription and perpetual license inquiries before payment. The best fit depends on the product, required term, number of users, operating system, account email requirements, and whether the work is short-term, project-based, or ongoing.",
+          "DIGILICEN lists subscription options, one-year commercial license inquiries, six-month developer tool access, and perpetual research software license key inquiries so customers can confirm the correct route before ordering."
+        ]
+      },
+      {
+        heading: "Compare listed subscription-style options",
+        paragraphs: [
+          "Adobe Creative Cloud is listed as a subscription inquiry with 1 Month at US$6.00, 3 Months at US$15.00, 6 Months at US$30.00, and 1 Year at US$50.00. These terms can fit creative, PDF, design, video, and content workflows that need flexible duration choices.",
+          "JetBrains AI Assistant with All Products Pack is listed at US$34.00 for 6 Months. Autodesk and AutoCAD product pages commonly list one-year commercial or professional license inquiries for CAD, BIM, infrastructure, design, manufacturing, and engineering workflows."
+        ]
+      },
+      {
+        heading: "Compare listed perpetual research options",
+        paragraphs: [
+          "Research software inquiries may use a different structure. DIGILICEN lists NVivo 15 at US$15.00 and NVivo 14 at US$12.00 for perpetual license key inquiries, while EndNote 2025, 21, 20, and X9 for Windows and Mac are listed at US$5.50.",
+          "Before payment, confirm whether you need a subscription term, a one-year commercial license inquiry, a six-month developer tools option, or a perpetual research software key. DIGILICEN supports Alibaba online payment and PayPal invoice requests where available, and does not provide cracked software, unsafe activation tools, or bypass methods."
         ]
       }
     ]
