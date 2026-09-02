@@ -4,7 +4,7 @@ const SITE_URL = "https://digilicen.com";
 const SITE_NAME = "DIGILICEN";
 const EMAIL = "digilicen@outlook.com";
 const WHATSAPP = "https://wa.me/8619928777176";
-const LASTMOD = "2026-08-31";
+const LASTMOD = "2026-09-02";
 const SOURCE = await readFile(new URL("../app.js", import.meta.url), "utf8");
 
 function extractLiteral(name, terminator) {
@@ -1605,6 +1605,39 @@ const BLOG_POSTS = [
         paragraphs: [
           "Research software inquiries may use a different structure. DIGILICEN lists NVivo 15 at US$15.00 and NVivo 14 at US$12.00 for perpetual license key inquiries, while EndNote 2025, 21, 20, and X9 for Windows and Mac are listed at US$5.50.",
           "Before payment, confirm whether you need a subscription term, a one-year commercial license inquiry, a six-month developer tools option, or a perpetual research software key. DIGILICEN supports Alibaba online payment and PayPal invoice requests where available, and does not provide cracked software, unsafe activation tools, or bypass methods."
+        ]
+      }
+    ]
+  },
+  {
+    slug: "multi-user-software-license-inquiry-guide",
+    title: "Multi-User Software License Inquiry Guide",
+    description: "Plan multi-user software license inquiries for Autodesk, Adobe Creative Cloud, JetBrains, EndNote, NVivo, and mixed business teams.",
+    category: "Team software licenses",
+    date: "2026-09-02",
+    heroImage: "assets/hero-license.png",
+    related: ["aec-collection", "adobe-1-year", "jetbrains-ai-assistant-all-products-6-month", "endnote-2025-21-20-x9-license-key", "nvivo-15-license-key-windows-mac"],
+    cta: "Tell DIGILICEN how many users, devices, operating systems, account emails, and software products your team needs before ordering.",
+    sections: [
+      {
+        heading: "Start with users and devices",
+        paragraphs: [
+          "Multi-user software license inquiries should start with the number of people, devices, operating systems, and account emails involved. A small office, design studio, research team, engineering group, or developer team may need different products, terms, and delivery support.",
+          "DIGILICEN lists software license inquiry pages for Autodesk, Adobe Creative Cloud, JetBrains, EndNote, NVivo, and related professional tools so teams can confirm price, term, product fit, payment route, and support requirements before ordering."
+        ]
+      },
+      {
+        heading: "Map products to team roles",
+        paragraphs: [
+          "Engineering and architecture teams may compare AutoCAD, Revit, Civil 3D, Navisworks, and Autodesk AEC Collection one-year license inquiries. Creative and marketing users may need Adobe Creative Cloud subscription options, including 1 Year at US$50.00.",
+          "Developer teams may ask about JetBrains AI Assistant with All Products Pack at US$34.00 for 6 Months. Research teams may ask about EndNote 2025, 21, 20, and X9 for Windows and Mac at US$5.50, NVivo 15 at US$15.00, or NVivo 14 at US$12.00."
+        ]
+      },
+      {
+        heading: "Confirm payment and support workflow",
+        paragraphs: [
+          "Before payment, prepare the exact product names, terms, number of users, Windows or Mac platform, account email requirements, preferred payment method, and whether remote installation support is needed. This reduces back-and-forth and helps DIGILICEN match the order to the right delivery process.",
+          "DIGILICEN supports Alibaba online payment and PayPal invoice requests where available. Customers should confirm compatibility and delivery timing before payment. DIGILICEN does not provide cracked software, unsafe activation tools, or bypass methods."
         ]
       }
     ]
