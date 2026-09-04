@@ -4,7 +4,7 @@ const SITE_URL = "https://digilicen.com";
 const SITE_NAME = "DIGILICEN";
 const EMAIL = "digilicen@outlook.com";
 const WHATSAPP = "https://wa.me/8619928777176";
-const LASTMOD = "2026-09-02";
+const LASTMOD = "2026-09-04";
 const SOURCE = await readFile(new URL("../app.js", import.meta.url), "utf8");
 
 function extractLiteral(name, terminator) {
@@ -1638,6 +1638,39 @@ const BLOG_POSTS = [
         paragraphs: [
           "Before payment, prepare the exact product names, terms, number of users, Windows or Mac platform, account email requirements, preferred payment method, and whether remote installation support is needed. This reduces back-and-forth and helps DIGILICEN match the order to the right delivery process.",
           "DIGILICEN supports Alibaba online payment and PayPal invoice requests where available. Customers should confirm compatibility and delivery timing before payment. DIGILICEN does not provide cracked software, unsafe activation tools, or bypass methods."
+        ]
+      }
+    ]
+  },
+  {
+    slug: "remote-installation-support-endnote-nvivo-license-keys",
+    title: "Remote Installation Support for EndNote and NVivo License Keys",
+    description: "Prepare an EndNote or NVivo license key inquiry with Windows or Mac details, installer guidance, tutorial support, and remote installation information.",
+    category: "Research software support",
+    date: "2026-09-04",
+    heroImage: "assets/nvivo-qualitative-analysis-license-key.png",
+    related: ["endnote-2025-21-20-x9-license-key", "nvivo-15-license-key-windows-mac", "nvivo-14-license-key-windows-mac"],
+    cta: "Tell DIGILICEN your EndNote or NVivo version, Windows or Mac platform, order reference, and whether remote installation support is needed.",
+    sections: [
+      {
+        heading: "Confirm the research software version",
+        paragraphs: [
+          "EndNote and NVivo inquiries should start with the exact product version. DIGILICEN lists EndNote 2025, 21, 20, and X9 for Windows and Mac at US$5.50, NVivo 15 at US$15.00, and NVivo 14 at US$12.00.",
+          "Customers should confirm whether the request is for citation management, bibliography work, qualitative coding, interview analysis, survey response review, or a broader research team workflow before payment."
+        ]
+      },
+      {
+        heading: "Prepare Windows or Mac installation details",
+        paragraphs: [
+          "Remote installation support is easier when the platform details are clear. Before ordering, prepare the operating system, device type, product version, account email requirements, preferred language if relevant, and whether an installer package or tutorial is needed.",
+          "EndNote delivery can include a license key, installer package, tutorial, and remote installation support. NVivo inquiries can include license key support, installer guidance, tutorial notes, and remote installation support depending on the selected version and order details."
+        ]
+      },
+      {
+        heading: "Send complete support information",
+        paragraphs: [
+          "After payment, send the order reference, selected product page, Windows or Mac platform, product version, and preferred contact channel. If installation or activation shows an error, send a screenshot and the exact error text so the issue can be reviewed efficiently.",
+          "DIGILICEN supports PayPal invoice requests for contact-only research software inquiries. Customers should confirm compatibility and delivery timing before payment. DIGILICEN does not provide cracked software, unsafe activation tools, or bypass methods."
         ]
       }
     ]
