@@ -4,7 +4,7 @@ const SITE_URL = "https://digilicen.com";
 const SITE_NAME = "DIGILICEN";
 const EMAIL = "digilicen@outlook.com";
 const WHATSAPP = "https://wa.me/8619928777176";
-const LASTMOD = "2026-09-04";
+const LASTMOD = "2026-09-07";
 const SOURCE = await readFile(new URL("../app.js", import.meta.url), "utf8");
 
 function extractLiteral(name, terminator) {
@@ -1670,6 +1670,39 @@ const BLOG_POSTS = [
         heading: "Send complete support information",
         paragraphs: [
           "After payment, send the order reference, selected product page, Windows or Mac platform, product version, and preferred contact channel. If installation or activation shows an error, send a screenshot and the exact error text so the issue can be reviewed efficiently.",
+          "DIGILICEN supports PayPal invoice requests for contact-only research software inquiries. Customers should confirm compatibility and delivery timing before payment. DIGILICEN does not provide cracked software, unsafe activation tools, or bypass methods."
+        ]
+      }
+    ]
+  },
+  {
+    slug: "nvivo-interview-coding-license-inquiry-guide",
+    title: "NVivo Interview Coding License Inquiry Guide",
+    description: "Plan an NVivo license key inquiry for interview coding, qualitative analysis, research projects, Windows or Mac setup, and installation support.",
+    category: "Research software",
+    date: "2026-09-07",
+    heroImage: "assets/nvivo-qualitative-analysis-license-key.png",
+    related: ["nvivo-15-license-key-windows-mac", "nvivo-14-license-key-windows-mac", "endnote-2025-21-20-x9-license-key"],
+    cta: "Tell DIGILICEN whether your NVivo workflow needs interview coding, qualitative analysis, Windows or Mac setup, installer guidance, or remote installation support.",
+    sections: [
+      {
+        heading: "Start with the qualitative research workflow",
+        paragraphs: [
+          "NVivo license inquiries often start with a research method rather than only a software name. Interview coding, focus group analysis, open-ended survey review, literature notes, and theme development can all affect the version and support details a customer should confirm before payment.",
+          "DIGILICEN lists NVivo 15 and NVivo 14 license key inquiry options for customers who need qualitative analysis software support, installer guidance, tutorial notes, and Windows or Mac compatibility confirmation."
+        ]
+      },
+      {
+        heading: "Compare the listed NVivo options",
+        paragraphs: [
+          "NVivo 15 is listed at US$15.00 for a perpetual license key inquiry. NVivo 14 is listed at US$12.00 for a perpetual license key inquiry. Customers should confirm the required version, operating system, device setup, and whether remote installation support is needed before ordering.",
+          "Research teams that also manage citations may compare NVivo with EndNote 2025, 21, 20, and X9 for Windows and Mac, which is listed at US$5.50. EndNote is positioned for reference management and bibliography workflows, while NVivo is positioned for qualitative data analysis."
+        ]
+      },
+      {
+        heading: "Prepare information before contacting support",
+        paragraphs: [
+          "A complete NVivo inquiry should include the product version, Windows or Mac platform, number of users, account email requirements if any, payment preference, expected delivery channel, and whether the research workflow includes interview transcripts or survey responses.",
           "DIGILICEN supports PayPal invoice requests for contact-only research software inquiries. Customers should confirm compatibility and delivery timing before payment. DIGILICEN does not provide cracked software, unsafe activation tools, or bypass methods."
         ]
       }
