@@ -3013,6 +3013,82 @@ ${urls.map((url) => `  <url>
 `;
 }
 
+function robotsTxt() {
+  const aiUserAgents = [
+    "OAI-SearchBot",
+    "ChatGPT-User",
+    "OAI-AdsBot",
+    "GPTBot",
+    "ClaudeBot",
+    "Claude-SearchBot",
+    "Claude-User",
+    "PerplexityBot",
+    "Perplexity-User",
+    "Googlebot",
+    "Google-Extended"
+  ];
+
+  return `# DIGILICEN allows search engines and AI assistants to read public website content.
+# Main machine-readable entry points:
+# ${SITE_URL}/sitemap.xml
+# ${SITE_URL}/llms.txt
+
+User-agent: *
+Allow: /
+
+${aiUserAgents.map((agent) => `User-agent: ${agent}
+Allow: /`).join("\n\n")}
+
+Sitemap: ${SITE_URL}/sitemap.xml
+`;
+}
+
+function llmsTxt() {
+  const mainPages = [
+    ["Home", `${SITE_URL}/`, "DIGILICEN software license inquiry homepage."],
+    ...INFO_PAGES.map((page) => [page.heading, infoPageUrl(page), page.description]),
+    ...CATEGORY_PAGES.map((category) => [category.name, categoryUrl(category), category.description]),
+    ["Software License Blog", `${SITE_URL}/blog/`, "DIGILICEN software license buying guides, payment notes, delivery notes, and support articles."]
+  ];
+  const productPages = PRODUCTS.map((product) => [
+    productLabel(product),
+    productUrl(product),
+    `${product.summary} Listed price: ${product.price}.`
+  ]);
+  const blogPages = BLOG_POSTS.map((post) => [
+    post.title,
+    blogUrl(post),
+    post.description
+  ]);
+
+  const section = (title, links) => `## ${title}
+
+${links.map(([label, url, description]) => `- [${label}](${url}): ${description}`).join("\n")}`;
+
+  return `# DIGILICEN
+
+DIGILICEN is a software license inquiry website for Autodesk, Adobe Creative Cloud, AutoCAD, Revit, JetBrains, EndNote, NVivo, engineering, creative, developer, and research software customers.
+
+The site is public and intended to be readable by search engines and AI assistants. Customers should confirm product name, version, license term, operating system, account email requirements, payment route, delivery timing, and support needs before ordering.
+
+DIGILICEN does not provide cracked software, pirated copies, unsafe activation tools, or bypass methods.
+
+Contact:
+- Email: ${EMAIL}
+- WhatsApp: ${WHATSAPP}
+
+Machine-readable resources:
+- Sitemap: ${SITE_URL}/sitemap.xml
+- Robots: ${SITE_URL}/robots.txt
+
+${section("Core Pages", mainPages)}
+
+${section("Product Pages", productPages)}
+
+${section("Blog Guides", blogPages)}
+`;
+}
+
 await mkdir(new URL("../products", import.meta.url), { recursive: true });
 await mkdir(new URL("../categories", import.meta.url), { recursive: true });
 await mkdir(new URL("../blog", import.meta.url), { recursive: true });
@@ -3035,9 +3111,7 @@ for (const page of INFO_PAGES) {
 }
 
 await writeFile(new URL("../sitemap.xml", import.meta.url), sitemapXml());
-await writeFile(new URL("../robots.txt", import.meta.url), `User-agent: *
-Allow: /
-Sitemap: ${SITE_URL}/sitemap.xml
-`);
+await writeFile(new URL("../robots.txt", import.meta.url), robotsTxt());
+await writeFile(new URL("../llms.txt", import.meta.url), llmsTxt());
 
-console.log(`Generated ${PRODUCTS.length} product pages, sitemap.xml, and robots.txt.`);
+console.log(`Generated ${PRODUCTS.length} product pages, sitemap.xml, robots.txt, and llms.txt.`);
