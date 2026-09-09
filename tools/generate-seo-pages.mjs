@@ -4,7 +4,7 @@ const SITE_URL = "https://digilicen.com";
 const SITE_NAME = "DIGILICEN";
 const EMAIL = "digilicen@outlook.com";
 const WHATSAPP = "https://wa.me/8619928777176";
-const LASTMOD = "2026-09-07";
+const LASTMOD = "2026-09-09";
 const SOURCE = await readFile(new URL("../app.js", import.meta.url), "utf8");
 
 function extractLiteral(name, terminator) {
@@ -1704,6 +1704,39 @@ const BLOG_POSTS = [
         paragraphs: [
           "A complete NVivo inquiry should include the product version, Windows or Mac platform, number of users, account email requirements if any, payment preference, expected delivery channel, and whether the research workflow includes interview transcripts or survey responses.",
           "DIGILICEN supports PayPal invoice requests for contact-only research software inquiries. Customers should confirm compatibility and delivery timing before payment. DIGILICEN does not provide cracked software, unsafe activation tools, or bypass methods."
+        ]
+      }
+    ]
+  },
+  {
+    slug: "jetbrains-ai-assistant-coding-workflow-license-guide",
+    title: "JetBrains AI Assistant Coding Workflow License Guide",
+    description: "Plan a JetBrains AI Assistant and All Products Pack inquiry for coding, IDE access, multi-device use, account details, and delivery support.",
+    category: "Developer tools",
+    date: "2026-09-09",
+    heroImage: "assets/jetbrains-ai-assistant-all-products-6-month-usd34.png",
+    related: ["jetbrains-ai-assistant-all-products-6-month", "adobe-1-year", "autocad"],
+    cta: "Tell DIGILICEN whether your JetBrains workflow needs AI Assistant, All Products Pack access, Windows or Mac setup, account email confirmation, and six-month license support.",
+    sections: [
+      {
+        heading: "Start with the coding workflow",
+        paragraphs: [
+          "JetBrains AI Assistant inquiries should begin with the developer workflow, not only the product name. A Python, Java, web, database, game development, or cross-platform team may need different IDE access, account details, device planning, and delivery support before payment.",
+          "DIGILICEN lists JetBrains AI Assistant with All Products Pack for 6 Months at US$34.00. The inquiry is positioned for customers who need AI coding assistance together with access to professional JetBrains developer tools."
+        ]
+      },
+      {
+        heading: "Confirm IDE and account requirements",
+        paragraphs: [
+          "Before ordering, confirm whether the workflow needs IntelliJ IDEA, PyCharm, WebStorm, PhpStorm, GoLand, CLion, DataGrip, Rider, or multiple JetBrains tools. Also prepare the account email, operating system, number of devices, and whether the buyer is ordering for personal use or a developer team.",
+          "A complete inquiry helps DIGILICEN confirm the correct JetBrains product route, license term, payment method, and delivery details. Customers should ask before payment if they need multi-device use, cross-platform support, or a specific IDE workflow."
+        ]
+      },
+      {
+        heading: "Prepare payment and delivery details",
+        paragraphs: [
+          "For JetBrains AI Assistant and All Products Pack, send the selected product page, required term, account email, Windows or Mac platform, preferred contact channel, and payment preference. DIGILICEN supports PayPal invoice requests and Alibaba online payment where available.",
+          "DIGILICEN does not provide cracked software, pirated copies, unsafe activation tools, or bypass methods. Customers should confirm compatibility, account requirements, delivery timing, and support expectations before payment."
         ]
       }
     ]
