@@ -4,7 +4,7 @@ const SITE_URL = "https://digilicen.com";
 const SITE_NAME = "DIGILICEN";
 const EMAIL = "digilicen@outlook.com";
 const WHATSAPP = "https://wa.me/8619928777176";
-const LASTMOD = "2026-09-09";
+const LASTMOD = "2026-09-11";
 const SOURCE = await readFile(new URL("../app.js", import.meta.url), "utf8");
 
 function extractLiteral(name, terminator) {
@@ -1737,6 +1737,39 @@ const BLOG_POSTS = [
         paragraphs: [
           "For JetBrains AI Assistant and All Products Pack, send the selected product page, required term, account email, Windows or Mac platform, preferred contact channel, and payment preference. DIGILICEN supports PayPal invoice requests and Alibaba online payment where available.",
           "DIGILICEN does not provide cracked software, pirated copies, unsafe activation tools, or bypass methods. Customers should confirm compatibility, account requirements, delivery timing, and support expectations before payment."
+        ]
+      }
+    ]
+  },
+  {
+    slug: "autocad-electrical-license-inquiry-guide",
+    title: "AutoCAD Electrical License Inquiry Guide",
+    description: "Plan an AutoCAD Electrical license inquiry for electrical design, control documentation, one-year term, payment, and delivery support.",
+    category: "AutoCAD electrical",
+    date: "2026-09-11",
+    heroImage: "assets/autodesk-generic.png",
+    related: ["electrical", "autocad", "mep", "plant-3d"],
+    cta: "Tell DIGILICEN whether your electrical design workflow needs AutoCAD Electrical, AutoCAD, MEP, Plant 3D, account confirmation, and one-year license support.",
+    sections: [
+      {
+        heading: "Start with the electrical workflow",
+        paragraphs: [
+          "AutoCAD Electrical license inquiries should start with the actual project workflow. Electrical control drawings, panel documentation, schematic drafting, wiring diagrams, and equipment documentation can require a more specific product than a general AutoCAD inquiry.",
+          "DIGILICEN lists AutoCAD Electrical at US$60.00 for a one-year commercial license inquiry. Customers should confirm whether the work is focused on electrical design or whether the team also needs AutoCAD, AutoCAD MEP, or AutoCAD Plant 3D for related project tasks."
+        ]
+      },
+      {
+        heading: "Compare AutoCAD Electrical with related CAD options",
+        paragraphs: [
+          "AutoCAD Electrical is positioned for electrical design workflows. AutoCAD is listed at US$65.00 for a one-year commercial license inquiry and may fit broader drafting work. AutoCAD MEP is listed at US$60.00 and may fit building systems workflows where mechanical, electrical, and plumbing documentation are connected.",
+          "AutoCAD Plant 3D is listed at US$60.00 and may fit plant design or process piping workflows. If the buyer is not sure which product is required, DIGILICEN should receive the project type, file workflow, operating system, and expected output before payment."
+        ]
+      },
+      {
+        heading: "Prepare order and support details",
+        paragraphs: [
+          "Before ordering AutoCAD Electrical, prepare the exact product name, one-year term, operating system, account email requirements, number of users, preferred payment method, and whether installation or activation support is needed.",
+          "DIGILICEN supports Alibaba online payment and PayPal invoice requests where available. Customers should confirm compatibility, delivery timing, and account requirements before payment. DIGILICEN does not provide cracked software, pirated copies, unsafe activation tools, or bypass methods."
         ]
       }
     ]
