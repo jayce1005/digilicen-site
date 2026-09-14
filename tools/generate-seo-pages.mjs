@@ -4,7 +4,7 @@ const SITE_URL = "https://digilicen.com";
 const SITE_NAME = "DIGILICEN";
 const EMAIL = "digilicen@outlook.com";
 const WHATSAPP = "https://wa.me/8619928777176";
-const LASTMOD = "2026-09-11";
+const LASTMOD = "2026-09-14";
 const SOURCE = await readFile(new URL("../app.js", import.meta.url), "utf8");
 
 function extractLiteral(name, terminator) {
@@ -1769,6 +1769,39 @@ const BLOG_POSTS = [
         heading: "Prepare order and support details",
         paragraphs: [
           "Before ordering AutoCAD Electrical, prepare the exact product name, one-year term, operating system, account email requirements, number of users, preferred payment method, and whether installation or activation support is needed.",
+          "DIGILICEN supports Alibaba online payment and PayPal invoice requests where available. Customers should confirm compatibility, delivery timing, and account requirements before payment. DIGILICEN does not provide cracked software, pirated copies, unsafe activation tools, or bypass methods."
+        ]
+      }
+    ]
+  },
+  {
+    slug: "autocad-mep-license-inquiry-guide",
+    title: "AutoCAD MEP License Inquiry Guide",
+    description: "Plan an AutoCAD MEP license inquiry for building systems, mechanical, electrical, plumbing workflows, one-year term, and delivery support.",
+    category: "AutoCAD MEP",
+    date: "2026-09-14",
+    heroImage: "assets/autocad-mep.png",
+    related: ["mep", "electrical", "revit", "plant-3d"],
+    cta: "Tell DIGILICEN whether your building systems workflow needs AutoCAD MEP, AutoCAD Electrical, Revit, Plant 3D, account confirmation, and one-year license support.",
+    sections: [
+      {
+        heading: "Start with the building systems workflow",
+        paragraphs: [
+          "AutoCAD MEP license inquiries should start with the building systems work that needs support. Mechanical, electrical, and plumbing documentation can involve different project files, team roles, and compatibility questions than a general AutoCAD drafting inquiry.",
+          "DIGILICEN lists AutoCAD MEP at US$60.00 for a one-year commercial license inquiry. Customers should confirm whether the work is focused on building systems documentation or whether the team also needs Revit, AutoCAD Electrical, or AutoCAD Plant 3D for related project workflows."
+        ]
+      },
+      {
+        heading: "Compare AutoCAD MEP with related design tools",
+        paragraphs: [
+          "AutoCAD MEP may fit users preparing building systems documentation in CAD workflows. AutoCAD Electrical is listed at US$60.00 for a one-year commercial license inquiry and may fit electrical control and schematic documentation. Revit is listed at US$60.00 and may fit BIM and building design workflows.",
+          "AutoCAD Plant 3D is listed at US$60.00 and may fit plant design or process piping workflows. If a buyer is not sure which product is required, DIGILICEN should receive the project type, current file format, operating system, and expected output before payment."
+        ]
+      },
+      {
+        heading: "Prepare the inquiry before payment",
+        paragraphs: [
+          "Before ordering AutoCAD MEP, prepare the exact product name, one-year term, operating system, account email requirements, number of users, preferred payment method, and whether installation or activation support is needed.",
           "DIGILICEN supports Alibaba online payment and PayPal invoice requests where available. Customers should confirm compatibility, delivery timing, and account requirements before payment. DIGILICEN does not provide cracked software, pirated copies, unsafe activation tools, or bypass methods."
         ]
       }
