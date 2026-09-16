@@ -4,7 +4,7 @@ const SITE_URL = "https://digilicen.com";
 const SITE_NAME = "DIGILICEN";
 const EMAIL = "digilicen@outlook.com";
 const WHATSAPP = "https://wa.me/8619928777176";
-const LASTMOD = "2026-09-14";
+const LASTMOD = "2026-09-16";
 const SOURCE = await readFile(new URL("../app.js", import.meta.url), "utf8");
 
 function extractLiteral(name, terminator) {
@@ -1802,6 +1802,39 @@ const BLOG_POSTS = [
         heading: "Prepare the inquiry before payment",
         paragraphs: [
           "Before ordering AutoCAD MEP, prepare the exact product name, one-year term, operating system, account email requirements, number of users, preferred payment method, and whether installation or activation support is needed.",
+          "DIGILICEN supports Alibaba online payment and PayPal invoice requests where available. Customers should confirm compatibility, delivery timing, and account requirements before payment. DIGILICEN does not provide cracked software, pirated copies, unsafe activation tools, or bypass methods."
+        ]
+      }
+    ]
+  },
+  {
+    slug: "autocad-plant-3d-license-inquiry-guide",
+    title: "AutoCAD Plant 3D License Inquiry Guide",
+    description: "Plan an AutoCAD Plant 3D license inquiry for plant design, process piping, one-year term, payment, and digital delivery support.",
+    category: "Plant design software",
+    date: "2026-09-16",
+    heroImage: "assets/autodesk-generic.png",
+    related: ["plant-3d", "navisworks", "recap-pro", "civil-3d"],
+    cta: "Tell DIGILICEN whether your plant design workflow needs AutoCAD Plant 3D, Navisworks, ReCap Pro, Civil 3D, account confirmation, and one-year license support.",
+    sections: [
+      {
+        heading: "Start with the plant design workflow",
+        paragraphs: [
+          "AutoCAD Plant 3D license inquiries should start with the actual plant design or process piping workflow. Piping layouts, plant documentation, model review, scan coordination, and infrastructure context can point to different Autodesk products and support requirements.",
+          "DIGILICEN lists AutoCAD Plant 3D at US$60.00 for a one-year commercial license inquiry. Customers should confirm whether the work is focused on plant design or whether the team also needs Navisworks, ReCap Pro, or Civil 3D for review, scan, or infrastructure coordination."
+        ]
+      },
+      {
+        heading: "Compare Plant 3D with related Autodesk tools",
+        paragraphs: [
+          "AutoCAD Plant 3D is positioned for plant design and process piping workflows. Navisworks Manage is listed at US$60.00 for a one-year professional license inquiry and may fit model review and coordination. ReCap Pro is listed at US$60.00 and may fit reality capture or scan workflows.",
+          "Civil 3D is listed at US$60.00 and may fit civil engineering design and documentation. If a buyer is not sure which product is required, DIGILICEN should receive the project type, current file format, operating system, and expected output before payment."
+        ]
+      },
+      {
+        heading: "Prepare payment and delivery details",
+        paragraphs: [
+          "Before ordering AutoCAD Plant 3D, prepare the exact product name, one-year term, operating system, account email requirements, number of users, preferred payment method, and whether installation or activation support is needed.",
           "DIGILICEN supports Alibaba online payment and PayPal invoice requests where available. Customers should confirm compatibility, delivery timing, and account requirements before payment. DIGILICEN does not provide cracked software, pirated copies, unsafe activation tools, or bypass methods."
         ]
       }
