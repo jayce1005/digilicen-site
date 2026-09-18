@@ -4,7 +4,7 @@ const SITE_URL = "https://digilicen.com";
 const SITE_NAME = "DIGILICEN";
 const EMAIL = "digilicen@outlook.com";
 const WHATSAPP = "https://wa.me/8619928777176";
-const LASTMOD = "2026-09-16";
+const LASTMOD = "2026-09-18";
 const SOURCE = await readFile(new URL("../app.js", import.meta.url), "utf8");
 
 function extractLiteral(name, terminator) {
@@ -1835,6 +1835,39 @@ const BLOG_POSTS = [
         heading: "Prepare payment and delivery details",
         paragraphs: [
           "Before ordering AutoCAD Plant 3D, prepare the exact product name, one-year term, operating system, account email requirements, number of users, preferred payment method, and whether installation or activation support is needed.",
+          "DIGILICEN supports Alibaba online payment and PayPal invoice requests where available. Customers should confirm compatibility, delivery timing, and account requirements before payment. DIGILICEN does not provide cracked software, pirated copies, unsafe activation tools, or bypass methods."
+        ]
+      }
+    ]
+  },
+  {
+    slug: "autocad-mechanical-license-inquiry-guide",
+    title: "AutoCAD Mechanical License Inquiry Guide",
+    description: "Plan an AutoCAD Mechanical license inquiry for mechanical drafting, manufacturing workflows, one-year pricing, delivery, and activation support.",
+    category: "Mechanical CAD software",
+    date: "2026-09-18",
+    heroImage: "assets/autocad-mechanical.png",
+    related: ["autocad-mechanical", "inventor", "fusion-360", "autocad"],
+    cta: "Tell DIGILICEN whether your workflow needs AutoCAD Mechanical, Inventor, Fusion 360, or AutoCAD, plus your operating system and one-year license requirements.",
+    sections: [
+      {
+        heading: "Start with the mechanical design workflow",
+        paragraphs: [
+          "An AutoCAD Mechanical license inquiry should begin with the actual drafting and manufacturing workflow. Parts documentation, mechanical drawings, product design, collaboration, and general CAD work can require different software and support details.",
+          "DIGILICEN lists AutoCAD Mechanical at US$60.00 for a one-year commercial license inquiry. Before payment, customers should confirm whether the work is mainly mechanical drafting or whether the team also needs Inventor, Fusion 360, or standard AutoCAD for related design tasks."
+        ]
+      },
+      {
+        heading: "Compare AutoCAD Mechanical with related CAD tools",
+        paragraphs: [
+          "AutoCAD Mechanical is positioned for mechanical drafting workflows. Autodesk Inventor is listed at US$60.00 for a one-year professional license inquiry and may fit product design and engineering teams. Autodesk Fusion 360 is listed at US$50.00 and may fit integrated product design workflows.",
+          "Standard AutoCAD is listed at US$65.00 for a one-year commercial license inquiry and may fit broader professional drafting and design work. Buyers who are unsure should provide the project type, current file formats, operating system, and expected output so DIGILICEN can confirm the appropriate inquiry path."
+        ]
+      },
+      {
+        heading: "Prepare payment, delivery, and activation details",
+        paragraphs: [
+          "Before ordering AutoCAD Mechanical, prepare the exact product name, one-year term, operating system, account email requirements, number of users, preferred payment method, and whether installation or activation support is needed.",
           "DIGILICEN supports Alibaba online payment and PayPal invoice requests where available. Customers should confirm compatibility, delivery timing, and account requirements before payment. DIGILICEN does not provide cracked software, pirated copies, unsafe activation tools, or bypass methods."
         ]
       }
