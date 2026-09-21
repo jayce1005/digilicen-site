@@ -4,7 +4,7 @@ const SITE_URL = "https://digilicen.com";
 const SITE_NAME = "DIGILICEN";
 const EMAIL = "digilicen@outlook.com";
 const WHATSAPP = "https://wa.me/8619928777176";
-const LASTMOD = "2026-09-18";
+const LASTMOD = "2026-09-21";
 const SOURCE = await readFile(new URL("../app.js", import.meta.url), "utf8");
 
 function extractLiteral(name, terminator) {
@@ -1868,6 +1868,39 @@ const BLOG_POSTS = [
         heading: "Prepare payment, delivery, and activation details",
         paragraphs: [
           "Before ordering AutoCAD Mechanical, prepare the exact product name, one-year term, operating system, account email requirements, number of users, preferred payment method, and whether installation or activation support is needed.",
+          "DIGILICEN supports Alibaba online payment and PayPal invoice requests where available. Customers should confirm compatibility, delivery timing, and account requirements before payment. DIGILICEN does not provide cracked software, pirated copies, unsafe activation tools, or bypass methods."
+        ]
+      }
+    ]
+  },
+  {
+    slug: "autodesk-inventor-license-inquiry-guide",
+    title: "Autodesk Inventor License Inquiry Guide",
+    description: "Plan an Autodesk Inventor license inquiry for product design, mechanical engineering, one-year pricing, digital delivery, and activation support.",
+    category: "Mechanical design software",
+    date: "2026-09-21",
+    heroImage: "assets/autodesk-generic.png",
+    related: ["inventor", "fusion-360", "autocad-mechanical", "autocad"],
+    cta: "Tell DIGILICEN whether your workflow needs Autodesk Inventor, Fusion 360, AutoCAD Mechanical, or AutoCAD, plus your operating system and one-year license requirements.",
+    sections: [
+      {
+        heading: "Define the Inventor design workflow",
+        paragraphs: [
+          "An Autodesk Inventor license inquiry should begin with the product design or mechanical engineering workflow. Part modeling, assemblies, technical documentation, collaboration, and general drafting may point to different Autodesk products and support requirements.",
+          "DIGILICEN lists Autodesk Inventor at US$60.00 for a one-year professional license inquiry. Customers should confirm whether Inventor is required for the main workflow or whether Fusion 360, AutoCAD Mechanical, or standard AutoCAD would better match the expected design output."
+        ]
+      },
+      {
+        heading: "Compare Inventor with related Autodesk products",
+        paragraphs: [
+          "Autodesk Inventor is positioned for product design and engineering teams. Autodesk Fusion 360 is listed at US$50.00 for a one-year professional license inquiry and may fit integrated product design workflows. AutoCAD Mechanical is listed at US$60.00 and may fit mechanical drafting and documentation.",
+          "Standard AutoCAD is listed at US$65.00 for a one-year commercial license inquiry and may fit broader professional drafting work. Buyers who are unsure should provide the project type, current file formats, operating system, and expected output before payment."
+        ]
+      },
+      {
+        heading: "Prepare account, payment, and delivery details",
+        paragraphs: [
+          "Before ordering Autodesk Inventor, prepare the exact product name, one-year term, operating system, account email requirements, number of users, preferred payment method, and whether installation or activation support is needed.",
           "DIGILICEN supports Alibaba online payment and PayPal invoice requests where available. Customers should confirm compatibility, delivery timing, and account requirements before payment. DIGILICEN does not provide cracked software, pirated copies, unsafe activation tools, or bypass methods."
         ]
       }
