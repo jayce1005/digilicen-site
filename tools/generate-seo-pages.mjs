@@ -4,7 +4,7 @@ const SITE_URL = "https://digilicen.com";
 const SITE_NAME = "DIGILICEN";
 const EMAIL = "digilicen@outlook.com";
 const WHATSAPP = "https://wa.me/8619928777176";
-const LASTMOD = "2026-09-23";
+const LASTMOD = "2026-09-25";
 const SOURCE = await readFile(new URL("../app.js", import.meta.url), "utf8");
 
 function extractLiteral(name, terminator) {
@@ -1934,6 +1934,39 @@ const BLOG_POSTS = [
         heading: "Confirm account, payment, and digital delivery",
         paragraphs: [
           "Before ordering, prepare the selected one-month term, required Adobe apps, Windows or Mac environment, account email if required, preferred payment method, and contact channel. After payment, keep the order reference and account details available for delivery support.",
+          "DIGILICEN supports Alibaba online payment and PayPal invoice requests where available. Customers should confirm compatibility, delivery timing, and account requirements before payment. DIGILICEN does not provide cracked software, pirated copies, unsafe activation tools, or bypass methods."
+        ]
+      }
+    ]
+  },
+  {
+    slug: "adobe-creative-cloud-windows-mac-subscription-checklist",
+    title: "Adobe Creative Cloud Windows and Mac Subscription Checklist",
+    description: "Prepare an Adobe Creative Cloud subscription inquiry for Windows or Mac, including app needs, account email, term, price, payment, and delivery details.",
+    category: "Adobe Creative Cloud",
+    date: "2026-09-25",
+    heroImage: "assets/adobe-creative-large.png",
+    related: ["adobe-1-year", "adobe-6-month", "adobe-3-month", "adobe-1-month"],
+    cta: "Send DIGILICEN your Windows or Mac environment, required Adobe apps, preferred subscription term, and account details before ordering.",
+    sections: [
+      {
+        heading: "Identify the Windows or Mac environment first",
+        paragraphs: [
+          "An Adobe Creative Cloud subscription inquiry should state whether the user works on Windows or Mac before payment. Include the operating system version, required Adobe apps, device environment, and any company account requirements so compatibility questions can be reviewed early.",
+          "Do not assume that every app, version, or workflow has identical requirements on both platforms. Buyers should verify the current requirements for the apps they plan to use and confirm account details with DIGILICEN before ordering."
+        ]
+      },
+      {
+        heading: "Choose the subscription term and listed price",
+        paragraphs: [
+          "DIGILICEN lists Adobe Creative Cloud for 1 year at US$50.00, 6 months at US$30.00, 3 months at US$15.00, and 1 month at US$6.00. Choose the term according to the planned project period and ongoing creative workload.",
+          "A buyer preparing a Windows or Mac inquiry should include the selected term, expected start date, account email if required, and the design, photo, video, PDF, web, or production apps needed for the workflow."
+        ]
+      },
+      {
+        heading: "Prepare payment and digital delivery details",
+        paragraphs: [
+          "Before payment, confirm the subscription term, operating system, account email requirements, preferred payment route, delivery timing, and support channel. After payment, keep the order reference and confirmed account details available for support.",
           "DIGILICEN supports Alibaba online payment and PayPal invoice requests where available. Customers should confirm compatibility, delivery timing, and account requirements before payment. DIGILICEN does not provide cracked software, pirated copies, unsafe activation tools, or bypass methods."
         ]
       }
