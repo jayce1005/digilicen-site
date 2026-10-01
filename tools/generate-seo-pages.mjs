@@ -4,7 +4,7 @@ const SITE_URL = "https://digilicen.com";
 const SITE_NAME = "DIGILICEN";
 const EMAIL = "digilicen@outlook.com";
 const WHATSAPP = "https://wa.me/8619928777176";
-const LASTMOD = "2026-09-28";
+const LASTMOD = "2026-09-30";
 const SOURCE = await readFile(new URL("../app.js", import.meta.url), "utf8");
 
 function extractLiteral(name, terminator) {
@@ -2000,6 +2000,39 @@ const BLOG_POSTS = [
         heading: "Keep payment and activation support details organized",
         paragraphs: [
           "After payment, keep the Alibaba order number or PayPal invoice reference, selected term, confirmed account details, operating system, and preferred contact channel available. Do not send passwords or unnecessary sensitive information through an inquiry form.",
+          "DIGILICEN supports Alibaba online payment and PayPal invoice requests where available. Customers should confirm compatibility, delivery timing, and account requirements before payment. DIGILICEN does not provide cracked software, pirated copies, unsafe activation tools, or bypass methods."
+        ]
+      }
+    ]
+  },
+  {
+    slug: "adobe-creative-cloud-subscription-checklist-creative-teams",
+    title: "Adobe Creative Cloud Subscription Checklist for Creative Teams",
+    description: "Plan an Adobe Creative Cloud inquiry for design, photo, video, PDF, and marketing teams with user, app, term, price, account, and delivery details.",
+    category: "Adobe Creative Cloud",
+    date: "2026-09-30",
+    heroImage: "assets/adobe-creative-large.png",
+    related: ["adobe-1-year", "adobe-6-month", "adobe-3-month", "adobe-1-month"],
+    cta: "Tell DIGILICEN your creative workflow, number of users, required Adobe apps, operating systems, preferred term, and account requirements before ordering.",
+    sections: [
+      {
+        heading: "Map the creative workflow before choosing a term",
+        paragraphs: [
+          "A creative team may include graphic designers, photo editors, video producers, marketers, web staff, and PDF document users. An Adobe Creative Cloud inquiry should identify the apps and workflow each user needs instead of listing only the product name.",
+          "Include the number of users, Windows or Mac environment, expected project duration, required Adobe apps, and planned start date. Do not assume that one subscription covers multiple users; confirm the account and user requirements with DIGILICEN before payment."
+        ]
+      },
+      {
+        heading: "Compare Adobe subscription terms for the project schedule",
+        paragraphs: [
+          "DIGILICEN lists Adobe Creative Cloud for 1 year at US$50.00, 6 months at US$30.00, 3 months at US$15.00, and 1 month at US$6.00. A longer term may fit ongoing production, while a shorter term may fit a campaign, seasonal workload, or defined client project.",
+          "When several users are involved, prepare a simple list of roles, required apps, operating systems, and term lengths. This helps support review the inquiry without mixing different account or project requirements."
+        ]
+      },
+      {
+        heading: "Coordinate payment, delivery, and support",
+        paragraphs: [
+          "Before payment, confirm availability, user count, selected terms, account email requirements, delivery timing, and the person responsible for the order. After payment, keep the Alibaba order number or PayPal invoice reference with the confirmed inquiry details.",
           "DIGILICEN supports Alibaba online payment and PayPal invoice requests where available. Customers should confirm compatibility, delivery timing, and account requirements before payment. DIGILICEN does not provide cracked software, pirated copies, unsafe activation tools, or bypass methods."
         ]
       }
