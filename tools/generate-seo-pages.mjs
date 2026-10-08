@@ -4,7 +4,7 @@ const SITE_URL = "https://digilicen.com";
 const SITE_NAME = "DIGILICEN";
 const EMAIL = "digilicen@outlook.com";
 const WHATSAPP = "https://wa.me/8619928777176";
-const LASTMOD = "2026-10-02";
+const LASTMOD = "2026-10-08";
 const SOURCE = await readFile(new URL("../app.js", import.meta.url), "utf8");
 
 function extractLiteral(name, terminator) {
@@ -2066,6 +2066,39 @@ const BLOG_POSTS = [
         heading: "Prepare account, payment, and delivery information",
         paragraphs: [
           "Before ordering, confirm the six-month term, required apps, operating system, account email if required, number of users, preferred payment method, and support contact. After payment, keep the Alibaba order number or PayPal invoice reference with the confirmed details.",
+          "DIGILICEN supports Alibaba online payment and PayPal invoice requests where available. Customers should confirm compatibility, delivery timing, and account requirements before payment. DIGILICEN does not provide cracked software, pirated copies, unsafe activation tools, or bypass methods."
+        ]
+      }
+    ]
+  },
+  {
+    slug: "adobe-creative-cloud-alibaba-payment-digital-delivery-guide",
+    title: "Adobe Creative Cloud Alibaba Payment and Digital Delivery Guide",
+    description: "Prepare an Adobe Creative Cloud Alibaba order with the correct term, listed price, account details, payment reference, and digital delivery information.",
+    category: "Adobe Creative Cloud",
+    date: "2026-10-08",
+    heroImage: "assets/adobe-creative-large.png",
+    related: ["adobe-1-year", "adobe-6-month", "adobe-3-month", "adobe-1-month"],
+    cta: "Choose your Adobe Creative Cloud term, then ask DIGILICEN to confirm the Alibaba product link, account requirements, and delivery timing before payment.",
+    sections: [
+      {
+        heading: "Confirm the Adobe term before opening the Alibaba order",
+        paragraphs: [
+          "An Adobe Creative Cloud Alibaba inquiry should begin with the exact subscription term. DIGILICEN lists Adobe Creative Cloud for 1 year at US$50.00, 6 months at US$30.00, 3 months at US$15.00, and 1 month at US$6.00.",
+          "Before payment, confirm that the Alibaba product link and order details match the selected term. Also provide the required Adobe apps, Windows or Mac environment, number of users, account email requirements, and expected start date."
+        ]
+      },
+      {
+        heading: "Keep the Alibaba payment record connected to the inquiry",
+        paragraphs: [
+          "Use the Alibaba payment button on the matching DIGILICEN product page where available. Review the product name, term, listed price, and confirmed support details before completing the payment.",
+          "After payment, retain the Alibaba order number and keep it with the confirmed subscription term and contact conversation. The order reference helps DIGILICEN connect payment confirmation with the correct Adobe inquiry and delivery request."
+        ]
+      },
+      {
+        heading: "Prepare for digital delivery and activation support",
+        paragraphs: [
+          "Send the order number, selected term, confirmed account email if required, operating system, and preferred support channel after payment. Do not send passwords or unrelated sensitive information through email, WhatsApp, or an inquiry form.",
           "DIGILICEN supports Alibaba online payment and PayPal invoice requests where available. Customers should confirm compatibility, delivery timing, and account requirements before payment. DIGILICEN does not provide cracked software, pirated copies, unsafe activation tools, or bypass methods."
         ]
       }
