@@ -4,7 +4,7 @@ const SITE_URL = "https://digilicen.com";
 const SITE_NAME = "DIGILICEN";
 const EMAIL = "digilicen@outlook.com";
 const WHATSAPP = "https://wa.me/8619928777176";
-const LASTMOD = "2026-10-08";
+const LASTMOD = "2026-10-09";
 const SOURCE = await readFile(new URL("../app.js", import.meta.url), "utf8");
 
 function extractLiteral(name, terminator) {
@@ -2099,6 +2099,39 @@ const BLOG_POSTS = [
         heading: "Prepare for digital delivery and activation support",
         paragraphs: [
           "Send the order number, selected term, confirmed account email if required, operating system, and preferred support channel after payment. Do not send passwords or unrelated sensitive information through email, WhatsApp, or an inquiry form.",
+          "DIGILICEN supports Alibaba online payment and PayPal invoice requests where available. Customers should confirm compatibility, delivery timing, and account requirements before payment. DIGILICEN does not provide cracked software, pirated copies, unsafe activation tools, or bypass methods."
+        ]
+      }
+    ]
+  },
+  {
+    slug: "adobe-creative-cloud-3-month-subscription-inquiry-guide",
+    title: "Adobe Creative Cloud 3 Month Subscription Inquiry Guide",
+    description: "Plan an Adobe Creative Cloud 3 month subscription inquiry, confirm the US$15 price, compare one-month and six-month terms, and prepare delivery details.",
+    category: "Adobe Creative Cloud",
+    date: "2026-10-09",
+    heroImage: "assets/adobe-creative-large.png",
+    related: ["adobe-3-month", "adobe-1-month", "adobe-6-month", "adobe-1-year"],
+    cta: "Ask DIGILICEN to confirm Adobe Creative Cloud 3 month availability, account requirements, payment method, and digital delivery timing before ordering.",
+    sections: [
+      {
+        heading: "When a 3 month Adobe Creative Cloud term may fit",
+        paragraphs: [
+          "An Adobe Creative Cloud 3 month subscription inquiry can fit a defined quarter-length design, photo, video, PDF, web, or marketing project. Buyers should confirm the actual production schedule, required apps, and planned start date before payment.",
+          "DIGILICEN lists the Adobe Creative Cloud 3 month subscription at US$15.00. Include the Windows or Mac environment, account email requirements, number of users, and expected delivery timing in the inquiry."
+        ]
+      },
+      {
+        heading: "Compare three months with one month and six months",
+        paragraphs: [
+          "DIGILICEN also lists Adobe Creative Cloud for 1 month at US$6.00, 6 months at US$30.00, and 1 year at US$50.00. A three-month term may fit a short but multi-stage project, while one month may fit limited work and six months may fit a longer production schedule.",
+          "Choose the term according to the complete project period rather than the lowest initial price. If the project may continue beyond three months, compare the longer options before ordering."
+        ]
+      },
+      {
+        heading: "Prepare payment, account, and delivery information",
+        paragraphs: [
+          "Before ordering, confirm the three-month term, required Adobe apps, operating system, account email if required, user count, preferred payment route, and support contact. After payment, retain the Alibaba order number or PayPal invoice reference with the confirmed details.",
           "DIGILICEN supports Alibaba online payment and PayPal invoice requests where available. Customers should confirm compatibility, delivery timing, and account requirements before payment. DIGILICEN does not provide cracked software, pirated copies, unsafe activation tools, or bypass methods."
         ]
       }
