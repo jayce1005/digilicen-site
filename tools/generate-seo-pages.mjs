@@ -4,7 +4,7 @@ const SITE_URL = "https://digilicen.com";
 const SITE_NAME = "DIGILICEN";
 const EMAIL = "digilicen@outlook.com";
 const WHATSAPP = "https://wa.me/8619928777176";
-const LASTMOD = "2026-10-19";
+const LASTMOD = "2026-10-21";
 const SOURCE = await readFile(new URL("../app.js", import.meta.url), "utf8");
 
 function extractLiteral(name, terminator) {
@@ -2268,6 +2268,39 @@ const BLOG_POSTS = [
         ]
       }
     ]
+  },
+  {
+    slug: "adobe-creative-cloud-subscription-guide-for-marketing-campaigns",
+    title: "Adobe Creative Cloud Subscription Guide for Marketing Campaigns",
+    description: "Plan an Adobe Creative Cloud subscription inquiry for a marketing campaign, compare current terms and prices, and prepare team, account, payment, and delivery details.",
+    category: "Adobe Creative Cloud",
+    date: "2026-10-21",
+    heroImage: "assets/adobe-creative-large.png",
+    related: ["adobe-3-month", "adobe-6-month", "adobe-1-year", "adobe-1-month"],
+    cta: "Send DIGILICEN your campaign dates, required Adobe apps, user count, operating systems, preferred subscription term, account requirements, and payment method to request current availability.",
+    sections: [
+      {
+        heading: "Map the subscription to every campaign stage",
+        paragraphs: [
+          "A marketing campaign may include concept development, asset production, internal review, client approval, launch, optimization, final revisions, and file handoff. Include the full schedule when planning an Adobe Creative Cloud inquiry instead of counting only the launch period.",
+          "Share the planned start date, final delivery date, required creative workflows, and number of users before payment. This helps the buyer choose a term that covers production and revision time without assuming that every campaign follows the same schedule."
+        ]
+      },
+      {
+        heading: "Compare current Adobe Creative Cloud terms and prices",
+        paragraphs: [
+          "DIGILICEN currently lists Adobe Creative Cloud for 3 months at US$15.00, 6 months at US$30.00, 1 year at US$50.00, and 1 month at US$6.00. Compare these options with the complete campaign calendar and any expected post-launch work.",
+          "A one-month option may fit a limited production sprint, three or six months may fit a campaign with multiple stages, and one year may fit an ongoing content program. Confirm the exact product page, current availability, and digital delivery timing before ordering."
+        ]
+      },
+      {
+        heading: "Prepare team, account, payment, and delivery details",
+        paragraphs: [
+          "List the required Adobe apps or workflows, Windows or Mac environment for each user, account email requirements if applicable, selected term, campaign start date, and preferred support contact. Keep the Alibaba order number or PayPal invoice reference with the confirmed inquiry after payment.",
+          "Do not send passwords, client credentials, or unrelated campaign data. DIGILICEN supports Alibaba online payment and PayPal invoice requests where available. Customers should confirm compatibility, delivery timing, and account requirements before payment. DIGILICEN does not provide cracked software, pirated copies, unsafe activation tools, or bypass methods."
+        ]
+      }
+    ]
   }
 ];
 
@@ -3164,6 +3197,20 @@ function blogPage(post) {
   const relatedProducts = post.related.map((slug) => PRODUCTS.find((product) => product.slug === slug)).filter(Boolean);
   const faqs = blogFaqs(post);
   const heroImage = webImage(post.heroImage);
+  const relatedPosts = BLOG_POSTS
+    .filter((item) => item.slug !== post.slug)
+    .map((item) => ({
+      item,
+      sharedProducts: item.related.filter((slug) => post.related.includes(slug)).length,
+      sameCategory: item.category === post.category ? 1 : 0
+    }))
+    .sort((a, b) =>
+      b.sharedProducts - a.sharedProducts ||
+      b.sameCategory - a.sameCategory ||
+      b.item.date.localeCompare(a.item.date)
+    )
+    .slice(0, 3)
+    .map(({ item }) => item);
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
@@ -3311,7 +3358,7 @@ function blogPage(post) {
           <h2>Continue reading</h2>
         </div>
         <div class="related-links">
-          ${BLOG_POSTS.filter((item) => item.slug !== post.slug).slice(0, 3).map((item) => `<a href="${item.slug}">${escapeHtml(item.title)}</a>`).join("\n          ")}
+          ${relatedPosts.map((item) => `<a href="${item.slug}">${escapeHtml(item.title)}</a>`).join("\n          ")}
           <a href="./">All blog posts</a>
         </div>
       </section>
