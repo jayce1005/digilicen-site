@@ -4,7 +4,7 @@ const SITE_URL = "https://digilicen.com";
 const SITE_NAME = "DIGILICEN";
 const EMAIL = "digilicen@outlook.com";
 const WHATSAPP = "https://wa.me/8619928777176";
-const LASTMOD = "2026-10-21";
+const LASTMOD = "2026-10-23";
 const SOURCE = await readFile(new URL("../app.js", import.meta.url), "utf8");
 
 function extractLiteral(name, terminator) {
@@ -2298,6 +2298,39 @@ const BLOG_POSTS = [
         paragraphs: [
           "List the required Adobe apps or workflows, Windows or Mac environment for each user, account email requirements if applicable, selected term, campaign start date, and preferred support contact. Keep the Alibaba order number or PayPal invoice reference with the confirmed inquiry after payment.",
           "Do not send passwords, client credentials, or unrelated campaign data. DIGILICEN supports Alibaba online payment and PayPal invoice requests where available. Customers should confirm compatibility, delivery timing, and account requirements before payment. DIGILICEN does not provide cracked software, pirated copies, unsafe activation tools, or bypass methods."
+        ]
+      }
+    ]
+  },
+  {
+    slug: "adobe-creative-cloud-subscription-guide-for-video-editing-projects",
+    title: "Adobe Creative Cloud Subscription Guide for Video Editing Projects",
+    description: "Plan an Adobe Creative Cloud subscription inquiry for video editing, compare current terms and prices, and prepare app, device, account, payment, and delivery details.",
+    category: "Adobe Creative Cloud",
+    date: "2026-10-23",
+    heroImage: "assets/adobe-creative-large.png",
+    related: ["adobe-3-month", "adobe-6-month", "adobe-1-year", "adobe-1-month"],
+    cta: "Send DIGILICEN your video project dates, required Adobe apps, Windows or Mac environment, preferred subscription term, account requirements, and payment method to request current availability.",
+    sections: [
+      {
+        heading: "Plan for the complete video editing schedule",
+        paragraphs: [
+          "A video editing project may include media preparation, editing, graphics, audio work, client review, revisions, final exports, and delivery. Use the complete schedule when planning an Adobe Creative Cloud inquiry instead of counting only the first edit or production deadline.",
+          "Share the expected start date, final delivery date, required creative workflows, number of users, and revision period before payment. Buyers should also allow for export checks and final changes when deciding how long access is needed."
+        ]
+      },
+      {
+        heading: "Compare current Adobe Creative Cloud terms and prices",
+        paragraphs: [
+          "DIGILICEN currently lists Adobe Creative Cloud for 3 months at US$15.00, 6 months at US$30.00, 1 year at US$50.00, and 1 month at US$6.00. Compare these options with the full editing, review, and delivery timeline.",
+          "One month may fit a limited edit, three or six months may fit a longer production with multiple review rounds, and one year may fit ongoing video or content work. Confirm the exact product page, current availability, and digital delivery timing before ordering."
+        ]
+      },
+      {
+        heading: "Prepare app, device, account, payment, and delivery details",
+        paragraphs: [
+          "List the Adobe apps or workflows required for the project, Windows or Mac environment, account email requirements if applicable, selected term, project start date, user count, and preferred support contact. Confirm that the selected subscription option matches these requirements before payment.",
+          "Keep the Alibaba order number or PayPal invoice reference with the confirmed inquiry after payment, and do not send passwords or client media credentials. DIGILICEN supports Alibaba online payment and PayPal invoice requests where available. DIGILICEN does not provide cracked software, pirated copies, unsafe activation tools, or bypass methods."
         ]
       }
     ]
