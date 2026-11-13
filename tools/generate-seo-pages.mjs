@@ -4,7 +4,7 @@ const SITE_URL = "https://digilicen.com";
 const SITE_NAME = "DIGILICEN";
 const EMAIL = "digilicen@outlook.com";
 const WHATSAPP = "https://wa.me/8619928777176";
-const LASTMOD = "2026-11-11";
+const LASTMOD = "2026-11-13";
 const SOURCE = await readFile(new URL("../app.js", import.meta.url), "utf8");
 
 function extractLiteral(name, terminator) {
@@ -2594,6 +2594,39 @@ const BLOG_POSTS = [
         heading: "Prepare workflow, device, account, payment, and delivery details",
         paragraphs: [
           "List the required design, image, video, document, or export workflows, Adobe apps to be confirmed, Windows or Mac environment, account email requirements if applicable, selected term, start date, user count, and preferred support contact. Confirm compatibility and account requirements before payment, and do not send passwords, confidential translations, or private client files.",
+          "Keep the Alibaba order number or PayPal invoice reference with the confirmed inquiry after payment. DIGILICEN supports Alibaba online payment and PayPal invoice requests where available. DIGILICEN does not provide cracked software, pirated copies, unsafe activation tools, or bypass methods."
+        ]
+      }
+    ]
+  },
+  {
+    slug: "adobe-creative-cloud-subscription-guide-for-social-media-content",
+    title: "Adobe Creative Cloud Subscription Guide for Social Media Content Production",
+    description: "Plan an Adobe Creative Cloud inquiry for social media content production, compare current terms and prices, and prepare workflow, device, account, payment, and delivery details.",
+    category: "Adobe Creative Cloud",
+    date: "2026-11-13",
+    heroImage: "assets/adobe-creative-large.png",
+    related: ["adobe-1-month", "adobe-3-month", "adobe-6-month", "adobe-1-year"],
+    cta: "Send DIGILICEN your social media content schedule, required Adobe apps, Windows or Mac environment, preferred subscription term, account requirements, and payment method to request current availability.",
+    sections: [
+      {
+        heading: "Plan the complete social media content workflow",
+        paragraphs: [
+          "A social media content workflow may include a content calendar, image preparation, short video editing, motion assets, platform-size variations, captions or graphics, internal review, revisions, exports, and scheduled delivery. Use the complete publishing cycle when planning an Adobe Creative Cloud inquiry instead of counting only the first post date.",
+          "Share the expected start date, publishing period, target platforms, required creative workflows, user count, review rounds, and output formats before payment. Include time for platform variations, late campaign changes, final corrections, and reusable asset preparation when deciding how long access is needed."
+        ]
+      },
+      {
+        heading: "Compare current Adobe Creative Cloud terms and prices",
+        paragraphs: [
+          "DIGILICEN currently lists Adobe Creative Cloud for 1 month at US$6.00, 3 months at US$15.00, 6 months at US$30.00, and 1 year at US$50.00. Compare these options with the complete planning, production, review, revision, and publishing timeline.",
+          "One month may fit a limited content batch, three or six months may fit a campaign season or regular publishing cycle, and one year may fit ongoing social media production. Confirm the exact product page, required Adobe apps, current availability, and digital delivery timing before ordering."
+        ]
+      },
+      {
+        heading: "Prepare workflow, device, account, payment, and delivery details",
+        paragraphs: [
+          "List the required image, video, motion, design, or export workflows, Adobe apps to be confirmed, Windows or Mac environment, account email requirements if applicable, selected term, start date, user count, and preferred support contact. Confirm compatibility and account requirements before payment, and do not send passwords or private social account credentials.",
           "Keep the Alibaba order number or PayPal invoice reference with the confirmed inquiry after payment. DIGILICEN supports Alibaba online payment and PayPal invoice requests where available. DIGILICEN does not provide cracked software, pirated copies, unsafe activation tools, or bypass methods."
         ]
       }
