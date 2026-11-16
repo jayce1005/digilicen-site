@@ -85,7 +85,7 @@ node tools/generate-seo-pages.mjs
 
 ## Reseller catalog import
 
-The reseller catalog is stored in `reseller-products.js` and loaded before `app.js`. The current import contains 91 products. Public prices are calculated as supplier GC cost multiplied by 6, where 1 GC is treated as US$1 before markup. Existing products in `app.js` keep their separately confirmed prices.
+The reseller catalog is stored in `reseller-products.js` and loaded before `app.js`. The current import contains 91 products. Public prices use tiered markup, where 1 GC is treated as US$1 before markup: up to 3 GC uses 6x, above 3 through 10 GC uses 4x, above 10 through 50 GC uses 2.5x, and above 50 GC uses 1.5x. Existing products in `app.js` keep their separately confirmed prices.
 
 Refresh the catalog with credentials supplied only through environment variables:
 

@@ -2,7 +2,12 @@ import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 
 const API_BASE = "https://reseller.ado-besoft.com";
-const MARKUP_MULTIPLIER = 6;
+const PRICING_TIERS = [
+  { maxGc: 3, multiplier: 6 },
+  { maxGc: 10, multiplier: 4 },
+  { maxGc: 50, multiplier: 2.5 },
+  { maxGc: Infinity, multiplier: 1.5 }
+];
 
 const CATEGORY_MAP = {
   "Account trading": "Account Services",
@@ -56,6 +61,14 @@ function slugify(value) {
 
 function formatMoney(value) {
   return Number(value).toFixed(2);
+}
+
+function priceMultiplier(costGc) {
+  return PRICING_TIERS.find((tier) => costGc <= tier.maxGc).multiplier;
+}
+
+function retailPrice(costGc) {
+  return Number((costGc * priceMultiplier(costGc)).toFixed(2));
 }
 
 function termLabel(month) {
@@ -178,7 +191,7 @@ const normalized = sourceProducts.map((source) => {
       term: termLabel(Number(option.month)),
       monthCode: Number(option.month),
       supplierCostGc: Number(option.priceGoldCoins),
-      priceUsd: Number((Number(option.priceGoldCoins) * MARKUP_MULTIPLIER).toFixed(2)),
+      priceUsd: retailPrice(Number(option.priceGoldCoins)),
       availableCount: Number(option.availableCount || 0)
     }));
   const prices = options.map((option) => option.priceUsd);
@@ -209,7 +222,6 @@ const normalized = sourceProducts.map((source) => {
     requiresEmail: Boolean(source.requiresEmail),
     warrantyType: asciiText(source.warrantyType || "confirm-before-order"),
     warrantyDays: source.warrantyDays == null ? null : Number(source.warrantyDays),
-    markupMultiplier: MARKUP_MULTIPLIER,
     options,
     sourceImageUrl: source.imageUrl
   };
@@ -224,7 +236,7 @@ const productsWithImages = await mapWithConcurrency(normalized, 3, async (produc
 });
 
 const publicProducts = productsWithImages.map((product) => {
-  const { sourceImageUrl, markupMultiplier, ...publicProduct } = product;
+  const { sourceImageUrl, ...publicProduct } = product;
   return {
     ...publicProduct,
     options: publicProduct.options.map(({ supplierCostGc, ...option }) => option)
@@ -238,10 +250,10 @@ await writeFile(
   `${JSON.stringify({
     importedAt: new Date().toISOString(),
     source: API_BASE,
-    markupMultiplier: MARKUP_MULTIPLIER,
+    pricingModel: "0-3 GC x6; >3-10 GC x4; >10-50 GC x2.5; >50 GC x1.5",
     productCount: productsWithImages.length,
     products: productsWithImages
   }, null, 2)}\n`
 );
 
-console.log(`Imported ${productsWithImages.length} products at ${MARKUP_MULTIPLIER}x supplier GC cost.`);
+console.log(`Imported ${productsWithImages.length} products with tiered GC pricing.`);

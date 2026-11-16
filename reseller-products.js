@@ -9,9 +9,9 @@ const RESELLER_PRODUCTS = [
     "badge": "Adobe Team Version",
     "version": "Digital Subscription",
     "term": "Multiple Options",
-    "price": "US$7.20-48.00",
+    "price": "US$7.20-32.00",
     "priceMin": 7.2,
-    "priceMax": 48,
+    "priceMax": 32,
     "summary": "Adobe Team Version Accounts (Provided by the seller) digital product inquiry with 7 Days, 14 Days, 1 Month, 3 Months options. Confirm requirements, compatibility, delivery, warranty, and availability before payment.",
     "alibaba": "",
     "contactOnly": true,
@@ -43,7 +43,7 @@ const RESELLER_PRODUCTS = [
       {
         "term": "3 Months",
         "monthCode": 3,
-        "priceUsd": 48,
+        "priceUsd": 32,
         "availableCount": 477
       }
     ],
@@ -132,9 +132,9 @@ const RESELLER_PRODUCTS = [
     "badge": "Capcut Pro Accounts",
     "version": "Digital Subscription",
     "term": "Multiple Options",
-    "price": "US$1.92-74.10",
+    "price": "US$1.92-30.88",
     "priceMin": 1.92,
-    "priceMax": 74.1,
+    "priceMax": 30.88,
     "summary": "Capcut Pro Accounts With Full Warranty digital product inquiry with 7 Days, 1 Month, 6 Months options. Confirm requirements, compatibility, delivery, warranty, and availability before payment.",
     "alibaba": "",
     "contactOnly": true,
@@ -160,7 +160,7 @@ const RESELLER_PRODUCTS = [
       {
         "term": "6 Months",
         "monthCode": 6,
-        "priceUsd": 74.1,
+        "priceUsd": 30.88,
         "availableCount": 0
       }
     ],
@@ -175,9 +175,9 @@ const RESELLER_PRODUCTS = [
     "badge": "Autodesk Admin 250",
     "version": "Digital Subscription",
     "term": "1 Year",
-    "price": "US$156.00",
-    "priceMin": 156,
-    "priceMax": 156,
+    "price": "US$65.00",
+    "priceMin": 65,
+    "priceMax": 65,
     "summary": "Autodesk Admin 250 invite | 01 Year digital product inquiry with 1 Year option. Confirm requirements, compatibility, delivery, warranty, and availability before payment.",
     "alibaba": "",
     "contactOnly": true,
@@ -191,7 +191,7 @@ const RESELLER_PRODUCTS = [
       {
         "term": "1 Year",
         "monthCode": 12,
-        "priceUsd": 156,
+        "priceUsd": 65,
         "availableCount": 1
       }
     ],
@@ -206,9 +206,9 @@ const RESELLER_PRODUCTS = [
     "badge": "Autodesk Admin 3000",
     "version": "Digital Subscription",
     "term": "3 Years",
-    "price": "US$240.00",
-    "priceMin": 240,
-    "priceMax": 240,
+    "price": "US$100.00",
+    "priceMin": 100,
+    "priceMax": 100,
     "summary": "Autodesk Admin 3000 invite | 03 Years warranty 6 month digital product inquiry with 3 Years option. Confirm requirements, compatibility, delivery, warranty, and availability before payment.",
     "alibaba": "",
     "contactOnly": true,
@@ -222,7 +222,7 @@ const RESELLER_PRODUCTS = [
       {
         "term": "3 Years",
         "monthCode": 36,
-        "priceUsd": 240,
+        "priceUsd": 100,
         "availableCount": 2
       }
     ],
@@ -268,9 +268,9 @@ const RESELLER_PRODUCTS = [
     "badge": "Windows 11 Pro",
     "version": "Digital License Key",
     "term": "1 Year",
-    "price": "US$23.76",
-    "priceMin": 23.76,
-    "priceMax": 23.76,
+    "price": "US$15.84",
+    "priceMin": 15.84,
+    "priceMax": 15.84,
     "summary": "Windows 11 Pro - Retail Key (Global) digital product inquiry with 1 Year option. Confirm requirements, compatibility, delivery, warranty, and availability before payment.",
     "alibaba": "",
     "contactOnly": true,
@@ -284,7 +284,7 @@ const RESELLER_PRODUCTS = [
       {
         "term": "1 Year",
         "monthCode": 12,
-        "priceUsd": 23.76,
+        "priceUsd": 15.84,
         "availableCount": 15
       }
     ],
@@ -330,9 +330,9 @@ const RESELLER_PRODUCTS = [
     "badge": "Microsoft Office 2021",
     "version": "Digital License Key",
     "term": "One-Time",
-    "price": "US$108.00",
-    "priceMin": 108,
-    "priceMax": 108,
+    "price": "US$45.00",
+    "priceMin": 45,
+    "priceMax": 45,
     "summary": "Microsoft Office 2021 Professional Plus - 5 PC Keys (Global) digital product inquiry with One-Time option. Confirm requirements, compatibility, delivery, warranty, and availability before payment.",
     "alibaba": "",
     "contactOnly": true,
@@ -346,7 +346,7 @@ const RESELLER_PRODUCTS = [
       {
         "term": "One-Time",
         "monthCode": 0,
-        "priceUsd": 108,
+        "priceUsd": 45,
         "availableCount": 14
       }
     ],
@@ -392,9 +392,9 @@ const RESELLER_PRODUCTS = [
     "badge": "Windows 10 Pro",
     "version": "Digital License Key",
     "term": "1 Year",
-    "price": "US$24.00",
-    "priceMin": 24,
-    "priceMax": 24,
+    "price": "US$16.00",
+    "priceMin": 16,
+    "priceMax": 16,
     "summary": "Windows 10 Pro - OEM Key (Global) digital product inquiry with 1 Year option. Confirm requirements, compatibility, delivery, warranty, and availability before payment.",
     "alibaba": "",
     "contactOnly": true,
@@ -408,7 +408,7 @@ const RESELLER_PRODUCTS = [
       {
         "term": "1 Year",
         "monthCode": 12,
-        "priceUsd": 24,
+        "priceUsd": 16,
         "availableCount": 3
       }
     ],
@@ -423,9 +423,9 @@ const RESELLER_PRODUCTS = [
     "badge": "Autodesk (Commercial -",
     "version": "Digital Product",
     "term": "Multiple Options",
-    "price": "US$48.00-270.00",
-    "priceMin": 48,
-    "priceMax": 270,
+    "price": "US$32.00-112.50",
+    "priceMin": 32,
+    "priceMax": 112.5,
     "summary": "Autodesk (Commercial - Flex) AEC-All Apps digital product inquiry with 1 Month, 1 Year options. Confirm requirements, compatibility, delivery, warranty, and availability before payment.",
     "alibaba": "",
     "contactOnly": true,
@@ -439,13 +439,13 @@ const RESELLER_PRODUCTS = [
       {
         "term": "1 Month",
         "monthCode": 1,
-        "priceUsd": 48,
+        "priceUsd": 32,
         "availableCount": 97
       },
       {
         "term": "1 Year",
         "monthCode": 12,
-        "priceUsd": 270,
+        "priceUsd": 112.5,
         "availableCount": 113
       }
     ],
@@ -708,9 +708,9 @@ const RESELLER_PRODUCTS = [
     "badge": "Japanese TK One-Year",
     "version": "Digital Account Service",
     "term": "One-Time",
-    "price": "US$42.00",
-    "priceMin": 42,
-    "priceMax": 42,
+    "price": "US$28.00",
+    "priceMin": 28,
+    "priceMax": 28,
     "summary": "Japanese TK One-Year Veteran / 1000+ Followers / Email digital account service with One-Time option. Confirm requirements, compatibility, delivery, warranty, and availability before payment.",
     "alibaba": "",
     "contactOnly": true,
@@ -724,7 +724,7 @@ const RESELLER_PRODUCTS = [
       {
         "term": "One-Time",
         "monthCode": 0,
-        "priceUsd": 42,
+        "priceUsd": 28,
         "availableCount": 10
       }
     ],
@@ -832,9 +832,9 @@ const RESELLER_PRODUCTS = [
     "badge": "US Apple ID",
     "version": "Digital Account Service",
     "term": "One-Time",
-    "price": "US$27.00",
-    "priceMin": 27,
-    "priceMax": 27,
+    "price": "US$18.00",
+    "priceMin": 18,
+    "priceMax": 18,
     "summary": "US Apple ID / Brand New Account digital account service with One-Time option. Confirm requirements, compatibility, delivery, warranty, and availability before payment.",
     "alibaba": "",
     "contactOnly": true,
@@ -848,7 +848,7 @@ const RESELLER_PRODUCTS = [
       {
         "term": "One-Time",
         "monthCode": 0,
-        "priceUsd": 27,
+        "priceUsd": 18,
         "availableCount": 11
       }
     ],
@@ -863,9 +863,9 @@ const RESELLER_PRODUCTS = [
     "badge": "US Apple ID",
     "version": "Digital Account Service",
     "term": "One-Time",
-    "price": "US$33.00",
-    "priceMin": 33,
-    "priceMax": 33,
+    "price": "US$22.00",
+    "priceMin": 22,
+    "priceMax": 22,
     "summary": "US Apple ID / Exclusive digital account service with One-Time option. Confirm requirements, compatibility, delivery, warranty, and availability before payment.",
     "alibaba": "",
     "contactOnly": true,
@@ -879,7 +879,7 @@ const RESELLER_PRODUCTS = [
       {
         "term": "One-Time",
         "monthCode": 0,
-        "priceUsd": 33,
+        "priceUsd": 22,
         "availableCount": 12
       }
     ],
@@ -894,9 +894,9 @@ const RESELLER_PRODUCTS = [
     "badge": "Canva Edu Pro",
     "version": "Digital Product",
     "term": "1 Year",
-    "price": "US$54.60",
-    "priceMin": 54.6,
-    "priceMax": 54.6,
+    "price": "US$36.40",
+    "priceMin": 36.4,
+    "priceMax": 36.4,
     "summary": "Canva Edu Pro Admin (500 invitations) digital product inquiry with 1 Year option. Confirm requirements, compatibility, delivery, warranty, and availability before payment.",
     "alibaba": "",
     "contactOnly": true,
@@ -910,7 +910,7 @@ const RESELLER_PRODUCTS = [
       {
         "term": "1 Year",
         "monthCode": 12,
-        "priceUsd": 54.6,
+        "priceUsd": 36.4,
         "availableCount": 7
       }
     ],
@@ -925,9 +925,9 @@ const RESELLER_PRODUCTS = [
     "badge": "Canva Pro accounts",
     "version": "Digital Subscription",
     "term": "1 Year",
-    "price": "US$29.76",
-    "priceMin": 29.76,
-    "priceMax": 29.76,
+    "price": "US$19.84",
+    "priceMin": 19.84,
+    "priceMax": 19.84,
     "summary": "Canva Pro accounts digital product inquiry with 1 Year option. Confirm requirements, compatibility, delivery, warranty, and availability before payment.",
     "alibaba": "",
     "contactOnly": true,
@@ -941,7 +941,7 @@ const RESELLER_PRODUCTS = [
       {
         "term": "1 Year",
         "monthCode": 12,
-        "priceUsd": 29.76,
+        "priceUsd": 19.84,
         "availableCount": 10
       }
     ],
@@ -956,9 +956,9 @@ const RESELLER_PRODUCTS = [
     "badge": "LinkedIn Business -",
     "version": "Professional Digital Product",
     "term": "1 Year",
-    "price": "US$570.00",
-    "priceMin": 570,
-    "priceMax": 570,
+    "price": "US$142.50",
+    "priceMin": 142.5,
+    "priceMax": 142.5,
     "summary": "LinkedIn Business - Full 12 Months digital product inquiry with 1 Year option. Confirm requirements, compatibility, delivery, warranty, and availability before payment.",
     "alibaba": "",
     "contactOnly": true,
@@ -972,7 +972,7 @@ const RESELLER_PRODUCTS = [
       {
         "term": "1 Year",
         "monthCode": 12,
-        "priceUsd": 570,
+        "priceUsd": 142.5,
         "availableCount": 65
       }
     ],
@@ -987,9 +987,9 @@ const RESELLER_PRODUCTS = [
     "badge": "LinkedIn Career -",
     "version": "Professional Digital Product",
     "term": "1 Year",
-    "price": "US$450.00",
-    "priceMin": 450,
-    "priceMax": 450,
+    "price": "US$112.50",
+    "priceMin": 112.5,
+    "priceMax": 112.5,
     "summary": "LinkedIn Career - Full 12 Months digital product inquiry with 1 Year option. Confirm requirements, compatibility, delivery, warranty, and availability before payment.",
     "alibaba": "",
     "contactOnly": true,
@@ -1003,7 +1003,7 @@ const RESELLER_PRODUCTS = [
       {
         "term": "1 Year",
         "monthCode": 12,
-        "priceUsd": 450,
+        "priceUsd": 112.5,
         "availableCount": 11
       }
     ],
@@ -1080,9 +1080,9 @@ const RESELLER_PRODUCTS = [
     "badge": "Autodesk (Commercial -",
     "version": "Digital Product",
     "term": "Multiple Options",
-    "price": "US$30.00-210.00",
-    "priceMin": 30,
-    "priceMax": 210,
+    "price": "US$20.00-87.50",
+    "priceMin": 20,
+    "priceMax": 87.5,
     "summary": "Autodesk (Commercial - Flex) AEC-Any single software digital product inquiry with 1 Month, 1 Year options. Confirm requirements, compatibility, delivery, warranty, and availability before payment.",
     "alibaba": "",
     "contactOnly": true,
@@ -1096,13 +1096,13 @@ const RESELLER_PRODUCTS = [
       {
         "term": "1 Month",
         "monthCode": 1,
-        "priceUsd": 30,
+        "priceUsd": 20,
         "availableCount": 96
       },
       {
         "term": "1 Year",
         "monthCode": 12,
-        "priceUsd": 210,
+        "priceUsd": 87.5,
         "availableCount": 5
       }
     ],
@@ -1179,9 +1179,9 @@ const RESELLER_PRODUCTS = [
     "badge": "Figma EDU -",
     "version": "Digital Subscription",
     "term": "1 Year",
-    "price": "US$42.00",
-    "priceMin": 42,
-    "priceMax": 42,
+    "price": "US$28.00",
+    "priceMin": 28,
+    "priceMax": 28,
     "summary": "Figma EDU - Ready-made account (1-2 years) digital product inquiry with 1 Year option. Confirm requirements, compatibility, delivery, warranty, and availability before payment.",
     "alibaba": "",
     "contactOnly": true,
@@ -1195,7 +1195,7 @@ const RESELLER_PRODUCTS = [
       {
         "term": "1 Year",
         "monthCode": 12,
-        "priceUsd": 42,
+        "priceUsd": 28,
         "availableCount": 40
       }
     ],
@@ -1334,9 +1334,9 @@ const RESELLER_PRODUCTS = [
     "badge": "Adobe Acrobat 2020",
     "version": "Digital License Key",
     "term": "One-Time",
-    "price": "US$150.00",
-    "priceMin": 150,
-    "priceMax": 150,
+    "price": "US$62.50",
+    "priceMin": 62.5,
+    "priceMax": 62.5,
     "summary": "Adobe Acrobat 2020 Lifetime Serial Number - Windows digital product inquiry with One-Time option. Confirm requirements, compatibility, delivery, warranty, and availability before payment.",
     "alibaba": "",
     "contactOnly": true,
@@ -1350,7 +1350,7 @@ const RESELLER_PRODUCTS = [
       {
         "term": "One-Time",
         "monthCode": 0,
-        "priceUsd": 150,
+        "priceUsd": 62.5,
         "availableCount": 95
       }
     ],
@@ -1365,9 +1365,9 @@ const RESELLER_PRODUCTS = [
     "badge": "Adobe Photoshop plugins-Seedance",
     "version": "Digital Product",
     "term": "One-Time",
-    "price": "US$54.00",
-    "priceMin": 54,
-    "priceMax": 54,
+    "price": "US$36.00",
+    "priceMin": 36,
+    "priceMax": 36,
     "summary": "Adobe Photoshop plugins-Seedance / Image 2.0 / Nano Banana Pro 1000 credits digital product inquiry with One-Time option. Confirm requirements, compatibility, delivery, warranty, and availability before payment.",
     "alibaba": "",
     "contactOnly": true,
@@ -1381,7 +1381,7 @@ const RESELLER_PRODUCTS = [
       {
         "term": "One-Time",
         "monthCode": 0,
-        "priceUsd": 54,
+        "priceUsd": 36,
         "availableCount": 91
       }
     ],
@@ -1396,10 +1396,72 @@ const RESELLER_PRODUCTS = [
     "badge": "Adobe Photoshop plugins-Seedance",
     "version": "Digital Product",
     "term": "One-Time",
+    "price": "US$112.50",
+    "priceMin": 112.5,
+    "priceMax": 112.5,
+    "summary": "Adobe Photoshop plugins-Seedance / Image 2.0 / Nano Banana Pro 5000 credits digital product inquiry with One-Time option. Confirm requirements, compatibility, delivery, warranty, and availability before payment.",
+    "alibaba": "",
+    "contactOnly": true,
+    "delivery": "Digital delivery after availability and order confirmation",
+    "available": true,
+    "availableCount": 100,
+    "requiresEmail": false,
+    "warrantyType": "full",
+    "warrantyDays": null,
+    "options": [
+      {
+        "term": "One-Time",
+        "monthCode": 0,
+        "priceUsd": 112.5,
+        "availableCount": 100
+      }
+    ],
+    "image": "assets/catalog/reseller-274-adobe-photoshop-plugins-seedance-image-2-0-nano-banana-pro-5000-credits.png"
+  },
+  {
+    "slug": "reseller-275-adobe-photoshop-plugins-seedance-image-2-0-nano-banana-pro-10000-credits",
+    "name": "Adobe Photoshop plugins-Seedance / Image 2.0 / Nano Banana Pro 10000 credits",
+    "category": "AI Tools",
+    "sourceCategory": "Ai Tools",
+    "sourceId": 275,
+    "badge": "Adobe Photoshop plugins-Seedance",
+    "version": "Digital Product",
+    "term": "One-Time",
+    "price": "US$135.00",
+    "priceMin": 135,
+    "priceMax": 135,
+    "summary": "Adobe Photoshop plugins-Seedance / Image 2.0 / Nano Banana Pro 10000 credits digital product inquiry with One-Time option. Confirm requirements, compatibility, delivery, warranty, and availability before payment.",
+    "alibaba": "",
+    "contactOnly": true,
+    "delivery": "Digital delivery after availability and order confirmation",
+    "available": true,
+    "availableCount": 100,
+    "requiresEmail": false,
+    "warrantyType": "full",
+    "warrantyDays": null,
+    "options": [
+      {
+        "term": "One-Time",
+        "monthCode": 0,
+        "priceUsd": 135,
+        "availableCount": 100
+      }
+    ],
+    "image": "assets/catalog/reseller-275-adobe-photoshop-plugins-seedance-image-2-0-nano-banana-pro-10000-credits.png"
+  },
+  {
+    "slug": "reseller-276-adobe-photoshop-plugins-seedance-image-2-0-nano-banana-pro-20000-credits",
+    "name": "Adobe Photoshop plugins-Seedance / Image 2.0 / Nano Banana Pro 20000 credits",
+    "category": "AI Tools",
+    "sourceCategory": "Ai Tools",
+    "sourceId": 276,
+    "badge": "Adobe Photoshop plugins-Seedance",
+    "version": "Digital Product",
+    "term": "One-Time",
     "price": "US$270.00",
     "priceMin": 270,
     "priceMax": 270,
-    "summary": "Adobe Photoshop plugins-Seedance / Image 2.0 / Nano Banana Pro 5000 credits digital product inquiry with One-Time option. Confirm requirements, compatibility, delivery, warranty, and availability before payment.",
+    "summary": "Adobe Photoshop plugins-Seedance / Image 2.0 / Nano Banana Pro 20000 credits digital product inquiry with One-Time option. Confirm requirements, compatibility, delivery, warranty, and availability before payment.",
     "alibaba": "",
     "contactOnly": true,
     "delivery": "Digital delivery after availability and order confirmation",
@@ -1416,68 +1478,6 @@ const RESELLER_PRODUCTS = [
         "availableCount": 100
       }
     ],
-    "image": "assets/catalog/reseller-274-adobe-photoshop-plugins-seedance-image-2-0-nano-banana-pro-5000-credits.png"
-  },
-  {
-    "slug": "reseller-275-adobe-photoshop-plugins-seedance-image-2-0-nano-banana-pro-10000-credits",
-    "name": "Adobe Photoshop plugins-Seedance / Image 2.0 / Nano Banana Pro 10000 credits",
-    "category": "AI Tools",
-    "sourceCategory": "Ai Tools",
-    "sourceId": 275,
-    "badge": "Adobe Photoshop plugins-Seedance",
-    "version": "Digital Product",
-    "term": "One-Time",
-    "price": "US$540.00",
-    "priceMin": 540,
-    "priceMax": 540,
-    "summary": "Adobe Photoshop plugins-Seedance / Image 2.0 / Nano Banana Pro 10000 credits digital product inquiry with One-Time option. Confirm requirements, compatibility, delivery, warranty, and availability before payment.",
-    "alibaba": "",
-    "contactOnly": true,
-    "delivery": "Digital delivery after availability and order confirmation",
-    "available": true,
-    "availableCount": 100,
-    "requiresEmail": false,
-    "warrantyType": "full",
-    "warrantyDays": null,
-    "options": [
-      {
-        "term": "One-Time",
-        "monthCode": 0,
-        "priceUsd": 540,
-        "availableCount": 100
-      }
-    ],
-    "image": "assets/catalog/reseller-275-adobe-photoshop-plugins-seedance-image-2-0-nano-banana-pro-10000-credits.png"
-  },
-  {
-    "slug": "reseller-276-adobe-photoshop-plugins-seedance-image-2-0-nano-banana-pro-20000-credits",
-    "name": "Adobe Photoshop plugins-Seedance / Image 2.0 / Nano Banana Pro 20000 credits",
-    "category": "AI Tools",
-    "sourceCategory": "Ai Tools",
-    "sourceId": 276,
-    "badge": "Adobe Photoshop plugins-Seedance",
-    "version": "Digital Product",
-    "term": "One-Time",
-    "price": "US$1080.00",
-    "priceMin": 1080,
-    "priceMax": 1080,
-    "summary": "Adobe Photoshop plugins-Seedance / Image 2.0 / Nano Banana Pro 20000 credits digital product inquiry with One-Time option. Confirm requirements, compatibility, delivery, warranty, and availability before payment.",
-    "alibaba": "",
-    "contactOnly": true,
-    "delivery": "Digital delivery after availability and order confirmation",
-    "available": true,
-    "availableCount": 100,
-    "requiresEmail": false,
-    "warrantyType": "full",
-    "warrantyDays": null,
-    "options": [
-      {
-        "term": "One-Time",
-        "monthCode": 0,
-        "priceUsd": 1080,
-        "availableCount": 100
-      }
-    ],
     "image": "assets/catalog/reseller-276-adobe-photoshop-plugins-seedance-image-2-0-nano-banana-pro-20000-credits.png"
   },
   {
@@ -1489,9 +1489,9 @@ const RESELLER_PRODUCTS = [
     "badge": "Miro Lifetime Panel",
     "version": "Digital Subscription",
     "term": "1 Year",
-    "price": "US$66.00",
-    "priceMin": 66,
-    "priceMax": 66,
+    "price": "US$27.50",
+    "priceMin": 27.5,
+    "priceMax": 27.5,
     "summary": "Miro Lifetime Panel 100 invite digital product inquiry with 1 Year option. Confirm requirements, compatibility, delivery, warranty, and availability before payment.",
     "alibaba": "",
     "contactOnly": true,
@@ -1505,7 +1505,7 @@ const RESELLER_PRODUCTS = [
       {
         "term": "1 Year",
         "monthCode": 12,
-        "priceUsd": 66,
+        "priceUsd": 27.5,
         "availableCount": 29
       }
     ],
@@ -1650,9 +1650,9 @@ const RESELLER_PRODUCTS = [
     "badge": "Framer AI 1",
     "version": "Digital Product",
     "term": "1 Year",
-    "price": "US$72.00",
-    "priceMin": 72,
-    "priceMax": 72,
+    "price": "US$30.00",
+    "priceMin": 30,
+    "priceMax": 30,
     "summary": "Framer AI 1 Year digital product inquiry with 1 Year option. Confirm requirements, compatibility, delivery, warranty, and availability before payment.",
     "alibaba": "",
     "contactOnly": true,
@@ -1666,7 +1666,7 @@ const RESELLER_PRODUCTS = [
       {
         "term": "1 Year",
         "monthCode": 12,
-        "priceUsd": 72,
+        "priceUsd": 30,
         "availableCount": 20
       }
     ],
@@ -1743,9 +1743,9 @@ const RESELLER_PRODUCTS = [
     "badge": "100 Kids' Stories",
     "version": "Professional Digital Product",
     "term": "One-Time",
-    "price": "US$90.00",
-    "priceMin": 90,
-    "priceMax": 90,
+    "price": "US$37.50",
+    "priceMin": 37.5,
+    "priceMax": 37.5,
     "summary": "100 Kids' Stories + 150 Editable Videos & Templates to Resell as Your Own! digital product inquiry with One-Time option. Confirm requirements, compatibility, delivery, warranty, and availability before payment.",
     "alibaba": "",
     "contactOnly": true,
@@ -1759,7 +1759,7 @@ const RESELLER_PRODUCTS = [
       {
         "term": "One-Time",
         "monthCode": 0,
-        "priceUsd": 90,
+        "priceUsd": 37.5,
         "availableCount": 30
       }
     ],
@@ -1774,9 +1774,9 @@ const RESELLER_PRODUCTS = [
     "badge": "30 Million Digital",
     "version": "Professional Digital Product",
     "term": "One-Time",
-    "price": "US$120.00",
-    "priceMin": 120,
-    "priceMax": 120,
+    "price": "US$50.00",
+    "priceMin": 50,
+    "priceMax": 50,
     "summary": "30 Million Digital Products Bundle digital product inquiry with One-Time option. Confirm requirements, compatibility, delivery, warranty, and availability before payment.",
     "alibaba": "",
     "contactOnly": true,
@@ -1790,7 +1790,7 @@ const RESELLER_PRODUCTS = [
       {
         "term": "One-Time",
         "monthCode": 0,
-        "priceUsd": 120,
+        "priceUsd": 50,
         "availableCount": 60
       }
     ],
@@ -1805,9 +1805,9 @@ const RESELLER_PRODUCTS = [
     "badge": "3000+ Professional Logo",
     "version": "Professional Digital Product",
     "term": "One-Time",
-    "price": "US$48.00",
-    "priceMin": 48,
-    "priceMax": 48,
+    "price": "US$32.00",
+    "priceMin": 32,
+    "priceMax": 32,
     "summary": "3000+ Professional Logo Bundle (Lifetime Access) digital product inquiry with One-Time option. Confirm requirements, compatibility, delivery, warranty, and availability before payment.",
     "alibaba": "",
     "contactOnly": true,
@@ -1821,7 +1821,7 @@ const RESELLER_PRODUCTS = [
       {
         "term": "One-Time",
         "monthCode": 0,
-        "priceUsd": 48,
+        "priceUsd": 32,
         "availableCount": 20
       }
     ],
@@ -1836,9 +1836,9 @@ const RESELLER_PRODUCTS = [
     "badge": "Adobe Acrobat Pro",
     "version": "Digital License Key",
     "term": "One-Time",
-    "price": "US$360.00",
-    "priceMin": 360,
-    "priceMax": 360,
+    "price": "US$90.00",
+    "priceMin": 90,
+    "priceMax": 90,
     "summary": "Adobe Acrobat Pro 2022 - Lifetime License Key (1 PC | Windows) digital product inquiry with One-Time option. Confirm requirements, compatibility, delivery, warranty, and availability before payment.",
     "alibaba": "",
     "contactOnly": true,
@@ -1852,7 +1852,7 @@ const RESELLER_PRODUCTS = [
       {
         "term": "One-Time",
         "monthCode": 0,
-        "priceUsd": 360,
+        "priceUsd": 90,
         "availableCount": 18
       }
     ],
@@ -1867,9 +1867,9 @@ const RESELLER_PRODUCTS = [
     "badge": "Adobe Photoshop 2021",
     "version": "Digital Product",
     "term": "One-Time",
-    "price": "US$90.00",
-    "priceMin": 90,
-    "priceMax": 90,
+    "price": "US$37.50",
+    "priceMin": 37.5,
+    "priceMax": 37.5,
     "summary": "Adobe Photoshop 2021 Pre-Activated - Windows digital product inquiry with One-Time option. Confirm requirements, compatibility, delivery, warranty, and availability before payment.",
     "alibaba": "",
     "contactOnly": true,
@@ -1883,7 +1883,7 @@ const RESELLER_PRODUCTS = [
       {
         "term": "One-Time",
         "monthCode": 0,
-        "priceUsd": 90,
+        "priceUsd": 37.5,
         "availableCount": 20
       }
     ],
@@ -1898,9 +1898,9 @@ const RESELLER_PRODUCTS = [
     "badge": "ChatGPT plus 1",
     "version": "Digital Subscription",
     "term": "1 Month",
-    "price": "US$45.06",
-    "priceMin": 45.06,
-    "priceMax": 45.06,
+    "price": "US$30.04",
+    "priceMin": 30.04,
+    "priceMax": 30.04,
     "summary": "ChatGPT plus 1 Months Account - Exclusive Account digital product inquiry with 1 Month option. Confirm requirements, compatibility, delivery, warranty, and availability before payment.",
     "alibaba": "",
     "contactOnly": true,
@@ -1914,7 +1914,7 @@ const RESELLER_PRODUCTS = [
       {
         "term": "1 Month",
         "monthCode": 1,
-        "priceUsd": 45.06,
+        "priceUsd": 30.04,
         "availableCount": 20
       }
     ],
@@ -1929,9 +1929,9 @@ const RESELLER_PRODUCTS = [
     "badge": "Adobe Individual Accounts",
     "version": "Digital Subscription",
     "term": "Multiple Options",
-    "price": "US$72.00-180.00",
-    "priceMin": 72,
-    "priceMax": 180,
+    "price": "US$30.00-75.00",
+    "priceMin": 30,
+    "priceMax": 75,
     "summary": "Adobe Individual Accounts activated using a redemption code-Very stable & Full Warranty digital product inquiry with 1 Month, 2 Months, 3 Months options. Confirm requirements, compatibility, delivery, warranty, and availability before payment.",
     "alibaba": "",
     "contactOnly": true,
@@ -1945,19 +1945,19 @@ const RESELLER_PRODUCTS = [
       {
         "term": "1 Month",
         "monthCode": 1,
-        "priceUsd": 72,
+        "priceUsd": 30,
         "availableCount": 71
       },
       {
         "term": "2 Months",
         "monthCode": 2,
-        "priceUsd": 132,
+        "priceUsd": 55,
         "availableCount": 1
       },
       {
         "term": "3 Months",
         "monthCode": 3,
-        "priceUsd": 180,
+        "priceUsd": 75,
         "availableCount": 66
       }
     ],
@@ -1972,9 +1972,9 @@ const RESELLER_PRODUCTS = [
     "badge": "Microsoft Office 2021",
     "version": "Digital License Key",
     "term": "One-Time",
-    "price": "US$330.00",
-    "priceMin": 330,
-    "priceMax": 330,
+    "price": "US$82.50",
+    "priceMin": 82.5,
+    "priceMax": 82.5,
     "summary": "Microsoft Office 2021 Professional Plus - 1 PC Keys (Global) digital product inquiry with One-Time option. Confirm requirements, compatibility, delivery, warranty, and availability before payment.",
     "alibaba": "",
     "contactOnly": true,
@@ -1988,7 +1988,7 @@ const RESELLER_PRODUCTS = [
       {
         "term": "One-Time",
         "monthCode": 0,
-        "priceUsd": 330,
+        "priceUsd": 82.5,
         "availableCount": 1
       }
     ],
@@ -2003,9 +2003,9 @@ const RESELLER_PRODUCTS = [
     "badge": "Microsoft Office 2019",
     "version": "Digital License Key",
     "term": "One-Time",
-    "price": "US$138.00",
-    "priceMin": 138,
-    "priceMax": 138,
+    "price": "US$57.50",
+    "priceMin": 57.5,
+    "priceMax": 57.5,
     "summary": "Microsoft Office 2019 Professional Plus - 1 PC Key (Global) digital product inquiry with One-Time option. Confirm requirements, compatibility, delivery, warranty, and availability before payment.",
     "alibaba": "",
     "contactOnly": true,
@@ -2019,7 +2019,7 @@ const RESELLER_PRODUCTS = [
       {
         "term": "One-Time",
         "monthCode": 0,
-        "priceUsd": 138,
+        "priceUsd": 57.5,
         "availableCount": 10
       }
     ],
@@ -2034,9 +2034,9 @@ const RESELLER_PRODUCTS = [
     "badge": "Microsoft Office 2019",
     "version": "Digital License Key",
     "term": "One-Time",
-    "price": "US$90.00",
-    "priceMin": 90,
-    "priceMax": 90,
+    "price": "US$37.50",
+    "priceMin": 37.5,
+    "priceMax": 37.5,
     "summary": "Microsoft Office 2019 Home & Business for Mac - 1 Mac Key (Global) digital product inquiry with One-Time option. Confirm requirements, compatibility, delivery, warranty, and availability before payment.",
     "alibaba": "",
     "contactOnly": true,
@@ -2050,7 +2050,7 @@ const RESELLER_PRODUCTS = [
       {
         "term": "One-Time",
         "monthCode": 0,
-        "priceUsd": 90,
+        "priceUsd": 37.5,
         "availableCount": 16
       }
     ],
@@ -2065,9 +2065,9 @@ const RESELLER_PRODUCTS = [
     "badge": "Microsoft Visio 2024",
     "version": "Digital Subscription",
     "term": "One-Time",
-    "price": "US$210.00",
-    "priceMin": 210,
-    "priceMax": 210,
+    "price": "US$87.50",
+    "priceMin": 87.5,
+    "priceMax": 87.5,
     "summary": "Microsoft Visio 2024 - Account Binding (Global) digital product inquiry with One-Time option. Confirm requirements, compatibility, delivery, warranty, and availability before payment.",
     "alibaba": "",
     "contactOnly": true,
@@ -2081,7 +2081,7 @@ const RESELLER_PRODUCTS = [
       {
         "term": "One-Time",
         "monthCode": 0,
-        "priceUsd": 210,
+        "priceUsd": 87.5,
         "availableCount": 16
       }
     ],
@@ -2127,9 +2127,9 @@ const RESELLER_PRODUCTS = [
     "badge": "CorelDRAW Graphics Suite",
     "version": "Digital License Key",
     "term": "One-Time",
-    "price": "US$120.00",
-    "priceMin": 120,
-    "priceMax": 120,
+    "price": "US$50.00",
+    "priceMin": 50,
+    "priceMax": 50,
     "summary": "CorelDRAW Graphics Suite & Technical Suite Lifetime License-TECH-17-24-WIN digital product inquiry with One-Time option. Confirm requirements, compatibility, delivery, warranty, and availability before payment.",
     "alibaba": "",
     "contactOnly": true,
@@ -2143,7 +2143,7 @@ const RESELLER_PRODUCTS = [
       {
         "term": "One-Time",
         "monthCode": 0,
-        "priceUsd": 120,
+        "priceUsd": 50,
         "availableCount": 17
       }
     ],
@@ -2158,9 +2158,9 @@ const RESELLER_PRODUCTS = [
     "badge": "CorelDRAW Graphics Suite",
     "version": "Digital License Key",
     "term": "One-Time",
-    "price": "US$150.00",
-    "priceMin": 150,
-    "priceMax": 150,
+    "price": "US$62.50",
+    "priceMin": 62.5,
+    "priceMax": 62.5,
     "summary": "CorelDRAW Graphics Suite & Technical Suite Lifetime License-TECH-2025-WIN digital product inquiry with One-Time option. Confirm requirements, compatibility, delivery, warranty, and availability before payment.",
     "alibaba": "",
     "contactOnly": true,
@@ -2174,7 +2174,7 @@ const RESELLER_PRODUCTS = [
       {
         "term": "One-Time",
         "monthCode": 0,
-        "priceUsd": 150,
+        "priceUsd": 62.5,
         "availableCount": 17
       }
     ],
@@ -2189,9 +2189,9 @@ const RESELLER_PRODUCTS = [
     "badge": "CorelDRAW Graphics Suite",
     "version": "Digital License Key",
     "term": "One-Time",
-    "price": "US$126.00",
-    "priceMin": 126,
-    "priceMax": 126,
+    "price": "US$52.50",
+    "priceMin": 52.5,
+    "priceMax": 52.5,
     "summary": "CorelDRAW Graphics Suite & Technical Suite Lifetime License-GRAPHIC-2024-MAC digital product inquiry with One-Time option. Confirm requirements, compatibility, delivery, warranty, and availability before payment.",
     "alibaba": "",
     "contactOnly": true,
@@ -2205,7 +2205,7 @@ const RESELLER_PRODUCTS = [
       {
         "term": "One-Time",
         "monthCode": 0,
-        "priceUsd": 126,
+        "priceUsd": 52.5,
         "availableCount": 17
       }
     ],
@@ -2220,9 +2220,9 @@ const RESELLER_PRODUCTS = [
     "badge": "CorelDRAW Graphics Suite",
     "version": "Digital License Key",
     "term": "One-Time",
-    "price": "US$150.00",
-    "priceMin": 150,
-    "priceMax": 150,
+    "price": "US$62.50",
+    "priceMin": 62.5,
+    "priceMax": 62.5,
     "summary": "CorelDRAW Graphics Suite & Technical Suite Lifetime License-GRAPHIC-2025-MAC digital product inquiry with One-Time option. Confirm requirements, compatibility, delivery, warranty, and availability before payment.",
     "alibaba": "",
     "contactOnly": true,
@@ -2236,7 +2236,7 @@ const RESELLER_PRODUCTS = [
       {
         "term": "One-Time",
         "monthCode": 0,
-        "priceUsd": 150,
+        "priceUsd": 62.5,
         "availableCount": 17
       }
     ],
@@ -2251,9 +2251,9 @@ const RESELLER_PRODUCTS = [
     "badge": "CorelDRAW Graphics Suite",
     "version": "Digital License Key",
     "term": "One-Time",
-    "price": "US$120.00",
-    "priceMin": 120,
-    "priceMax": 120,
+    "price": "US$50.00",
+    "priceMin": 50,
+    "priceMax": 50,
     "summary": "CorelDRAW Graphics Suite & Technical Suite Lifetime License-STD-20-21-WIN digital product inquiry with One-Time option. Confirm requirements, compatibility, delivery, warranty, and availability before payment.",
     "alibaba": "",
     "contactOnly": true,
@@ -2267,7 +2267,7 @@ const RESELLER_PRODUCTS = [
       {
         "term": "One-Time",
         "monthCode": 0,
-        "priceUsd": 120,
+        "priceUsd": 50,
         "availableCount": 34
       }
     ],
@@ -2282,9 +2282,9 @@ const RESELLER_PRODUCTS = [
     "badge": "CorelDRAW Graphics Suite",
     "version": "Digital License Key",
     "term": "One-Time",
-    "price": "US$360.00",
-    "priceMin": 360,
-    "priceMax": 360,
+    "price": "US$90.00",
+    "priceMin": 90,
+    "priceMax": 90,
     "summary": "CorelDRAW Graphics Suite & Technical Suite Lifetime License-GRAPHIC-2026-MAC digital product inquiry with One-Time option. Confirm requirements, compatibility, delivery, warranty, and availability before payment.",
     "alibaba": "",
     "contactOnly": true,
@@ -2298,7 +2298,7 @@ const RESELLER_PRODUCTS = [
       {
         "term": "One-Time",
         "monthCode": 0,
-        "priceUsd": 360,
+        "priceUsd": 90,
         "availableCount": 15
       }
     ],
@@ -2313,9 +2313,9 @@ const RESELLER_PRODUCTS = [
     "badge": "CorelDRAW Graphics Suite",
     "version": "Digital License Key",
     "term": "One-Time",
-    "price": "US$330.00",
-    "priceMin": 330,
-    "priceMax": 330,
+    "price": "US$82.50",
+    "priceMin": 82.5,
+    "priceMax": 82.5,
     "summary": "CorelDRAW Graphics Suite & Technical Suite Lifetime License-STD-2026-WIN digital product inquiry with One-Time option. Confirm requirements, compatibility, delivery, warranty, and availability before payment.",
     "alibaba": "",
     "contactOnly": true,
@@ -2329,7 +2329,7 @@ const RESELLER_PRODUCTS = [
       {
         "term": "One-Time",
         "monthCode": 0,
-        "priceUsd": 330,
+        "priceUsd": 82.5,
         "availableCount": 15
       }
     ],
@@ -2344,9 +2344,9 @@ const RESELLER_PRODUCTS = [
     "badge": "AnyDesk - 1",
     "version": "Digital License Key",
     "term": "1 Year",
-    "price": "US$330.00",
-    "priceMin": 330,
-    "priceMax": 330,
+    "price": "US$82.50",
+    "priceMin": 82.5,
+    "priceMax": 82.5,
     "summary": "AnyDesk - 1 Year License | Solo Remote Activation digital product inquiry with 1 Year option. Confirm requirements, compatibility, delivery, warranty, and availability before payment.",
     "alibaba": "",
     "contactOnly": true,
@@ -2360,7 +2360,7 @@ const RESELLER_PRODUCTS = [
       {
         "term": "1 Year",
         "monthCode": 12,
-        "priceUsd": 330,
+        "priceUsd": 82.5,
         "availableCount": 29
       }
     ],
@@ -2375,9 +2375,9 @@ const RESELLER_PRODUCTS = [
     "badge": "AnyDesk - 1",
     "version": "Digital License Key",
     "term": "1 Year",
-    "price": "US$480.00",
-    "priceMin": 480,
-    "priceMax": 480,
+    "price": "US$120.00",
+    "priceMin": 120,
+    "priceMax": 120,
     "summary": "AnyDesk - 1 Year License | Standard Remote Activation digital product inquiry with 1 Year option. Confirm requirements, compatibility, delivery, warranty, and availability before payment.",
     "alibaba": "",
     "contactOnly": true,
@@ -2391,7 +2391,7 @@ const RESELLER_PRODUCTS = [
       {
         "term": "1 Year",
         "monthCode": 12,
-        "priceUsd": 480,
+        "priceUsd": 120,
         "availableCount": 15
       }
     ],
@@ -2406,9 +2406,9 @@ const RESELLER_PRODUCTS = [
     "badge": "AnyDesk - 1",
     "version": "Digital License Key",
     "term": "1 Year",
-    "price": "US$780.00",
-    "priceMin": 780,
-    "priceMax": 780,
+    "price": "US$195.00",
+    "priceMin": 195,
+    "priceMax": 195,
     "summary": "AnyDesk - 1 Year License | Advanced Remote Activation digital product inquiry with 1 Year option. Confirm requirements, compatibility, delivery, warranty, and availability before payment.",
     "alibaba": "",
     "contactOnly": true,
@@ -2422,7 +2422,7 @@ const RESELLER_PRODUCTS = [
       {
         "term": "1 Year",
         "monthCode": 12,
-        "priceUsd": 780,
+        "priceUsd": 195,
         "availableCount": 15
       }
     ],
@@ -2437,9 +2437,9 @@ const RESELLER_PRODUCTS = [
     "badge": "Bluebeam Revu eXtreme",
     "version": "Digital License Key",
     "term": "One-Time",
-    "price": "US$1020.00",
-    "priceMin": 1020,
-    "priceMax": 1020,
+    "price": "US$255.00",
+    "priceMin": 255,
+    "priceMax": 255,
     "summary": "Bluebeam Revu eXtreme 20.3 - Perpetual License Key (Windows) digital product inquiry with One-Time option. Confirm requirements, compatibility, delivery, warranty, and availability before payment.",
     "alibaba": "",
     "contactOnly": true,
@@ -2453,7 +2453,7 @@ const RESELLER_PRODUCTS = [
       {
         "term": "One-Time",
         "monthCode": 0,
-        "priceUsd": 1020,
+        "priceUsd": 255,
         "availableCount": 10
       }
     ],
@@ -2468,9 +2468,9 @@ const RESELLER_PRODUCTS = [
     "badge": "Bolt.new Pro -",
     "version": "Digital Subscription",
     "term": "1 Year",
-    "price": "US$210.00",
-    "priceMin": 210,
-    "priceMax": 210,
+    "price": "US$87.50",
+    "priceMin": 87.5,
+    "priceMax": 87.5,
     "summary": "Bolt.new Pro - 12 Months | Official Coupon Code | Activation on Your Account digital product inquiry with 1 Year option. Confirm requirements, compatibility, delivery, warranty, and availability before payment.",
     "alibaba": "",
     "contactOnly": true,
@@ -2484,7 +2484,7 @@ const RESELLER_PRODUCTS = [
       {
         "term": "1 Year",
         "monthCode": 12,
-        "priceUsd": 210,
+        "priceUsd": 87.5,
         "availableCount": 13
       }
     ],
@@ -2499,9 +2499,9 @@ const RESELLER_PRODUCTS = [
     "badge": "ChatPRD Pro -",
     "version": "Digital Subscription",
     "term": "1 Year",
-    "price": "US$72.00",
-    "priceMin": 72,
-    "priceMax": 72,
+    "price": "US$30.00",
+    "priceMin": 30,
+    "priceMax": 30,
     "summary": "ChatPRD Pro - 12 Months | Official Coupon Code | Activation on Your Account digital product inquiry with 1 Year option. Confirm requirements, compatibility, delivery, warranty, and availability before payment.",
     "alibaba": "",
     "contactOnly": true,
@@ -2515,7 +2515,7 @@ const RESELLER_PRODUCTS = [
       {
         "term": "1 Year",
         "monthCode": 12,
-        "priceUsd": 72,
+        "priceUsd": 30,
         "availableCount": 14
       }
     ],
@@ -2530,9 +2530,9 @@ const RESELLER_PRODUCTS = [
     "badge": "Envato Elements subscription",
     "version": "Digital Subscription",
     "term": "Multiple Options",
-    "price": "US$18.00-72.00",
+    "price": "US$18.00-32.00",
     "priceMin": 18,
-    "priceMax": 72,
+    "priceMax": 32,
     "summary": "Envato Elements subscription digital product inquiry with 1 Month, 3 Months, 6 Months, 1 Year options. Confirm requirements, compatibility, delivery, warranty, and availability before payment.",
     "alibaba": "",
     "contactOnly": true,
@@ -2552,19 +2552,19 @@ const RESELLER_PRODUCTS = [
       {
         "term": "3 Months",
         "monthCode": 3,
-        "priceUsd": 30,
+        "priceUsd": 20,
         "availableCount": 21
       },
       {
         "term": "6 Months",
         "monthCode": 6,
-        "priceUsd": 48,
+        "priceUsd": 32,
         "availableCount": 21
       },
       {
         "term": "1 Year",
         "monthCode": 12,
-        "priceUsd": 72,
+        "priceUsd": 30,
         "availableCount": 8
       }
     ],
@@ -2579,9 +2579,9 @@ const RESELLER_PRODUCTS = [
     "badge": "Freepik subscription",
     "version": "Digital Subscription",
     "term": "Multiple Options",
-    "price": "US$18.00-72.00",
+    "price": "US$18.00-32.00",
     "priceMin": 18,
-    "priceMax": 72,
+    "priceMax": 32,
     "summary": "Freepik subscription digital product inquiry with 1 Month, 3 Months, 6 Months, 1 Year options. Confirm requirements, compatibility, delivery, warranty, and availability before payment.",
     "alibaba": "",
     "contactOnly": true,
@@ -2601,19 +2601,19 @@ const RESELLER_PRODUCTS = [
       {
         "term": "3 Months",
         "monthCode": 3,
-        "priceUsd": 30,
+        "priceUsd": 20,
         "availableCount": 20
       },
       {
         "term": "6 Months",
         "monthCode": 6,
-        "priceUsd": 48,
+        "priceUsd": 32,
         "availableCount": 20
       },
       {
         "term": "1 Year",
         "monthCode": 12,
-        "priceUsd": 72,
+        "priceUsd": 30,
         "availableCount": 10
       }
     ],
@@ -2628,9 +2628,9 @@ const RESELLER_PRODUCTS = [
     "badge": "Adobe Individual Accounts",
     "version": "Digital Subscription",
     "term": "Multiple Options",
-    "price": "US$36.00-96.00",
-    "priceMin": 36,
-    "priceMax": 96,
+    "price": "US$24.00-40.00",
+    "priceMin": 24,
+    "priceMax": 40,
     "summary": "Adobe Individual Accounts activated using a credit card (Very stable & Provided by the seller) digital product inquiry with 1 Month, 3 Months options. Confirm requirements, compatibility, delivery, warranty, and availability before payment.",
     "alibaba": "",
     "contactOnly": true,
@@ -2644,13 +2644,13 @@ const RESELLER_PRODUCTS = [
       {
         "term": "1 Month",
         "monthCode": 1,
-        "priceUsd": 36,
+        "priceUsd": 24,
         "availableCount": 2
       },
       {
         "term": "3 Months",
         "monthCode": 3,
-        "priceUsd": 96,
+        "priceUsd": 40,
         "availableCount": 0
       }
     ],
@@ -2665,9 +2665,9 @@ const RESELLER_PRODUCTS = [
     "badge": "Lovable Pro (Lite)",
     "version": "Digital Product",
     "term": "Multiple Options",
-    "price": "US$7.80-26.46",
+    "price": "US$7.80-17.64",
     "priceMin": 7.8,
-    "priceMax": 26.46,
+    "priceMax": 17.64,
     "summary": "Lovable Pro (Lite) digital product inquiry with 1 Month, 1 Year options. Confirm requirements, compatibility, delivery, warranty, and availability before payment.",
     "alibaba": "",
     "contactOnly": true,
@@ -2687,7 +2687,7 @@ const RESELLER_PRODUCTS = [
       {
         "term": "1 Year",
         "monthCode": 12,
-        "priceUsd": 26.46,
+        "priceUsd": 17.64,
         "availableCount": 4
       }
     ],
@@ -2702,9 +2702,9 @@ const RESELLER_PRODUCTS = [
     "badge": "Adobe Photoshop plugins-Seedance",
     "version": "Digital Product",
     "term": "One-Time",
-    "price": "US$27.00",
-    "priceMin": 27,
-    "priceMax": 27,
+    "price": "US$18.00",
+    "priceMin": 18,
+    "priceMax": 18,
     "summary": "Adobe Photoshop plugins-Seedance / Image 2.0 / Nano Banana Pro 1000 credits digital product inquiry with One-Time option. Confirm requirements, compatibility, delivery, warranty, and availability before payment.",
     "alibaba": "",
     "contactOnly": true,
@@ -2718,7 +2718,7 @@ const RESELLER_PRODUCTS = [
       {
         "term": "One-Time",
         "monthCode": 0,
-        "priceUsd": 27,
+        "priceUsd": 18,
         "availableCount": 499
       }
     ],
@@ -2733,9 +2733,9 @@ const RESELLER_PRODUCTS = [
     "badge": "Trimble SketchUp Pro",
     "version": "Digital Subscription",
     "term": "1 Year",
-    "price": "US$360.00",
-    "priceMin": 360,
-    "priceMax": 360,
+    "price": "US$90.00",
+    "priceMin": 90,
+    "priceMax": 90,
     "summary": "Trimble SketchUp Pro - Personal Email Activation digital product inquiry with 1 Year option. Confirm requirements, compatibility, delivery, warranty, and availability before payment.",
     "alibaba": "",
     "contactOnly": true,
@@ -2749,7 +2749,7 @@ const RESELLER_PRODUCTS = [
       {
         "term": "1 Year",
         "monthCode": 12,
-        "priceUsd": 360,
+        "priceUsd": 90,
         "availableCount": 26
       }
     ],
@@ -2764,9 +2764,9 @@ const RESELLER_PRODUCTS = [
     "badge": "Trimble SketchUp studio",
     "version": "Digital Subscription",
     "term": "1 Year",
-    "price": "US$480.00",
-    "priceMin": 480,
-    "priceMax": 480,
+    "price": "US$120.00",
+    "priceMin": 120,
+    "priceMax": 120,
     "summary": "Trimble SketchUp studio - Personal Email Activation digital product inquiry with 1 Year option. Confirm requirements, compatibility, delivery, warranty, and availability before payment.",
     "alibaba": "",
     "contactOnly": true,
@@ -2780,7 +2780,7 @@ const RESELLER_PRODUCTS = [
       {
         "term": "1 Year",
         "monthCode": 12,
-        "priceUsd": 480,
+        "priceUsd": 120,
         "availableCount": 59
       }
     ],
@@ -2795,9 +2795,9 @@ const RESELLER_PRODUCTS = [
     "badge": "[Slot] Netflix 4K",
     "version": "Digital Account Service",
     "term": "1 Month",
-    "price": "US$18.06",
-    "priceMin": 18.06,
-    "priceMax": 18.06,
+    "price": "US$12.04",
+    "priceMin": 12.04,
+    "priceMax": 12.04,
     "summary": "[Slot] Netflix 4K Premium 1 month Full Warranty digital account service with 1 Month option. Confirm requirements, compatibility, delivery, warranty, and availability before payment.",
     "alibaba": "",
     "contactOnly": true,
@@ -2811,7 +2811,7 @@ const RESELLER_PRODUCTS = [
       {
         "term": "1 Month",
         "monthCode": 1,
-        "priceUsd": 18.06,
+        "priceUsd": 12.04,
         "availableCount": 0
       }
     ],
@@ -2826,9 +2826,9 @@ const RESELLER_PRODUCTS = [
     "badge": "Kling AI Pro",
     "version": "Digital Subscription",
     "term": "1 Month",
-    "price": "US$132.00",
-    "priceMin": 132,
-    "priceMax": 132,
+    "price": "US$55.00",
+    "priceMin": 55,
+    "priceMax": 55,
     "summary": "Kling AI Pro accounts - 3,300 Credits | 30 Days Validity | 7 Days Warranty digital product inquiry with 1 Month option. Confirm requirements, compatibility, delivery, warranty, and availability before payment.",
     "alibaba": "",
     "contactOnly": true,
@@ -2842,7 +2842,7 @@ const RESELLER_PRODUCTS = [
       {
         "term": "1 Month",
         "monthCode": 1,
-        "priceUsd": 132,
+        "priceUsd": 55,
         "availableCount": 62
       }
     ],
@@ -2919,9 +2919,9 @@ const RESELLER_PRODUCTS = [
     "badge": "ADOBE CREATIVE CLOUD",
     "version": "Digital Product",
     "term": "1 Year",
-    "price": "US$540.00",
-    "priceMin": 540,
-    "priceMax": 540,
+    "price": "US$135.00",
+    "priceMin": 135,
+    "priceMax": 135,
     "summary": "ADOBE CREATIVE CLOUD HIGHER EDUCATION Version+ STOCK PREMIUM - 1 YEAR Full Warranty digital product inquiry with 1 Year option. Confirm requirements, compatibility, delivery, warranty, and availability before payment.",
     "alibaba": "",
     "contactOnly": true,
@@ -2935,7 +2935,7 @@ const RESELLER_PRODUCTS = [
       {
         "term": "1 Year",
         "monthCode": 12,
-        "priceUsd": 540,
+        "priceUsd": 135,
         "availableCount": 1
       }
     ],
