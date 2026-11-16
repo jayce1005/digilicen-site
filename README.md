@@ -71,7 +71,7 @@ SEO files included:
 
 - `_redirects` - redirects `www.digilicen.com` to the canonical root domain when supported by the Cloudflare static deployment
 - `robots.txt` - allows search engines and points to the sitemap
-- `sitemap.xml` - lists the homepage, category landing pages, blog pages, and 26 static product pages
+- `sitemap.xml` - lists the homepage, category landing pages, blog pages, and 121 static product pages
 - `categories/*.html` - category landing pages for Autodesk, Adobe Creative Cloud, and AutoCAD / engineering software keywords
 - `blog/*.html` - software license buying guides for long-tail SEO keywords
 - `products/*.html` - static product pages with unique titles, descriptions, canonical URLs, Open Graph tags, Product structured data, and breadcrumb structured data
@@ -82,6 +82,19 @@ After changing products, prices, images, or links in `app.js`, regenerate SEO pa
 ```sh
 node tools/generate-seo-pages.mjs
 ```
+
+## Reseller catalog import
+
+The reseller catalog is stored in `reseller-products.js` and loaded before `app.js`. The current import contains 91 products. Public prices are calculated as supplier GC cost multiplied by 6, where 1 GC is treated as US$1 before markup. Existing products in `app.js` keep their separately confirmed prices.
+
+Refresh the catalog with credentials supplied only through environment variables:
+
+```sh
+ADO_USER="..." ADO_PASS="..." node tools/import-reseller-products.mjs
+node tools/generate-seo-pages.mjs
+```
+
+The importer downloads local product images to `assets/catalog/`, writes the public catalog without supplier costs, and keeps the supplier-cost audit file in ignored local file `data/reseller-catalog-private.json`. Never commit credentials or the private audit file.
 
 ## Deploy
 

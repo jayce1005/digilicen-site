@@ -4,20 +4,23 @@ const SITE_URL = "https://digilicen.com";
 const SITE_NAME = "DIGILICEN";
 const EMAIL = "digilicen@outlook.com";
 const WHATSAPP = "https://wa.me/8619928777176";
-const LASTMOD = "2026-11-13";
+const LASTMOD = "2026-11-16";
 const SOURCE = await readFile(new URL("../app.js", import.meta.url), "utf8");
+const RESELLER_SOURCE = await readFile(new URL("../reseller-products.js", import.meta.url), "utf8");
 
-function extractLiteral(name, terminator) {
+function extractLiteral(name, terminator, source = SOURCE) {
   const marker = `const ${name} = `;
-  const start = SOURCE.indexOf(marker);
+  const start = source.indexOf(marker);
   if (start === -1) throw new Error(`Missing ${name}`);
   const literalStart = start + marker.length;
-  const end = SOURCE.indexOf(terminator, literalStart);
+  const end = source.indexOf(terminator, literalStart);
   if (end === -1) throw new Error(`Missing terminator for ${name}`);
-  return SOURCE.slice(literalStart, end + terminator.trim().length);
+  return source.slice(literalStart, end + terminator.trim().length);
 }
 
-const PRODUCTS = Function(`return ${extractLiteral("PRODUCTS", "\n];")}`)();
+const CORE_PRODUCTS = Function(`return ${extractLiteral("CORE_PRODUCTS", "\n];")}`)();
+const RESELLER_PRODUCTS = Function(`return ${extractLiteral("RESELLER_PRODUCTS", "\n];", RESELLER_SOURCE)}`)();
+const PRODUCTS = [...CORE_PRODUCTS, ...RESELLER_PRODUCTS];
 const CATEGORY_IMAGES = Function(`return ${extractLiteral("CATEGORY_IMAGES", "\n};")}`)();
 const PRODUCT_IMAGES = Function(`return ${extractLiteral("PRODUCT_IMAGES", "\n};")}`)();
 const CATEGORY_PAGES = [
@@ -29,7 +32,7 @@ const CATEGORY_PAGES = [
     heading: "Autodesk software license inquiries",
     intro: "Browse Autodesk commercial license options for design, engineering, BIM, architecture, manufacturing, and visualization workflows.",
     image: "assets/autodesk-generic.png",
-    match: (product) => product.category === "Autodesk" || product.category === "Engineering"
+    match: (product) => product.category === "Autodesk" || product.category === "Engineering" || product.name.includes("Autodesk")
   },
   {
     slug: "adobe-creative-cloud-subscription",
@@ -39,7 +42,7 @@ const CATEGORY_PAGES = [
     heading: "Adobe Creative Cloud subscription inquiries",
     intro: "Compare Adobe Creative Cloud subscription terms for creative, design, PDF, video, and professional production workflows.",
     image: "assets/adobe-creative-large.png",
-    match: (product) => product.category === "Adobe"
+    match: (product) => product.category === "Adobe" || product.name.includes("Adobe")
   },
   {
     slug: "autocad-engineering-software-licenses",
@@ -72,6 +75,31 @@ const CATEGORY_PAGES = [
     match: (product) => product.category === "Research Tools" || product.name.includes("EndNote") || product.name.includes("NVivo")
   }
 ];
+
+const RESELLER_CATEGORY_PAGES = [
+  ["Design Tools", "design-tools-digital-products", "Design Tools and Digital Products"],
+  ["Microsoft Office", "microsoft-office-windows-licenses", "Microsoft Office and Windows Licenses"],
+  ["Account Services", "digital-account-services", "Digital Account Services"],
+  ["Professional Growth", "professional-growth-digital-products", "Professional Growth Digital Products"],
+  ["AI Tools", "ai-tools-subscriptions", "AI Tools and Subscriptions"],
+  ["Streaming", "streaming-subscriptions", "Streaming Subscriptions"],
+  ["VPN Tools", "vpn-tools-subscriptions", "VPN Tools and Subscriptions"],
+  ["Remote Access", "remote-access-software", "Remote Access Software"]
+].map(([category, slug, name]) => {
+  const first = PRODUCTS.find((product) => product.category === category);
+  return {
+    slug,
+    name,
+    title: `${name} | DIGILICEN`,
+    description: `Browse ${name.toLowerCase()} with clear term and USD price options. Contact DIGILICEN to confirm requirements, availability, delivery, and warranty before payment.`,
+    heading: `${name.toLowerCase()} inquiries`,
+    intro: `Compare available ${name.toLowerCase()} and contact DIGILICEN to confirm the right term, account requirements, compatibility, delivery process, and current availability.`,
+    image: first?.image || "assets/genuine-software.png",
+    match: (product) => product.category === category
+  };
+});
+
+CATEGORY_PAGES.push(...RESELLER_CATEGORY_PAGES);
 const INFO_PAGES = [
   {
     slug: "about",
@@ -1285,7 +1313,7 @@ const BLOG_POSTS = [
     description: "Compare Revit, Revit LT, AEC Collection, and BIM Collection license inquiries for building design and BIM workflows.",
     category: "BIM software",
     date: "2026-08-17",
-    heroImage: "assets/revit-commercial.png",
+    heroImage: "assets/autodesk-generic.png",
     related: ["revit", "revit-lt", "aec-collection", "bim-collection"],
     cta: "Tell DIGILICEN whether your project needs full BIM collaboration, lighter Revit drafting, or a broader Autodesk collection before ordering.",
     sections: [
@@ -1384,7 +1412,7 @@ const BLOG_POSTS = [
     description: "Compare Inventor, Fusion 360, AutoCAD Mechanical, and AutoCAD license inquiries for manufacturing CAD workflows.",
     category: "Manufacturing CAD",
     date: "2026-08-20",
-    heroImage: "assets/inventor.png",
+    heroImage: "assets/autodesk-generic.png",
     related: ["inventor", "fusion-360", "autocad-mechanical", "autocad"],
     cta: "Tell DIGILICEN whether your manufacturing workflow needs mechanical design, product development, drafting, or general CAD before ordering.",
     sections: [
@@ -2688,6 +2716,7 @@ function compactSeoTitle(title) {
 }
 
 function imageFor(product) {
+  if (product.image) return product.image;
   return webImage(PRODUCT_IMAGES[product.slug] || CATEGORY_IMAGES[product.category] || "assets/genuine-software.png");
 }
 
@@ -2762,7 +2791,53 @@ function whatsappFor(product) {
 }
 
 function priceValue(product) {
-  return product.price.replace("US$", "");
+  return String(product.priceMin ?? product.price).replace("US$", "").split("-")[0];
+}
+
+function productOffers(product, canonical) {
+  const seller = {
+    "@type": "Organization",
+    name: SITE_NAME,
+    url: SITE_URL
+  };
+  if (product.options?.length > 1) {
+    return {
+      "@type": "AggregateOffer",
+      url: canonical,
+      priceCurrency: "USD",
+      lowPrice: product.priceMin,
+      highPrice: product.priceMax,
+      offerCount: product.options.length,
+      availability: product.available ? "https://schema.org/InStock" : "https://schema.org/OutOfStock",
+      seller
+    };
+  }
+  return {
+    "@type": "Offer",
+    url: canonical,
+    priceCurrency: "USD",
+    price: priceValue(product),
+    availability: product.available === false ? "https://schema.org/OutOfStock" : "https://schema.org/InStock",
+    seller
+  };
+}
+
+function productOptionsHtml(product) {
+  if (!product.options?.length) return "";
+  return `<div class="option-table-wrap">
+              <h2>Available options</h2>
+              <table class="option-table">
+                <thead><tr><th>Term</th><th>Price</th><th>Availability</th></tr></thead>
+                <tbody>
+                  ${product.options.map((option) => `<tr>
+                    <td>${escapeHtml(option.term)}</td>
+                    <td>US$${Number(option.priceUsd).toFixed(2)}</td>
+                    <td>${option.availableCount > 0 ? "Available" : "Confirm before ordering"}</td>
+                  </tr>`).join("\n                  ")}
+                </tbody>
+              </table>
+              <p>Prices are listed in USD. Contact DIGILICEN to confirm the selected term and current availability before payment.</p>
+            </div>`;
 }
 
 function productTitle(product) {
@@ -2779,6 +2854,9 @@ function productTitle(product) {
 }
 
 function productDescription(product) {
+  if (product.sourceId) {
+    return `${productLabel(product)} inquiry from DIGILICEN. Listed price ${product.price}. Confirm requirements, compatibility, delivery, warranty, and availability before payment.`;
+  }
   if (isContactOnly(product)) {
     if (product.name.includes("EndNote")) {
       return `EndNote 2025, 21, 20, and X9 license key inquiries for Win/Mac from DIGILICEN: ${product.price}, installer, tutorial, and remote support.`;
@@ -2823,6 +2901,23 @@ function productFaqs(product) {
         {
           question: `How do I order ${product.name}?`,
           answer: "This product does not use an Alibaba product link on DIGILICEN. Contact us by WhatsApp or email to confirm version, Windows or Mac platform, price, and delivery details."
+        }
+      ];
+    }
+
+    if (product.sourceId) {
+      return [
+        {
+          question: `Which options are available for ${product.name}?`,
+          answer: `${product.name} currently lists ${product.options.map((option) => `${option.term} at US$${Number(option.priceUsd).toFixed(2)}`).join(", ")}. Contact DIGILICEN to confirm availability before payment.`
+        },
+        {
+          question: `What should I confirm before ordering ${product.name}?`,
+          answer: "Confirm the selected term, regional and account requirements, device or operating-system compatibility, delivery method, and warranty terms before payment."
+        },
+        {
+          question: `How do I order ${product.name}?`,
+          answer: "Contact DIGILICEN by WhatsApp or email with the product name and selected term. Availability and delivery details will be confirmed before payment."
         }
       ];
     }
@@ -2882,7 +2977,10 @@ function productGuidance(product) {
       checklist: "Confirm the software name, version, Windows or Mac platform, language preference, installer package needs, tutorial needs, and whether remote installation support is required."
     }
   };
-  const guidance = categoryGuidance[product.category] || categoryGuidance.Autodesk;
+  const guidance = categoryGuidance[product.category] || {
+    audience: `Customers comparing ${product.category.toLowerCase()} for personal, professional, creative, office, or business workflows.`,
+    checklist: "Confirm the exact product, selected term, account or email requirements, supported region, operating system or device, delivery method, current availability, and warranty terms."
+  };
 
   return [
     {
@@ -2979,18 +3077,7 @@ function productPage(product) {
         value: deliveryText(product)
       }
     ],
-    offers: {
-      "@type": "Offer",
-      url: canonical,
-      priceCurrency: "USD",
-      price: priceValue(product),
-      availability: "https://schema.org/InStock",
-      seller: {
-        "@type": "Organization",
-        name: SITE_NAME,
-        url: SITE_URL
-      }
-    }
+    offers: productOffers(product, canonical)
   };
   const howToSchema = {
     "@context": "https://schema.org",
@@ -3079,7 +3166,7 @@ function productPage(product) {
     <meta name="twitter:title" content="${escapeHtml(title)}">
     <meta name="twitter:description" content="${escapeHtml(description)}">
     <meta name="twitter:image" content="${SITE_URL}/${image}">
-    <link rel="stylesheet" href="../styles.css?v=6">
+    <link rel="stylesheet" href="../styles.css?v=7">
     <script type="application/ld+json">${jsonLd(schema)}</script>
     <script type="application/ld+json">${jsonLd(howToSchema)}</script>
     <script type="application/ld+json">${jsonLd(breadcrumbSchema)}</script>
@@ -3117,12 +3204,12 @@ function productPage(product) {
               <span><strong>Version</strong> ${escapeHtml(product.version)}</span>
               <span><strong>Term</strong> ${escapeHtml(product.term)}</span>
               <span><strong>Price</strong> ${escapeHtml(product.price)}</span>
-              <span><strong>License type</strong> Genuine commercial software license</span>
+              <span><strong>Product type</strong> ${escapeHtml(product.sourceId ? product.version : "Genuine commercial software license")}</span>
               <span><strong>Delivery</strong> ${escapeHtml(deliveryText(product))}</span>
               <span><strong>Payment</strong> ${escapeHtml(paymentText(product))}</span>
               <span><strong>Support</strong> WhatsApp and email activation guidance</span>
             </div>
-            <div class="product-actions">
+            ${productOptionsHtml(product)}<div class="product-actions">
               ${productDetailActions(product)}
             </div>
           </div>
@@ -3225,7 +3312,7 @@ function productPage(product) {
       <div class="copyright">2026 Copyright (c) Digilicen.com</div>
     </footer>
 
-    <script src="../app.js?v=6"></script>
+    <script src="../app.js?v=7"></script>
   </body>
 </html>
 `;
@@ -3258,7 +3345,7 @@ function categoryPage(category) {
   const canonical = categoryUrl(category);
   const faqs = categoryFaqs(category, products);
   const contactOnly = products.length > 0 && products.every(isContactOnly);
-  const categoryImage = webImage(category.image);
+  const categoryImage = category.image.startsWith("assets/catalog/") ? category.image : webImage(category.image);
   const itemListSchema = {
     "@context": "https://schema.org",
     "@type": "ItemList",
@@ -3321,7 +3408,7 @@ function categoryPage(category) {
     <meta name="twitter:title" content="${escapeHtml(category.title)}">
     <meta name="twitter:description" content="${escapeHtml(category.description)}">
     <meta name="twitter:image" content="${SITE_URL}/${categoryImage}">
-    <link rel="stylesheet" href="../styles.css?v=6">
+    <link rel="stylesheet" href="../styles.css?v=7">
     <script type="application/ld+json">${jsonLd(itemListSchema)}</script>
     <script type="application/ld+json">${jsonLd(breadcrumbSchema)}</script>
     <script type="application/ld+json">${jsonLd(faqSchema)}</script>
@@ -3423,7 +3510,7 @@ function categoryPage(category) {
       <div class="copyright">2026 Copyright (c) Digilicen.com</div>
     </footer>
 
-    <script src="../app.js?v=6"></script>
+    <script src="../app.js?v=7"></script>
   </body>
 </html>
 `;
@@ -3464,7 +3551,7 @@ function blogIndexPage() {
     <meta property="og:url" content="${canonical}">
     <meta property="og:image" content="${SITE_URL}/${image}">
     <meta name="twitter:card" content="summary_large_image">
-    <link rel="stylesheet" href="../styles.css?v=6">
+    <link rel="stylesheet" href="../styles.css?v=7">
     <script type="application/ld+json">${jsonLd(blogSchema)}</script>
   </head>
   <body>
@@ -3519,7 +3606,7 @@ function blogIndexPage() {
       </div>
       <div class="copyright">2026 Copyright (c) Digilicen.com</div>
     </footer>
-    <script src="../app.js?v=6"></script>
+    <script src="../app.js?v=7"></script>
   </body>
 </html>
 `;
@@ -3622,7 +3709,7 @@ function blogPage(post) {
     <meta name="twitter:title" content="${escapeHtml(title)}">
     <meta name="twitter:description" content="${escapeHtml(post.description)}">
     <meta name="twitter:image" content="${SITE_URL}/${heroImage}">
-    <link rel="stylesheet" href="../styles.css?v=6">
+    <link rel="stylesheet" href="../styles.css?v=7">
     <script type="application/ld+json">${jsonLd(articleSchema)}</script>
     <script type="application/ld+json">${jsonLd(breadcrumbSchema)}</script>
     <script type="application/ld+json">${jsonLd(faqSchema)}</script>
@@ -3714,7 +3801,7 @@ function blogPage(post) {
       </div>
       <div class="copyright">2026 Copyright (c) Digilicen.com</div>
     </footer>
-    <script src="../app.js?v=6"></script>
+    <script src="../app.js?v=7"></script>
   </body>
 </html>
 `;
@@ -3792,7 +3879,7 @@ function infoPage(page) {
     <meta name="twitter:title" content="${escapeHtml(title)}">
     <meta name="twitter:description" content="${escapeHtml(page.description)}">
     <meta name="twitter:image" content="${SITE_URL}/${image}">
-    <link rel="stylesheet" href="styles.css?v=6">
+    <link rel="stylesheet" href="styles.css?v=7">
     <script type="application/ld+json">${jsonLd(webPageSchema)}</script>
     <script type="application/ld+json">${jsonLd(breadcrumbSchema)}</script>
     ${faqSchema ? `<script type="application/ld+json">${jsonLd(faqSchema)}</script>` : ""}
@@ -3885,7 +3972,7 @@ function infoPage(page) {
       </div>
       <div class="copyright">2026 Copyright (c) Digilicen.com</div>
     </footer>
-    <script src="app.js?v=6"></script>
+    <script src="app.js?v=7"></script>
   </body>
 </html>
 `;
@@ -3910,7 +3997,7 @@ function sitemapXml() {
     ...CATEGORY_PAGES.map((category) => ({
       loc: categoryUrl(category),
       priority: "0.9",
-      image: `${SITE_URL}/${webImage(category.image)}`,
+      image: `${SITE_URL}/${category.image.startsWith("assets/catalog/") ? category.image : webImage(category.image)}`,
       imageTitle: category.name,
       imageCaption: category.description
     })),

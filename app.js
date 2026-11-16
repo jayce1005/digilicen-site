@@ -1,4 +1,4 @@
-const PRODUCTS = [
+const CORE_PRODUCTS = [
   {
     slug: "adobe-1-year",
     name: "Adobe Creative Cloud",
@@ -337,6 +337,11 @@ const PRODUCTS = [
   }
 ];
 
+const PRODUCTS = [
+  ...CORE_PRODUCTS,
+  ...(typeof RESELLER_PRODUCTS === "undefined" ? [] : RESELLER_PRODUCTS)
+];
+
 const EMAIL = "digilicen@outlook.com";
 const WHATSAPP = "https://wa.me/8619928777176";
 const CATEGORY_IMAGES = {
@@ -397,6 +402,7 @@ function webImage(path) {
 }
 
 function imageFor(product) {
+  if (product.image) return product.image;
   return webImage(PRODUCT_IMAGES[product.slug] || CATEGORY_IMAGES[product.category] || "assets/genuine-software.png");
 }
 
@@ -419,8 +425,28 @@ function productSearchText(product) {
     product.version,
     product.term,
     product.summary,
-    product.price
+    product.price,
+    ...(product.options || []).flatMap((option) => [option.term, option.priceUsd])
   ].join(" ").toLowerCase();
+}
+
+function renderProductOptions(product) {
+  if (!product.options?.length) return "";
+  return `
+    <div class="option-table-wrap">
+      <h2>Available options</h2>
+      <table class="option-table">
+        <thead><tr><th>Term</th><th>Price</th><th>Availability</th></tr></thead>
+        <tbody>
+          ${product.options.map((option) => `<tr>
+            <td>${option.term}</td>
+            <td>US$${Number(option.priceUsd).toFixed(2)}</td>
+            <td>${option.availableCount > 0 ? "Available" : "Confirm before ordering"}</td>
+          </tr>`).join("")}
+        </tbody>
+      </table>
+      <p>Prices are listed in USD. Contact DIGILICEN to confirm the selected term and current availability before payment.</p>
+    </div>`;
 }
 
 function renderProducts(filter = activeFilter, query = activeQuery) {
@@ -502,11 +528,12 @@ function renderProductDetail() {
           <span><strong>Version</strong> ${product.version}</span>
           <span><strong>Term</strong> ${product.term}</span>
           <span><strong>Price</strong> ${product.price}</span>
-          <span><strong>License type</strong> Genuine commercial software license</span>
+          <span><strong>Product type</strong> ${product.sourceId ? product.version : "Genuine commercial software license"}</span>
           <span><strong>Delivery</strong> ${product.delivery || "Digital delivery after payment confirmation"}</span>
           <span><strong>Payment</strong> ${isContactOnly(product) ? "Contact us before ordering" : "Alibaba secure online payment or PayPal invoice"}</span>
           <span><strong>Support</strong> WhatsApp and email activation guidance</span>
         </div>
+        ${renderProductOptions(product)}
         <div class="product-actions">
           ${isContactOnly(product) ? `
           <a class="btn btn-primary" href="${whatsappFor(productLabel(product))}" target="_blank" rel="noopener">Contact Us on WhatsApp</a>
@@ -520,6 +547,17 @@ function renderProductDetail() {
   `;
 
   renderProductSelect(productLabel(product));
+}
+
+function renderFilters() {
+  const row = document.querySelector("#productFilters");
+  if (!row) return;
+  const categories = [...new Set(PRODUCTS.map((product) => product.category))].sort((a, b) => a.localeCompare(b));
+  row.innerHTML = ["all", ...categories].map((category) => `
+    <button class="filter-chip ${category === "all" ? "active" : ""}" type="button" data-filter="${category}">
+      ${category === "all" ? "All" : category}
+    </button>
+  `).join("");
 }
 
 function bindFilters() {
@@ -589,6 +627,7 @@ function bindMobileMenu() {
 }
 
 bindProductSearch();
+renderFilters();
 renderProducts();
 renderProductSelect();
 renderProductDetail();
