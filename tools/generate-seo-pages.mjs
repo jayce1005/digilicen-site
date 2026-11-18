@@ -100,6 +100,24 @@ const RESELLER_CATEGORY_PAGES = [
 });
 
 CATEGORY_PAGES.push(...RESELLER_CATEGORY_PAGES);
+
+const NON_CORE_CATEGORY_SLUGS = new Set([
+  "digital-account-services",
+  "streaming-subscriptions"
+]);
+const NON_CORE_PRODUCT_SOURCE_IDS = new Set([288, 289, 290]);
+
+function isSeoEligibleProduct(product) {
+  return product.category !== "Account Services" &&
+    product.category !== "Streaming" &&
+    !NON_CORE_PRODUCT_SOURCE_IDS.has(product.sourceId);
+}
+
+function isSeoEligibleCategory(category) {
+  return !NON_CORE_CATEGORY_SLUGS.has(category.slug);
+}
+
+const SEO_CATEGORY_PAGES = CATEGORY_PAGES.filter(isSeoEligibleCategory);
 const INFO_PAGES = [
   {
     slug: "about",
@@ -3187,7 +3205,7 @@ function productPage(product) {
     <title>${escapeHtml(title)}</title>
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <meta name="description" content="${escapeHtml(description)}">
-    <meta name="robots" content="index,follow,max-image-preview:large">
+    <meta name="robots" content="${isSeoEligibleProduct(product) ? "index,follow,max-image-preview:large" : "noindex,follow"}">
     <link rel="canonical" href="${canonical}">
     <meta property="og:type" content="product">
     <meta property="og:site_name" content="DIGILICEN">
@@ -3374,7 +3392,9 @@ function productCards(products) {
 }
 
 function categoryPage(category) {
-  const products = PRODUCTS.filter(category.match);
+  const products = PRODUCTS
+    .filter(category.match)
+    .filter((product) => !isSeoEligibleCategory(category) || isSeoEligibleProduct(product));
   const canonical = categoryUrl(category);
   const faqs = categoryFaqs(category, products);
   const contactOnly = products.length > 0 && products.every(isContactOnly);
@@ -3429,7 +3449,7 @@ function categoryPage(category) {
     <title>${escapeHtml(category.title)}</title>
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <meta name="description" content="${escapeHtml(category.description)}">
-    <meta name="robots" content="index,follow,max-image-preview:large">
+    <meta name="robots" content="${isSeoEligibleCategory(category) ? "index,follow,max-image-preview:large" : "noindex,follow"}">
     <link rel="canonical" href="${canonical}">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="DIGILICEN">
@@ -3519,7 +3539,7 @@ function categoryPage(category) {
           <h2>Software license categories</h2>
         </div>
         <div class="related-links">
-          ${CATEGORY_PAGES.filter((item) => item.slug !== category.slug).map((item) => `<a href="${item.slug}">${escapeHtml(item.name)}</a>`).join("\n          ")}
+          ${SEO_CATEGORY_PAGES.filter((item) => item.slug !== category.slug).map((item) => `<a href="${item.slug}">${escapeHtml(item.name)}</a>`).join("\n          ")}
           <a href="../#products">View all products</a>
         </div>
       </section>
@@ -3532,7 +3552,7 @@ function categoryPage(category) {
       </div>
       <div>
         <strong>Categories</strong>
-        ${CATEGORY_PAGES.map((item) => `<a href="${item.slug}">${escapeHtml(item.name)}</a>`).join("\n        ")}
+        ${SEO_CATEGORY_PAGES.map((item) => `<a href="${item.slug}">${escapeHtml(item.name)}</a>`).join("\n        ")}
       </div>
       <div>
         <strong>Contact</strong>
@@ -3629,7 +3649,7 @@ function blogIndexPage() {
       </div>
       <div>
         <strong>Categories</strong>
-        ${CATEGORY_PAGES.map((item) => `<a href="../categories/${item.slug}">${escapeHtml(item.name)}</a>`).join("\n        ")}
+        ${SEO_CATEGORY_PAGES.map((item) => `<a href="../categories/${item.slug}">${escapeHtml(item.name)}</a>`).join("\n        ")}
       </div>
       <div>
         <strong>Contact</strong>
@@ -3824,7 +3844,7 @@ function blogPage(post) {
       </div>
       <div>
         <strong>Categories</strong>
-        ${CATEGORY_PAGES.map((item) => `<a href="../categories/${item.slug}">${escapeHtml(item.name)}</a>`).join("\n        ")}
+        ${SEO_CATEGORY_PAGES.map((item) => `<a href="../categories/${item.slug}">${escapeHtml(item.name)}</a>`).join("\n        ")}
       </div>
       <div>
         <strong>Contact</strong>
@@ -4027,7 +4047,7 @@ function sitemapXml() {
       imageTitle: page.heading,
       imageCaption: page.description
     })),
-    ...CATEGORY_PAGES.map((category) => ({
+    ...SEO_CATEGORY_PAGES.map((category) => ({
       loc: categoryUrl(category),
       priority: "0.9",
       image: `${SITE_URL}/${category.image.startsWith("assets/catalog/") ? category.image : webImage(category.image)}`,
@@ -4048,7 +4068,7 @@ function sitemapXml() {
       imageTitle: post.title,
       imageCaption: post.description
     })),
-    ...PRODUCTS.map((product) => ({
+    ...PRODUCTS.filter(isSeoEligibleProduct).map((product) => ({
       loc: productUrl(product),
       priority: "0.8",
       image: `${SITE_URL}/${imageFor(product)}`,
@@ -4109,10 +4129,10 @@ function llmsTxt() {
   const mainPages = [
     ["Home", `${SITE_URL}/`, "DIGILICEN software license inquiry homepage."],
     ...INFO_PAGES.map((page) => [page.heading, infoPageUrl(page), page.description]),
-    ...CATEGORY_PAGES.map((category) => [category.name, categoryUrl(category), category.description]),
+    ...SEO_CATEGORY_PAGES.map((category) => [category.name, categoryUrl(category), category.description]),
     ["Software License Blog", `${SITE_URL}/blog/`, "DIGILICEN software license buying guides, payment notes, delivery notes, and support articles."]
   ];
-  const productPages = PRODUCTS.map((product) => [
+  const productPages = PRODUCTS.filter(isSeoEligibleProduct).map((product) => [
     productLabel(product),
     productUrl(product),
     `${product.summary} Listed price: ${product.price}.`

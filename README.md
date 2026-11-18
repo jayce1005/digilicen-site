@@ -96,6 +96,8 @@ node tools/generate-seo-pages.mjs
 
 The importer downloads local product images to `assets/catalog/`, writes the public catalog without supplier costs, and keeps the supplier-cost audit file in ignored local file `data/reseller-catalog-private.json`. Never commit credentials or the private audit file.
 
+For SEO focus, account-service and streaming category pages remain available to visitors but use `noindex,follow`; their product pages are excluded from `sitemap.xml` and `llms.txt`. The non-software content bundles with source IDs 288, 289, and 290 follow the same rule. Core software, design, AI, office, developer, research, VPN, and remote-access products remain indexable.
+
 ## Deploy
 
 This is a static site and can be uploaded to:
