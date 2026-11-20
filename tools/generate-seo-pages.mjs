@@ -4,7 +4,7 @@ const SITE_URL = "https://digilicen.com";
 const SITE_NAME = "DIGILICEN";
 const EMAIL = "digilicen@outlook.com";
 const WHATSAPP = "https://wa.me/8619928777176";
-const LASTMOD = "2026-11-16";
+const LASTMOD = "2026-11-20";
 const SOURCE = await readFile(new URL("../app.js", import.meta.url), "utf8");
 const RESELLER_SOURCE = await readFile(new URL("../reseller-products.js", import.meta.url), "utf8");
 
@@ -2710,6 +2710,49 @@ const BLOG_POSTS = [
         ]
       }
     ]
+  },
+  {
+    slug: "microsoft-office-2021-vs-2019-windows-mac-license-guide",
+    title: "Microsoft Office 2021 vs 2019: Windows and Mac License Guide",
+    description: "Compare Microsoft Office 2021 and 2019 license options for Windows and Mac, including device count, one-time terms, activation details, and delivery.",
+    category: "Microsoft Office and Windows",
+    date: "2026-11-20",
+    heroImage: "assets/catalog/reseller-297-microsoft-office-2021-professional-plus-1-pc-keys-global.webp",
+    related: [
+      "reseller-297-microsoft-office-2021-professional-plus-1-pc-keys-global",
+      "reseller-18-microsoft-office-2021-professional-plus-5-pc-keys-global",
+      "reseller-298-microsoft-office-2019-professional-plus-1-pc-key-global",
+      "reseller-299-microsoft-office-2019-home-and-business-for-mac-1-mac-key-global"
+    ],
+    relatedPosts: [
+      "windows-mac-software-license-inquiry-checklist",
+      "software-license-activation-support-checklist",
+      "business-software-license-procurement-checklist"
+    ],
+    cta: "Send DIGILICEN the required Office version, Windows or Mac platform, number of devices, activation preference, and payment method to confirm the correct listing before ordering.",
+    sections: [
+      {
+        heading: "Start with the operating system and exact Office edition",
+        paragraphs: [
+          "Microsoft Office license inquiries should begin with the computer platform. DIGILICEN lists Microsoft Office 2021 Professional Plus and Office 2019 Professional Plus options for Windows, while the Office 2019 Home & Business listing is for one Mac. Confirm the operating system before comparing prices because a Windows listing should not be assumed to work on macOS.",
+          "Write down the exact edition shown on the product page, the required language, and whether the computer already has another Office installation. Do not rely on the words Microsoft Office alone: version, edition, platform, device count, and activation method are separate order details that should be confirmed before payment."
+        ]
+      },
+      {
+        heading: "Compare Office 2021 and 2019 by device count and listed term",
+        paragraphs: [
+          "DIGILICEN currently lists Office 2021 Professional Plus for one PC at US$82.50 and a separate five-PC key option at US$45.00. Office 2019 Professional Plus for one PC is listed at US$57.50, and Office 2019 Home & Business for one Mac is listed at US$37.50. These four pages describe one-time options, but each is a separate offer with its own platform, device count, availability, and delivery details.",
+          "A lower price should not be used as the only selection rule. Check whether the page matches the required number of computers and activation process, then ask DIGILICEN to confirm current availability and compatibility. For a business deployment, list every device that needs Office rather than assuming a one-PC option can be reused on additional computers."
+        ]
+      },
+      {
+        heading: "Prepare a complete Office license inquiry before payment",
+        paragraphs: [
+          "Send the product page, Office version and edition, Windows or Mac platform, device count, account email requirement if applicable, preferred payment method, and desired delivery timing in one message. If an existing Office installation is present, mention it so compatibility and installation questions can be discussed before the order is confirmed.",
+          "DIGILICEN supports Alibaba online payment where available and PayPal invoice requests after the product details are confirmed. Keep the order reference with the selected listing and support conversation, and do not send passwords or remote-access credentials during an initial inquiry. DIGILICEN does not provide cracked software, pirated copies, unsafe activation tools, or bypass methods."
+        ]
+      }
+    ]
   }
 ];
 
@@ -2738,6 +2781,7 @@ function compactSeoTitle(title) {
     .replace("What Information Is Needed Before Software License Activation?", "Information Needed Before Software Activation")
     .replace("NVivo License Key Windows and Mac Qualitative Analysis Guide", "NVivo License Key Windows and Mac Guide")
     .replace("JetBrains AI Assistant and All Products Pack Activation Guide", "JetBrains AI Assistant Activation Guide")
+    .replace("Microsoft Office 2021 vs 2019: Windows and Mac License Guide", "Microsoft Office 2021 vs 2019 License Guide")
     .replace("PayPal Invoice for Software License Purchases: How It Works", "PayPal Invoice for Software Licenses")
     .replace("Software License Delivery Questions to Ask Before Payment", "Software License Delivery Questions")
     .replace("EndNote License Key Windows and Mac Installation Guide", "EndNote License Key Windows and Mac Guide")
@@ -3671,20 +3715,22 @@ function blogPage(post) {
   const relatedProducts = post.related.map((slug) => PRODUCTS.find((product) => product.slug === slug)).filter(Boolean);
   const faqs = blogFaqs(post);
   const heroImage = webImage(post.heroImage);
-  const relatedPosts = BLOG_POSTS
-    .filter((item) => item.slug !== post.slug)
-    .map((item) => ({
-      item,
-      sharedProducts: item.related.filter((slug) => post.related.includes(slug)).length,
-      sameCategory: item.category === post.category ? 1 : 0
-    }))
-    .sort((a, b) =>
-      b.sharedProducts - a.sharedProducts ||
-      b.sameCategory - a.sameCategory ||
-      b.item.date.localeCompare(a.item.date)
-    )
-    .slice(0, 3)
-    .map(({ item }) => item);
+  const relatedPosts = post.relatedPosts
+    ? post.relatedPosts.map((slug) => BLOG_POSTS.find((item) => item.slug === slug)).filter(Boolean)
+    : BLOG_POSTS
+      .filter((item) => item.slug !== post.slug)
+      .map((item) => ({
+        item,
+        sharedProducts: item.related.filter((slug) => post.related.includes(slug)).length,
+        sameCategory: item.category === post.category ? 1 : 0
+      }))
+      .sort((a, b) =>
+        b.sharedProducts - a.sharedProducts ||
+        b.sameCategory - a.sameCategory ||
+        b.item.date.localeCompare(a.item.date)
+      )
+      .slice(0, 3)
+      .map(({ item }) => item);
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
