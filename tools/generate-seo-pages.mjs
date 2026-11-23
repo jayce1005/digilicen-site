@@ -1,10 +1,11 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
+import { existsSync } from "node:fs";
 
 const SITE_URL = "https://digilicen.com";
 const SITE_NAME = "DIGILICEN";
 const EMAIL = "digilicen@outlook.com";
 const WHATSAPP = "https://wa.me/8619928777176";
-const LASTMOD = "2026-11-20";
+const LASTMOD = "2026-11-23";
 const SOURCE = await readFile(new URL("../app.js", import.meta.url), "utf8");
 const RESELLER_SOURCE = await readFile(new URL("../reseller-products.js", import.meta.url), "utf8");
 
@@ -2753,6 +2754,58 @@ const BLOG_POSTS = [
         ]
       }
     ]
+  },
+  {
+    slug: "anydesk-solo-vs-standard-vs-advanced-license-guide",
+    title: "AnyDesk Solo vs Standard vs Advanced: 1-Year License Guide",
+    description: "Compare AnyDesk Solo, Standard, and Advanced 1-year license options by users, connections, managed devices, listed prices, activation, and delivery.",
+    category: "Remote Access Software",
+    date: "2026-11-23",
+    heroImage: "assets/catalog/reseller-309-anydesk-1-year-license-solo-remote-activation.png",
+    related: [
+      "reseller-309-anydesk-1-year-license-solo-remote-activation",
+      "reseller-310-anydesk-1-year-license-standard-remote-activation",
+      "reseller-311-anydesk-1-year-license-advanced-remote-activation"
+    ],
+    relatedPosts: [
+      "multi-user-software-license-inquiry-guide",
+      "business-software-license-procurement-checklist",
+      "what-information-needed-before-software-license-activation"
+    ],
+    sources: [
+      {
+        label: "AnyDesk official pricing and plan comparison",
+        url: "https://anydesk.com/en/pricing"
+      },
+      {
+        label: "AnyDesk official license documentation",
+        url: "https://support.anydesk.com/docs/anydesk-licenses"
+      }
+    ],
+    cta: "Send DIGILICEN the AnyDesk tier, number of users, concurrent connections, managed-device requirement, account email, and preferred payment method to confirm the correct 1-year listing.",
+    sections: [
+      {
+        heading: "Choose the AnyDesk tier by users, connections, and managed devices",
+        paragraphs: [
+          "AnyDesk currently positions Solo for one business user, Standard for small teams, and Advanced for larger IT or technical-support teams. Its official plan information lists Solo with one non-scalable outgoing connection and up to 100 managed devices, Standard with one starting connection, up to 20 users, and up to 500 managed devices, and Advanced with two starting connections, up to 100 users, and up to 1,000 managed devices.",
+          "These official plan descriptions are a useful starting point, but the exact entitlement attached to a reseller listing should still be confirmed before payment. Write down who initiates remote sessions, how many sessions may run at the same time, how many unattended devices must be managed, and whether the team needs centralized administration or deployment features."
+        ]
+      },
+      {
+        heading: "Compare DIGILICEN's current 1-year AnyDesk listings",
+        paragraphs: [
+          "DIGILICEN currently lists AnyDesk Solo Remote Activation for 1 year at US$82.50, Standard Remote Activation for 1 year at US$120.00, and Advanced Remote Activation for 1 year at US$195.00. Each page is a separate digital license-key inquiry, and an account email may be required after the product and delivery details are confirmed.",
+          "Do not select a tier from price alone. A single user who starts one connection has different requirements from a support team that needs multiple users, add-on connections, managed devices, or deployment controls. Ask DIGILICEN to confirm the selected tier, current availability, activation process, account requirement, and exact delivery scope before ordering."
+        ]
+      },
+      {
+        heading: "Prepare a secure remote-access license inquiry",
+        paragraphs: [
+          "Send the selected product page, required tier, number of licensed users, expected concurrent outgoing connections, approximate managed-device count, operating systems, account email requirement, and preferred payment route in one message. If the purchase is for a company, also state whether the license is for remote work, unattended device access, an internal help desk, or customer support.",
+          "DIGILICEN supports Alibaba online payment where available and PayPal invoice requests after the order details are confirmed. Do not send passwords, unattended-access credentials, device access codes, or confidential network information during an initial inquiry. Keep the final order reference with the confirmed product and support conversation."
+        ]
+      }
+    ]
   }
 ];
 
@@ -2782,6 +2835,7 @@ function compactSeoTitle(title) {
     .replace("NVivo License Key Windows and Mac Qualitative Analysis Guide", "NVivo License Key Windows and Mac Guide")
     .replace("JetBrains AI Assistant and All Products Pack Activation Guide", "JetBrains AI Assistant Activation Guide")
     .replace("Microsoft Office 2021 vs 2019: Windows and Mac License Guide", "Microsoft Office 2021 vs 2019 License Guide")
+    .replace("AnyDesk Solo vs Standard vs Advanced: 1-Year License Guide", "AnyDesk Solo vs Standard vs Advanced")
     .replace("PayPal Invoice for Software License Purchases: How It Works", "PayPal Invoice for Software Licenses")
     .replace("Software License Delivery Questions to Ask Before Payment", "Software License Delivery Questions")
     .replace("EndNote License Key Windows and Mac Installation Guide", "EndNote License Key Windows and Mac Guide")
@@ -2816,7 +2870,9 @@ function imageFor(product) {
 }
 
 function webImage(path) {
-  return path.replace(/\.png$/, ".jpg");
+  if (!path.endsWith(".png")) return path;
+  const jpgPath = path.replace(/\.png$/, ".jpg");
+  return existsSync(new URL(`../${jpgPath}`, import.meta.url)) ? jpgPath : path;
 }
 
 function productUrl(product) {
@@ -3749,7 +3805,8 @@ function blogPage(post) {
       name: SITE_NAME,
       url: SITE_URL
     },
-    mainEntityOfPage: canonical
+    mainEntityOfPage: canonical,
+    ...(post.sources?.length ? { citation: post.sources.map((source) => source.url) } : {})
   };
   const breadcrumbSchema = {
     "@context": "https://schema.org",
@@ -3843,7 +3900,13 @@ function blogPage(post) {
             <h2>${escapeHtml(section.heading)}</h2>
             ${section.paragraphs.map((paragraph) => `<p>${escapeHtml(paragraph)}</p>`).join("\n            ")}
           </section>`).join("\n          ")}
-          <section>
+${post.sources?.length ? `          <section>
+            <h2>Official plan references</h2>
+            <p>Plan specifications can change. Review the official references and confirm the exact DIGILICEN listing before payment.</p>
+            <div class="related-links">
+              ${post.sources.map((source) => `<a href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(source.label)}</a>`).join("\n              ")}
+            </div>
+          </section>\n` : ""}          <section>
             <h2>Frequently asked questions</h2>
             <div class="faq-list">
               ${faqs.map((faq, index) => `<details ${index === 0 ? "open" : ""}>
