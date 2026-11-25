@@ -51,7 +51,7 @@ Machine-readable resources:
 - [Autodesk Fusion 360 - 1 Year](https://digilicen.com/products/fusion-360): Fusion 360 professional license for product design and engineering workflows. Listed price: US$50.00.
 - [Autodesk Inventor - 1 Year](https://digilicen.com/products/inventor): Inventor professional license support for product design and engineering teams. Listed price: US$60.00.
 - [Autodesk Maya - 1 Year](https://digilicen.com/products/maya): Maya commercial license for animation, modeling, and creative production. Listed price: US$60.00.
-- [Autodesk 3ds Max - 1 Year](https://digilicen.com/products/3ds-max): 3ds Max commercial license for rendering, animation, and visualization. Listed price: US$60.00.
+- [Autodesk 3ds Max - 1 Year](https://digilicen.com/products/3ds-max): Request an Autodesk 3ds Max 1-year commercial license for US$60.00. Confirm your Windows version, renderer, plug-ins, and delivery with DIGILICEN.
 - [Autodesk Civil 3D - 1 Year](https://digilicen.com/products/civil-3d): Civil 3D commercial license for civil engineering design and documentation. Listed price: US$60.00.
 - [Autodesk Revit - 1 Year](https://digilicen.com/products/revit): Revit commercial license for BIM and building design workflows. Listed price: US$60.00.
 - [AutoCAD Plant 3D - 1 Year](https://digilicen.com/products/plant-3d): Plant 3D commercial software license with digital delivery support. Listed price: US$60.00.

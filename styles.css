@@ -683,6 +683,10 @@ h3 {
   margin-bottom: 28px;
 }
 
+.value-grid p a {
+  text-decoration: underline;
+}
+
 .faq-list {
   display: grid;
   gap: 12px;

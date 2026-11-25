@@ -2991,7 +2991,43 @@ function productOptionsHtml(product) {
             </div>`;
 }
 
+const PRODUCT_SEO = {
+  "3ds-max": {
+    title: "Autodesk 3ds Max 1-Year Commercial License",
+    description: "Request an Autodesk 3ds Max 1-year commercial license for {price}. Confirm your Windows version, renderer, plug-ins, and delivery with DIGILICEN.",
+    imageAlt: "Autodesk illustration of a laptop displaying architectural and engineering 3D models",
+    lastmod: "2026-11-25",
+    faq: {
+      question: "What should I confirm about Windows and plug-ins before ordering 3ds Max?",
+      answer: "Check the Autodesk system requirements for the specific 3ds Max release you need. If your studio uses a third-party renderer or plug-in, check that its version supports that same release and confirm any separate license requirements before payment."
+    },
+    guidance: [
+      {
+        heading: "For visualization and rendering teams",
+        body: "Consider 3ds Max if your team needs to render architectural interiors or exteriors, visualize products, or continue work on a scene built in 3ds Max. If you are taking over a project, ask the original author which release, renderer, and plug-ins they used before you choose a version."
+      },
+      {
+        heading: "Check your workstation and project files",
+        body: "List your Windows version, GPU, and required 3ds Max release. For an existing project, also check its render engine, plug-in versions, textures, and linked files. Do not assume a third-party renderer or plug-in is included with the license.",
+        link: {
+          label: "Autodesk system requirements by release",
+          href: "https://www.autodesk.com/support/technical/article/caas/sfdcarticles/sfdcarticles/System-requirements-for-Autodesk-3ds-Max-products.html"
+        }
+      },
+      {
+        heading: "Request a quote for your studio",
+        body: "Send the number of users, requested release, planned start date, and whether you need compatibility or activation guidance. Ask DIGILICEN to confirm the one-year term, account requirements, availability, and delivery before paying. You do not need to send a client scene or password.",
+        link: { label: "Contact DIGILICEN", href: "../contact" }
+      }
+    ],
+    categoryLink: { label: "Browse Autodesk software licenses", href: "../categories/autodesk-software-licenses" }
+  }
+};
+
 function productTitle(product) {
+  if (PRODUCT_SEO[product.slug]?.title) {
+    return `${PRODUCT_SEO[product.slug].title} | ${SITE_NAME}`;
+  }
   if (product.name.includes("JetBrains")) {
     return `JetBrains AI Assistant 6 Month License | ${SITE_NAME}`;
   }
@@ -3005,6 +3041,9 @@ function productTitle(product) {
 }
 
 function productDescription(product) {
+  if (PRODUCT_SEO[product.slug]?.description) {
+    return PRODUCT_SEO[product.slug].description.replace("{price}", product.price);
+  }
   if (product.sourceId) {
     return `${productLabel(product)} inquiry from DIGILICEN. Listed price ${product.price}. Confirm requirements, compatibility, delivery, warranty, and availability before payment.`;
   }
@@ -3094,7 +3133,7 @@ function productFaqs(product) {
       question: `Is ${productLabel(product)} a genuine software license inquiry?`,
       answer: `Yes. DIGILICEN provides genuine software license inquiry support for ${productLabel(product)} and does not provide cracked software, pirated copies, or unsafe activation methods.`
     },
-    {
+    PRODUCT_SEO[product.slug]?.faq || {
       question: `What should I confirm before ordering ${product.name}?`,
       answer: `Please confirm the product name, ${product.term} term, account email requirements, operating system, compatibility needs, payment method, and delivery timing before payment.`
     },
@@ -3106,6 +3145,8 @@ function productFaqs(product) {
 }
 
 function productGuidance(product) {
+  if (PRODUCT_SEO[product.slug]?.guidance) return PRODUCT_SEO[product.slug].guidance;
+
   const categoryGuidance = {
     Adobe: {
       audience: "Creative teams, designers, editors, marketers, freelancers, and short-term project users who need Adobe Creative Cloud access for design, PDF, photo, video, or production work.",
@@ -3197,6 +3238,7 @@ function productPage(product) {
   const relatedPosts = relatedPostsForProduct(product);
   const faqs = productFaqs(product);
   const guidance = productGuidance(product);
+  const seo = PRODUCT_SEO[product.slug];
   const schema = {
     "@context": "https://schema.org",
     "@type": "Product",
@@ -3345,7 +3387,7 @@ function productPage(product) {
       <section class="product-detail">
         <div class="product-detail-card">
           <div class="product-detail-visual">
-            <img src="../${image}" alt="${escapeHtml(productLabel(product))}" decoding="async" fetchpriority="high">
+            <img src="../${image}" alt="${escapeHtml(seo?.imageAlt || productLabel(product))}" decoding="async" fetchpriority="high">
           </div>
           <div class="product-info-panel">
             <p class="eyebrow">${escapeHtml(product.category)} license inquiry</p>
@@ -3402,7 +3444,7 @@ function productPage(product) {
           ${guidance.map((item, index) => `<article>
             <span class="value-icon">${String(index + 1).padStart(2, "0")}</span>
             <h3>${escapeHtml(item.heading)}</h3>
-            <p>${escapeHtml(item.body)}</p>
+            <p>${escapeHtml(item.body)}${item.link ? ` <a href="${escapeHtml(item.link.href)}">${escapeHtml(item.link.label)}</a>` : ""}</p>
           </article>`).join("\n          ")}
         </div>
       </section>
@@ -3427,7 +3469,7 @@ function productPage(product) {
         </div>
         <div class="related-links">
           ${related.map((item) => `<a href="${item.slug}">${escapeHtml(productLabel(item))}</a>`).join("\n          ")}
-          <a href="../#products">View all products</a>
+          ${seo?.categoryLink ? `<a href="${escapeHtml(seo.categoryLink.href)}">${escapeHtml(seo.categoryLink.label)}</a>` : '<a href="../#products">View all products</a>'}
         </div>
       </section>
 
@@ -4179,6 +4221,7 @@ function sitemapXml() {
     })),
     ...PRODUCTS.filter(isSeoEligibleProduct).map((product) => ({
       loc: productUrl(product),
+      lastmod: PRODUCT_SEO[product.slug]?.lastmod,
       priority: "0.8",
       image: `${SITE_URL}/${imageFor(product)}`,
       imageTitle: productLabel(product),
@@ -4191,7 +4234,7 @@ function sitemapXml() {
   xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 ${urls.map((url) => `  <url>
     <loc>${escapeXml(url.loc)}</loc>
-    <lastmod>${LASTMOD}</lastmod>
+    <lastmod>${url.lastmod || LASTMOD}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>${url.priority}</priority>
     <image:image>
@@ -4244,7 +4287,7 @@ function llmsTxt() {
   const productPages = PRODUCTS.filter(isSeoEligibleProduct).map((product) => [
     productLabel(product),
     productUrl(product),
-    `${product.summary} Listed price: ${product.price}.`
+    PRODUCT_SEO[product.slug]?.description ? productDescription(product) : `${product.summary} Listed price: ${product.price}.`
   ]);
   const blogPages = BLOG_POSTS.map((post) => [
     post.title,
