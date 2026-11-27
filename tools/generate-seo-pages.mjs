@@ -3021,6 +3021,38 @@ const PRODUCT_SEO = {
       }
     ],
     categoryLink: { label: "Browse Autodesk software licenses", href: "../categories/autodesk-software-licenses" }
+  },
+  "aec-collection": {
+    title: "Autodesk AEC Collection 1-Year Commercial License",
+    description: "Autodesk AEC Collection 1-year commercial license listed at {price}. Confirm the apps, seats, and delivery before ordering.",
+    imageAlt: "DIGILICEN AEC Collection graphic showing a building model and Autodesk app icons",
+    lastmod: "2026-11-27",
+    faq: {
+      question: "Which apps should I confirm before ordering the Autodesk AEC Collection?",
+      answer: "Autodesk lists Revit, AutoCAD, Civil 3D, and Navisworks Manage in its AEC Collection. Before ordering, ask DIGILICEN to confirm the exact apps, editions, releases, and any cloud services you need for this listing."
+    },
+    guidance: [
+      {
+        heading: "Check which apps your team needs",
+        body: "Start with the project deliverables: Revit for building models, Civil 3D for civil design, AutoCAD for drawings, or Navisworks Manage for model coordination. Autodesk lists these in the AEC Collection. Verify the apps and any cloud services you need for this specific listing before payment.",
+        link: {
+          label: "See Autodesk's included software list",
+          href: "https://www.autodesk.com/collections/architecture-engineering-construction/included-software"
+        }
+      },
+      {
+        heading: "Compare a collection with a single app",
+        body: "If one person works across building models and coordination, ask about the collection. If your team only needs Revit or Civil 3D, compare the standalone listing first. For mixed teams, list which apps each person needs rather than assuming one license can be shared.",
+        link: { label: "Compare the collection and individual licenses", href: "../blog/autodesk-aec-collection-vs-individual-licenses" }
+      },
+      {
+        heading: "Request an itemized quote",
+        body: "Send your required apps and releases, the number of users for each, and the planned start date. If this is for an existing project, include the release your collaborators use. Ask for confirmation of the one-year term, supported apps, account requirements, availability, and delivery before paying.",
+        link: { label: "Contact DIGILICEN", href: "../contact" }
+      }
+    ],
+    relatedProducts: ["revit", "civil-3d", "navisworks"],
+    categoryLink: { label: "Browse Autodesk software licenses", href: "../categories/autodesk-software-licenses" }
   }
 };
 
@@ -3061,6 +3093,9 @@ function jsonLd(data) {
 }
 
 function relatedProducts(product) {
+  const relatedSlugs = PRODUCT_SEO[product.slug]?.relatedProducts;
+  if (relatedSlugs) return relatedSlugs.map((slug) => PRODUCTS.find((item) => item.slug === slug)).filter(Boolean);
+
   return PRODUCTS
     .filter((item) => item.slug !== product.slug && item.category === product.category)
     .slice(0, 3);

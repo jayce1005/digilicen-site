@@ -62,7 +62,7 @@ Machine-readable resources:
 - [Autodesk Revit LT - 1 Year](https://digilicen.com/products/revit-lt): Revit LT commercial license inquiry for compatible Windows or Mac workflows. Listed price: US$65.00.
 - [AutoCAD BIM Collection - 1 Year](https://digilicen.com/products/bim-collection): BIM collection commercial license for coordinated design and project workflows. Listed price: US$80.00.
 - [Autodesk Raster Design - 1 Year](https://digilicen.com/products/raster-design): Raster Design commercial license option for image and CAD workflows. Listed price: US$60.00.
-- [Autodesk AEC Collection - 1 Year](https://digilicen.com/products/aec-collection): Architecture, engineering, and construction collection commercial license. Listed price: US$75.00.
+- [Autodesk AEC Collection - 1 Year](https://digilicen.com/products/aec-collection): Autodesk AEC Collection 1-year commercial license listed at US$75.00. Confirm the apps, seats, and delivery before ordering.
 - [AutoCAD MEP - 1 Year](https://digilicen.com/products/mep): AutoCAD MEP commercial license with compatibility confirmation before payment. Listed price: US$60.00.
 - [AutoCAD Mechanical - 1 Year](https://digilicen.com/products/autocad-mechanical): AutoCAD Mechanical commercial license with guided activation support. Listed price: US$60.00.
 - [AutoCAD - 1 Year](https://digilicen.com/products/autocad): AutoCAD commercial software license for professional drafting and design teams. Listed price: US$65.00.
